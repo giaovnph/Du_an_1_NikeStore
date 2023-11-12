@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .all {
+    margin: auto;
+    width: 1400px;
+    height: auto;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    text-align: center;
+    background-color: #ffffff;
+  }
+  
+  .sl {
+    margin: 30px auto;
+  }
+  
+  .sl img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .content img {
+    width: 350px;
+    height: auto;
+    border: 1px solid #e8e7e7;
+  }
+  
+  h4{
+    font-weight: unset;
+    font-size: 19px;
+  }
+  .giam-gia {
+    display: inline-block;
+    margin:20px 0; 
+  }
+  
+  .tien {
+    text-decoration: line-through;  
+    display: inline-block;
+    font-weight: normal;
+    padding-right: 10px;
+    font-size: 15px;
+  }
+  
+  .sp1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    justify-content: center;
+  }
+  
+  .sp {
+    padding: 10px;
+    background-color: #ffffff;
+    text-align: left;
+    margin: 70px 0;
+    
+  }
+  
+  .chu-sp{
+    padding-top: 20px;
+    height: auto;
+    font-size: 18px;
+  }
+  
+  
+  .c {
+    margin-bottom:60px ;
+  }
+  .shop button{
+    width: 150px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: #e0dede;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+  
+  }
+  .shop button:hover{
+    background-color: black;
+    color: white;
+  
+  }
+  
+  .c1 {
+    font-size: 20px;
+    padding: 20px;
+    margin: 40px 0;
+  }
+  .c2 {
+    font-size: 60px;
+    font-weight: bold;
+  }
+  .logo {
+    width: 200px;
+    padding-bottom: 10px;
+  }
+  
+  .logo img {
+    width: 80px;
+  }
+  
+  .mn {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    width: 1395px;
+    margin-top: 30px ;
+    padding-top: 15px;
+  
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .search-box {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    border-radius: 17px;
+    background-color: #ededed;
+    margin-top: 8px;
+  }
+  
+  #search-input {
+    width: 150px;
+    border: none;
+    outline: none;
+    height: 25px;
+    background-color: #ededed;
+  }
+  
+  #search-button {
+    border: none;
+    border-radius: 50%;
+    align-items: center;
+    margin-right: 2px;
+    height: 30px;
+    width: 35px;
+    background-color: #ededed;
+  
+  }
+  
+  .menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu ul li a {
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 16px  ;
+    display: block;
+    color: black;
+    
+  }
+  
+  .menu a:hover {
+    color: #cac9c9;
+  }
+  
+  .tk{
+    width: 100px;
+    display: flex;
+  }
+  
+
+/* footer*/
+
+.footer {
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 27% 20% 18%  35%);
+    font-weight: bold;
+    font-size: 14px;
+}
+.footer a {
+    margin-top: 40px;
+    text-decoration: none;
+}
+.ft1 {
+    margin-left: 40px;
+    margin-bottom: 40px;
+    display: grid;
+}
+.ft2 {
+    margin-bottom: 40px;
+    display: grid;        
+}
+.chuft {
+    font-size: 12px;
+    font-weight: normal;
+    color: #808080;
+}
+.chuft a{
+    color: #808080;
+}
+.chuft:hover {
+    color: #fff;
+}
+.vn {
+    margin-right: 20px;
+    color: #fff;
+    font-weight: normal;
+
+}
+.ft3 {
+    margin-top: 30px;
+    font-size: 13px;
+}
+.chuft2{
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 345px;
+    color: #808080;
+    margin-left: 20px;
+
+}
+.chuft2 a{
+    padding-right:20px  ;
+    color: #808080;
+}
+.chuft2 a:hover {
+    color: #fff;
+}
+
+.icon{
+    margin-left: 30px ;
+    color: #808080;
+    font-size: 25px ;
+}
+.icon:hover {
+    color: #fff;
+}
+/*end footer*/
+  
+  .ct {
+    height: auto;
+    margin: 150px 0;
+  }
+  
+  .ct1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 70px 30px;
+    gap: 100px;
+  }
+  
+  .ct img {
+    width: 500px;
+    height: auto;
+  }
+  
+  .ct2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 70px 30px;
+    gap: 100px;
+  }
+  .chu{
+   width: 270px;
+   font-size: 27px;
+   margin:30px 150px ;
+  }
+  .chu1{
+    width: 225px;
+    font-size: 27px;
+    margin:30px 100px ;
+   }
+   a{
+    text-decoration: none;
+    color: black;
+   }
+  
+   .all2{
+    height: auto;
+   }
+   .logo2 img{
+    margin-top: 50px;
+      width: 50px;
+  }
+  input {
+    padding-left:10px ;
+    width: 330px;
+    height: 40px;
+    margin: 20px 0;
+    border: 1px solid #cac9c9;
+    font-size: 15px;
+    color: #7e7e7e;
+  
+  }
+  .cs{
+    font-size: 13px;
+    margin-top: 30px;
+    color: #7e7e7e;
+  }
+  .cs  a{
+    text-decoration: underline;
+  }
+  .dk{
+    font-size: 13px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    color: #7e7e7e;
+  
+  }
+  .dk a{
+    text-decoration: underline;
+  }
+  .dn button{
+      width: 347px;
+      height: 50px;
+      background-color: black;
+      color: white;
+      font-size: 18px;
+      margin-top: 30px;
+      border-radius: 5px;
+  
+  }
+  .dn button:hover{
+      background-color: rgb(66, 66, 66);
+  }
+  h2{
+    margin-left: 610px;
+    width: 300px;
+    font-size: 22px;
+    margin-top: 30px ;
+    margin-bottom: 20px ;
+  }
+  .logo3 img{
+    margin-top: 50px;
+    width: 50px;
+    margin-left: 10px;
+  }
+  .nut1 button{
+    font-size: 20px;
+    width: 340px;
+    height: 50px;
+    background-color: black;
+      border-radius: 5px;
+      margin-bottom: 70px;
+  
+      color: white;
+  }
+  .nut1 button:hover{
+    background-color: rgb(66, 66, 66);
+  
+  }
+  
+  .nut button{
+    font-size: 20px;
+    width: 167px;
+    height: 50px;
+    background-color: black;
+      border-radius: 5px;
+      color: white;
+      margin-bottom: 70px;
+  }
+  .nut button:hover{
+    background-color: rgb(66, 66, 66);
+  
+  }
+  .shop button a:hover{
+    color: white;
+  }
+  
+  
