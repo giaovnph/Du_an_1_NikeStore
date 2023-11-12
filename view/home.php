@@ -81,7 +81,7 @@
 
   <!-- Baner Tĩnh -->
   <div>
-    <img src="Anh_Giay/n.webp" height="800px" width="1400px">
+    <img src="Anh_Giay/n.webp" height="800px" width="100%">
   </div>
 
   <!-- Tiêy đề giới thiệu -->
@@ -127,5 +127,5 @@
 
   <!-- baner tĩnh 2 -->
   <div>
-    <img src="Anh_Giay/7.jpg" height="auto" width="1400px">
+    <img src="Anh_Giay/7.jpg" height="auto" width="100%">
   </div>
