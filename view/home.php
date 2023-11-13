@@ -22,7 +22,7 @@
     <div class="sp1">
 
       <div class="sp">
-        <a href="sp.php">
+        <a href="chitietsanpham.html">
           <img onmouseover="changeImg(this, './Anh_Giay/g1.1.webp')" onmouseout="normalImg(this,'./Anh_Giay/g1.jpg')" src="./Anh_Giay/g1.jpg" />
           <div class="chu-sp">
             <h4>Air Jordan 1 Mid SE</h4>
@@ -34,7 +34,7 @@
 
 
       <div class="sp">
-        <a href="sp.php">
+        <a href="chitietsanpham.html">
           <img onmouseover="changeImg(this, './Anh_Giay/g4.4.webp')" onmouseout="normalImg(this,'./Anh_Giay/g4.webp')" src="./Anh_Giay/g4.webp" />
           <div class="chu-sp">
             <h4>Jumpman MVP</h4>
@@ -48,7 +48,7 @@
 
 
       <div class="sp">
-        <a href="sp.php">
+        <a href="chitietsanpham.html">
           <img onmouseover="changeImg(this, './Anh_Giay/g2.2.webp')" onmouseout="normalImg(this,'./Anh_Giay/g2.webp')" src="./Anh_Giay/g2.webp" />
           <div class="chu-sp">
             <h4>Nike Air Jordan 1 Zoom Air PSG </h4>
@@ -61,7 +61,7 @@
 
 
       <div class="sp">
-        <a href="sp.php">
+        <a href="chitietsanpham.html">
           <img onmouseover="changeImg(this, './Anh_Giay/g3.3.webp')" onmouseout="normalImg(this,'./Anh_Giay/g3.jpg')" src="./Anh_Giay/g3.jpg" />
           <div class="chu-sp">
             <h4>Air Jordan 1 Mid SE</h4>

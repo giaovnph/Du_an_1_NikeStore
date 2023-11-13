@@ -374,3 +374,122 @@ h2{
   color: white;
 }
 
+.g0 {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 20% 40% 45%;
+}
+
+.g2 {
+  margin-right: 640px;
+}
+
+.g1 {
+  margin-left: 180px;
+  width: 140px;
+}
+
+.g1 img:hover {
+  border: .5px solid black;
+}
+
+.chu2 {
+  font-size: 28px;
+  width: 250px;
+  font-weight: 540;
+}
+
+.gia1{
+  margin-top:10px ;
+  font-weight: 550;
+
+  margin-right: 118px;
+  font-size: 20px;
+}
+.size{
+  margin-top:35px ;
+  width: 350px;
+}
+.size p{
+  font-size: 15px;
+  width: 100px;
+}
+.size button{
+
+  border:1px solid #c7c7c7;
+  width: 100px;
+  border-radius: 5px;   
+  margin-top:20px; 
+  background-color: white;
+  height: 45px;
+  font-size: 17px;
+}
+.bt button:hover{
+  border:2px solid black;
+}
+.bt button:focus{
+  border:2px solid black;
+}
+.bt{
+  margin-right: 24px;
+}
+.giohang button{
+  width: 316px;
+  height: 60px;
+  margin-left: 5px;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  margin-top: 50px;
+  border-radius: 50px;
+
+}
+.giohang button:hover{
+  background-color: rgb(96, 96, 96);
+}
+.yeuthich button{
+  width: 316px;
+  height: 60px;
+  margin-left: 5px;
+  background-color: #fff;
+  color: black;
+  font-size: 18px;
+  margin-top: 20px;
+  border-radius: 50px;
+  border: 1px solid #c7c7c7;
+
+}
+.yeuthich button:hover{
+  border: 1px solid black;
+}
+.tt{
+  margin-top: 30px;
+  width: 320px;
+  font-size: 16px;
+  margin-left: 5px;
+  
+}
+hr{
+  margin-top: 20px;
+  margin-left: 15px;
+  width: 295px;
+}
+.cl{
+  width: 320px;
+  font-size: 18.5px;
+  margin-left: 2px;
+  margin-top: 20px;
+}
+.cl1{
+  width: 230px;
+  font-size: 18.5px;
+  margin-right: 300px;
+  margin-top: 10px;
+  list-style: disc;
+}
+.h{
+  font-size: 24px;
+  width: 350px;
+  margin-left: 5px;
+  margin-top: 50px;
+}
