@@ -130,6 +130,7 @@
     <img src="Anh_Giay/7.jpg" height="auto" width="100%">
   </div>
   <div class="carousel-container">
+    <!-- ===Slide=== -->
       <div class="product-container">
         <div class="product"><img src="images/product_1.png" alt=""></div>
         <div class="product"><img src="images/product_2.png" alt=""></div>
