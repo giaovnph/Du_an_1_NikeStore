@@ -160,11 +160,11 @@
         productContainer.style.transform = `translateX(${newPosition}px)`;
       }
       function next() {
-        currentIndex = (currentIndex + 2) % 10;
+        currentIndex = (currentIndex + 3) % 12;
         showProducts();
       }
       function prev() {
-        currentIndex = (currentIndex - 3 + 10) % 9;
+        currentIndex = (currentIndex - 2 + 12) % 12;
         showProducts();
       }
     </script>
