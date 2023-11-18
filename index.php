@@ -1,4 +1,3 @@
-
 <?php
 session_start();
 include "model/pdo.php";
@@ -60,4 +59,7 @@ if (isset($_GET['act']) && ($_GET['act'] != "")) {
 }
 
 include "view/footer.php";
+    include "./view/header.php"; 
+    include "./view/home.php"; 
+    include "./view/footer.php"; 
 ?>

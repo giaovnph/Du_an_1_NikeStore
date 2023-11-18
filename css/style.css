@@ -500,4 +500,58 @@ hr{
   margin-left: 5px;
   margin-top: 50px;
 }
+<<<<<<< HEAD
 /*====================== END chi tiét sản phẩm ==============*/
+=======
+/*==========Giỏ Hàng============*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.cart-container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.product-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.remove-button {
+  background-color: #ff6961;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.button{
+  background-color: #ff6961;
+  width: 150px;
+  height: 30px;
+  margin-top: 30px;
+}
+>>>>>>> 74c4c2cef50cc82414099d42d9bcba35948551c5

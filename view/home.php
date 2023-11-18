@@ -129,3 +129,43 @@
   <div>
     <img src="Anh_Giay/7.jpg" height="auto" width="100%">
   </div>
+  <div class="carousel-container">
+    <!-- ===Slide=== -->
+      <div class="product-container">
+        <div class="product"><img src="images/product_1.png" alt=""></div>
+        <div class="product"><img src="images/product_2.png" alt=""></div>
+        <div class="product"><img src="images/product_3.png" alt=""></div>
+        <div class="product"><img src="images/product_4.png" alt=""></div>
+        <div class="product"><img src="images/product_5.png" alt=""></div>
+        <div class="product"><img src="images/product_6.png" alt=""></div>
+        <div class="product"><img src="images/product_7.png" alt=""></div>
+        <div class="product"><img src="images/product_8.png" alt=""></div>
+        <div class="product"><img src="images/product_9.png" alt=""></div>
+        <div class="product"><img src="images/product_4.png" alt=""></div>
+        <div class="product"><img src="images/product_5.png" alt=""></div>
+        <div class="product"><img src="images/product_6.png" alt=""></div>
+        <div class="product"><img src="images/product_1.png" alt=""></div>
+        <div class="product"><img src="images/product_2.png" alt=""></div>     
+        <div class="product"><img src="images/product_4.png" alt=""></div>
+
+      </div>
+      <button class="btn btn-prev" onclick="prev()">❮</button>
+      <button class="btn btn-next" onclick="next()">❯</button>
+    </div>
+
+    <script>
+      const productContainer = document.querySelector(".product-container");
+      let currentIndex = 0;
+      function showProducts() {
+        const newPosition = -currentIndex * 220; 
+        productContainer.style.transform = `translateX(${newPosition}px)`;
+      }
+      function next() {
+        currentIndex = (currentIndex + 3) % 12;
+        showProducts();
+      }
+      function prev() {
+        currentIndex = (currentIndex - 2 + 12) % 12;
+        showProducts();
+      }
+    </script>
