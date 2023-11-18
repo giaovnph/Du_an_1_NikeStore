@@ -153,19 +153,9 @@
       <button class="btn btn-next" onclick="next()">❯</button>
     </div>
 
-    <script>
-      const productContainer = document.querySelector(".product-container");
-      let currentIndex = 0;
-      function showProducts() {
-        const newPosition = -currentIndex * 220; 
-        productContainer.style.transform = `translateX(${newPosition}px)`;
-      }
-      function next() {
-        currentIndex = (currentIndex + 3) % 12;
-        showProducts();
-      }
-      function prev() {
-        currentIndex = (currentIndex - 2 + 12) % 12;
-        showProducts();
-      }
-    </script>
+    <script src="./css/js.js">
+  function query(giao) {
+    return document.querySelector(giao);
+  }
+</script>
+     
