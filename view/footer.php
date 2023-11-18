@@ -3,7 +3,7 @@
     <div class="footer">
         <div class="ft1">
             <a style="color: #fff;" href="https://www.google.com/maps/search/Nike/@21.0281042,105.8302773,16z/data=!3m1!4b1?entry=ttu">TÌM 1 CỬA HÀNG</a>
-            <a href="" style="color: #fff;">TRỞ THÀNH 1 THÀNH VIÊN</a>
+            <a href="index.php?act=dangky" style="color: #fff;">TRỞ THÀNH 1 THÀNH VIÊN</a>
             <a href="" style="color: #fff;">ĐĂNG KÝ EMAIL</a>
             <a href=""></a>
             <a href=""></a>
