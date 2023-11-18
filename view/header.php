@@ -15,7 +15,7 @@
 <body>
 <header> <!-- Phần Menu ngang -->
     <div class="mn">
-      <div class="logo"> <a href="index.php"><img src="images/th.jpg" alt="" /></a>
+      <div class="logo"> <a href="index.php"><img src="images/Logo.png" alt="" /></a>
 
       </div>
       <div class="menu">
