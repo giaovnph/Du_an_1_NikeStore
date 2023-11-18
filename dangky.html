@@ -6,11 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title></title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css ">
 </head>
 
 <body>
@@ -60,27 +56,30 @@
 
 
         <!-- Form đăng ký -->
-        <form method="post">
+        <form method="post" action="index.php?act=dangky">
             <input type="text" name="ten" placeholder="Tên đăng nhập"><br>
             
-
+        
             <input type="password" name="mk" placeholder="Mật khẩu"><br>
             
-
+        
             <input type="email" name="email" placeholder="Email"><br>
+        
+            <input type="next" name="sdt" placeholder="Số điện thoại"><br>
+        
             
             <div class="cs">
                 Bằng cách đăng ký, bạn đồng ý với<br>
                 <a href="https://agreementservice.svs.nike.com/rest/agreement?agreementType=privacyPolicy&country=VN&language=en&mobileStatus=false&requestType=redirect&uxId=com.nike.commerce.nikedotcom.web">Chính sách quyền riêng tư</a> và <a href="https://agreementservice.svs.nike.com/rest/agreement?agreementType=termsOfUse&country=VN&language=en&mobileStatus=false&requestType=redirect&uxId=com.nike.commerce.nikedotcom.web">Điều khoản sử dụng của Nike.</a>
             </div>
             <div class="dn">
-                <div class="them">
-                    <button type="submit" name="them">Đăng kí</button>
+                <div class="dangky">
+                    <button type="submit" name="dangky">Đăng kí</button>
                 </div>
             </div>
         </form>
         <div class="dk">Đã là thành viên hay chưa? <a href="dn.php">Đăng nhập.</a> </div>
-    </div>
+        </div>
     <!-- Phần footer -->
 <footer>
     <div class="footer">

@@ -2,102 +2,19 @@
   margin: 0;
   padding: 0;
 }
-
 .all {
   margin: auto;
   width: 1400px;
   height: auto;
   box-sizing: border-box;
 }
-
 body {
   font-family: Arial;
   text-align: center;
   background-color: #ffffff;
 }
 
-.sl {
-  margin: 30px auto;
-}
-
-.sl img {
-  width: 100%;
-  height: auto;
-}
-
-.content img {
-  width: 350px;
-  height: auto;
-  border: 1px solid #e8e7e7;
-}
-
-h4{
-  font-weight: unset;
-  font-size: 19px;
-}
-.giam-gia {
-  display: inline-block;
-  margin:20px 0; 
-}
-
-.tien {
-  text-decoration: line-through;  
-  display: inline-block;
-  font-weight: normal;
-  padding-right: 10px;
-  font-size: 15px;
-}
-
-.sp1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  justify-items: center;
-  justify-content: center;
-}
-
-.sp {
-  padding: 10px;
-  background-color: #ffffff;
-  text-align: left;
-  margin: 70px 0;
-  
-}
-
-.chu-sp{
-  padding-top: 20px;
-  height: auto;
-  font-size: 18px;
-}
-
-
-.c {
-  margin-bottom:60px ;
-}
-.shop button{
-  width: 150px;
-  height: 60px;
-  border-radius: 50px;
-  background-color: #e0dede;
-  font-weight: bold;
-  font-size: 18px;
-  border: none;
-
-}
-.shop button:hover{
-  background-color: black;
-  color: white;
-
-}
-
-.c1 {
-  font-size: 20px;
-  padding: 20px;
-  margin: 40px 0;
-}
-.c2 {
-  font-size: 60px;
-  font-weight: bold;
-}
+/*==================== Header ==================== */
 .logo {
   width: 200px;
   padding-bottom: 10px;
@@ -173,11 +90,136 @@ ul {
   width: 100px;
   display: flex;
 }
+/* end Header*/
 
 
-/* footer*/
+/*================ Home ================ */
+.sl {
+  margin: 30px auto;
+}
+
+.sl img {
+  width: 100%;
+  height: auto;
+}
+.content img {
+  width: 350px;
+  height: auto;
+  border: 1px solid #e8e7e7;
+}
+
+h4{
+  font-weight: unset;
+  font-size: 19px;
+}
+.giam-gia {
+  display: inline-block;
+  margin:20px 0; 
+}
+
+.tien {
+  text-decoration: line-through;  
+  display: inline-block;
+  font-weight: normal;
+  padding-right: 10px;
+  font-size: 15px;
+}
+
+.sp1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  justify-content: center;
+}
+
+.sp {
+  padding: 10px;
+  background-color: #ffffff;
+  text-align: left;
+  margin: 70px 0;
+  
+}
+
+.chu-sp{
+  padding-top: 20px;
+  height: auto;
+  font-size: 18px;
+}
+
+
+.c {
+  margin-bottom:60px ;
+}
+.shop button{
+  width: 150px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: #e0dede;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+
+}
+.shop button:hover{
+  background-color: black;
+  color: white;
+
+}
+
+.c1 {
+  font-size: 20px;
+  padding: 20px;
+  margin: 40px 0;
+}
+.c2 {
+  font-size: 60px;
+  font-weight: bold;
+}
+.ct {
+  height: auto;
+  margin: 150px 0;
+}
+
+.ct1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 70px 30px;
+  gap: 100px;
+}
+
+.ct img {
+  width: 500px;
+  height: auto;
+}
+
+.ct2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 70px 30px;
+  gap: 100px;
+}
+.chu{
+ width: 270px;
+ font-size: 27px;
+ margin:30px 150px ;
+}
+.chu1{
+  width: 225px;
+  font-size: 27px;
+  margin:30px 100px ;
+ }
+ a{
+  text-decoration: none;
+  color: black;
+ }
+
+
+
+
+/*=================== Footer ===============*/
 
 .footer {
+  text-align: left;
   background-color: black;
   display: grid;
   grid-template-columns: repeat(4, 27% 20% 18%  35%);
@@ -244,43 +286,8 @@ ul {
 }
 /*end footer*/
 
-.ct {
-  height: auto;
-  margin: 150px 0;
-}
 
-.ct1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 70px 30px;
-  gap: 100px;
-}
-
-.ct img {
-  width: 500px;
-  height: auto;
-}
-
-.ct2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 70px 30px;
-  gap: 100px;
-}
-.chu{
- width: 270px;
- font-size: 27px;
- margin:30px 150px ;
-}
-.chu1{
-  width: 225px;
-  font-size: 27px;
-  margin:30px 100px ;
- }
- a{
-  text-decoration: none;
-  color: black;
- }
+/*====================== Chi tiét sản phẩm - Đăng ký đăng nhập ==============*/
 
  .all2{
   height: auto;
@@ -493,3 +500,4 @@ hr{
   margin-left: 5px;
   margin-top: 50px;
 }
+/*====================== END chi tiét sản phẩm ==============*/
