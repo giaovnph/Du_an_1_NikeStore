@@ -44,16 +44,8 @@
             <a href="index.php?act=dangnhap">
               <img src="images/user.png" alt="" width="70px" height="45px" style="margin-left: 70px; padding-top:5px;" />
             </a>
-            <?php if (isset($_SESSION['user']) && is_array($_SESSION['user'])) {
-              $user = $_SESSION['user']['user'];
-            ?>
-              <p style="margin-left: 60px;">Xin chào! <a href=""><?= htmlspecialchars($user) ?></a></p>
-            <?php } ?>
           </div>
         </div>
       </form>
     </div>
   </header>
-</body>
-
-</html>
