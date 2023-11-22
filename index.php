@@ -8,54 +8,33 @@ include "model/taikhoan.php";
 if (isset($_GET['act']) && ($_GET['act'] != "")) {
     $act = $_GET['act'];
     switch ($act) {
-        case "dangky":
-            if (isset($_POST['dangky'])) {
-                $email = $_POST['email'];
-                $user = $_POST['user'];
-                $pass = $_POST['pass'];
-                $sdt = $_POST['sdt'];
-
-                if (empty($email) || empty($user) || empty($pass) || empty($sdt)) {
-                    $thongbao = "Vui lòng điền đầy đủ thông tin.";
+        case 'dangnhap':
+            include "view/taikhoan/dangnhap.php";
+            if (isset($_POST['dangnhap']) && ($_POST['dangnhap'])) {
+                $user = kttaikhoan($_POST['user'], $_POST['pass']);
+                if (is_array($user)) {
+                    $_SESSION['user'] = $user;
+                    header('Location: index.php');
+                    //$thongbao="Đăng nhập thành công.";
                 } else {
-                    insert_tk($user, $pass, $email, $sdt);
-                    include "view/taikhoan/dangnhap.php";
-
+                    $thongbao = "Tài khoản hoặc mật khẩu không đúng, vui lòng thử lại";
                 }
+            }
+            break;
+        case 'dangky':
+            if (isset($_POST['dangky']) && ($_POST['dangky'])) {
+                insert_taikhoan($_POST['email'], $_POST['user'], $_POST['pass'], $_POST['sdt']);
+                $thongbao = "thanh cong";
             }
             include "view/taikhoan/dangky.php";
             break;
 
-            case "dangnhap":
-                if (isset($_POST['dangnhap']) && isset($_POST['dangnhap'])) {
-                    $user = $_POST['user'];
-                    $pass = $_POST['pass'];
-                    $dangnhap = dangnhap($user, $pass);
-    
-                    if (is_array($dangnhap)) {
-                        $_SESSION['user'] = $dangnhap;
-                include "view/home.php";
-                        
-                    } else {
-                        $thongbao = "Không tìm thấy tài khoản";
-                    }
-                }
-                include "view/taikhoan/dangnhap.php";
-                break;
-            case "dangxuat":
-                dangxuat();
-                include "view/home.php";
-                break;
-            case "quenmk":
-                if (isset($_POST['guiemail'])) {
-                    $email = $_POST['email'];
-                    $sendMailMess = sendMail($email);
-                }
-                include "view/login/quenmk.php";
-                break;
+        case 'thoat':
+            session_unset();
+            header('Location: index.php');
+            break;
     }
 } else {
     include "view/home.php";
 }
-    include "./view/footer.php"; 
-?>
+include "./view/footer.php";
