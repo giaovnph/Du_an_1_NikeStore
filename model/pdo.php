@@ -2,9 +2,9 @@
 function pdo_get_connection(){
     $servername = "localhost";
     $username = "root";
-    $password = ""; 
+    $password = "";
     try {
-        $conn = new PDO("mysql:host=$servername;dbname=duan1", $username, $password);
+        $conn = new PDO("mysql:host=$servername;dbname=duan2023", $username, $password);
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return $conn;
     } catch(PDOException $e) {
@@ -44,28 +44,39 @@ function pdo_query($sql){
         unset($conn);
     }
 }
-// truy vấn  1 dữ liệu
-function pdo_query_one($sql, $params = []) {
-    try {
+// Truy vấn liên tục dữ liệu
+function pdo_execute_return($sql){
+    $sql_args = array_slice(func_get_args(), 1);
+    try{
         $conn = pdo_get_connection();
         $stmt = $conn->prepare($sql);
-        
-        if ($stmt === false) {
-            die('Error in query: ' . $sql);
-        }
-
-        $stmt->execute($params);
-        $row = $stmt->fetch(PDO::FETCH_ASSOC);
-
-        // Đọc và hiển thị giá trị trong danh sách trả về
-        return $row;
-    } catch (PDOException $e) {
-        // Xử lý lỗi PDOException: in ra chi tiết lỗi
-        die('Error executing query: ' . $e->getMessage());
-    } finally {
+        $stmt->execute($sql_args);
+        return $conn->lastInsertId();
+    }
+    catch(PDOException $e){
+        throw $e;
+    }
+    finally{
         unset($conn);
     }
 }
-
+// truy vấn  1 dữ liệu
+function pdo_query_one($sql){
+    $sql_args=array_slice(func_get_args(),1);
+    try{
+        $conn=pdo_get_connection();
+        $stmt=$conn->prepare($sql);
+        $stmt->execute($sql_args);
+        $row=$stmt->fetch(PDO::FETCH_ASSOC);
+        // đọc và hiển thị giá trị trong danh sách trả về
+        return $row;
+    }
+    catch(PDOException $e){
+        throw $e;
+    }
+    finally{
+        unset($conn);
+    }
+}
 pdo_get_connection();
 ?>
