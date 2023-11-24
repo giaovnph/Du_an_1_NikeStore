@@ -303,12 +303,13 @@ h4{
   align-items: center;
  }
  .all2 h2 {
-  margin: 50px 0;
+  margin-top: 20px ;
+  margin-bottom: 40px;
   width: 360px;
  }
 
  .logo2 img{
-  margin-top: 100px;
+  margin-top: 150px;
   width: 50px;
 }
 input {
@@ -331,10 +332,13 @@ input {
 }
 .dk{
   font-size: 13px;
-  margin-top: 30px;
-  margin-bottom: 70px;
+  margin-top: 50px;
+  margin-bottom: 100px;
   color: #7e7e7e;
 
+}
+.dk1{
+  margin-bottom: 20px;
 }
 .dk a{
   text-decoration: underline;

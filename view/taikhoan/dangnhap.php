@@ -18,7 +18,9 @@
                 <button type="submit" name="dangnhap">Đăng nhập</button>
             </div>
         </form>
-        <div class="dk"> Bạn không nhớ mật khẩu? <a href="dk.php">Quên mật khẩu</a> </div>
-        <div class="dk"> Bạn không phải thành viên Nike? <a href="index.php?act=dangky">Tham gia với chúng tôi</a> </div>
+        <div class="dk">
+        <div class="dk1" > Bạn không nhớ mật khẩu? <a href="dk.php">Quên mật khẩu</a> </div>
+        <div > Bạn không phải thành viên Nike? <a href="index.php?act=dangky">Tham gia với chúng tôi</a> </div>
+        </div>
     </div>
 </body>
