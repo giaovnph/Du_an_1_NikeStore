@@ -2,7 +2,6 @@
 <div class="all2">
         <div class="logo2">
             <img src="images/th.jpg" alt="">
-            <div class="overlay"></div>
         </div>
         <h2>TÀI KHOẢN CỦA BẠN CHO MỌI THỨ NIKE</h2>
         <?php if (isset($thongbao)){ echo $thongbao . "<br>"; } ?>
