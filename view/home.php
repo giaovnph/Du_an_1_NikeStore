@@ -147,15 +147,10 @@
         <div class="product"><img src="images/product_1.png" alt=""></div>
         <div class="product"><img src="images/product_2.png" alt=""></div>     
         <div class="product"><img src="images/product_4.png" alt=""></div>
-
-      </div>
+    </div>
       <button class="btn btn-prev" onclick="prev()">❮</button>
       <button class="btn btn-next" onclick="next()">❯</button>
     </div>
 
-    <script src="./css/js.js">
-  function query(giao) {
-    return document.querySelector(giao);
-  }
-</script>
+<script src="css/sptb.js"></script>
      

@@ -29,18 +29,4 @@ function changeImg(img, src) {
   setInterval(chuyenanh, 1000);
   
 //
-const productContainer = document.querySelector(".product-container");
-let currentIndex = 0;
-function showProducts() {
-  const newPosition = -currentIndex * 220; 
-  productContainer.style.transform = `translateX(${newPosition}px)`;
-}
-function next() {
-  currentIndex = (currentIndex + 3) % 12;
-  showProducts();
-}
-function prev() {
-  currentIndex = (currentIndex - 2 + 12) % 12;
-  showProducts();
-}
 
