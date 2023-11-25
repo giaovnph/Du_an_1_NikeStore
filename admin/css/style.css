@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial;
+    font-size: 16px;
+}
+
+.mn {
+    background-color: #d8d8d8;
+    padding: 0;
+    list-style-type: none;
+    height: auto;
+    display: flex; 
+
+}
+
+.mn ul {
+    display: flex; /* Hiển thị các mục ngang */
+    padding: 0;
+    margin: 0;
+}
+
+.mn ul li {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    list-style: none;
+}
+
+.mn ul li a {
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+
+.mn ul li a:hover {
+    color: rgb(142, 140, 140);
+}
+
+h2{
+    margin: 10px 30px;
+}
