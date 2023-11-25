@@ -37,3 +37,10 @@
 
 .btn-prev { left: 10px; }
 .btn-next { right: 10px; }
+
+.btn-prev {
+  left: 0;
+}
+.btn-next {
+  right: 0;
+}
