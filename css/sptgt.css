@@ -1,0 +1,39 @@
+.banner1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh; /* Đảm bảo cao đầy đủ màn hình */
+}
+
+.col-md-4 {
+    flex: 0 0 calc(33.33% - 10px); /* Chia layout thành 3 cột và thêm khoảng cách 10px */
+    margin-right: 10px; /* Khoảng cách giữa các cột */
+}
+
+.banner_item {
+    height: 700px; /* Chiều cao của mỗi cột */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.banner_category {
+    position: absolute;
+    top: 80%;
+    right: 70%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(98, 92, 92, 0.7); /* Trong suốt với màu trắng */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.banner_category a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.banner_category :hover {
+    color: #af2020;
+}
