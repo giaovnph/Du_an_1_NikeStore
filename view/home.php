@@ -152,7 +152,6 @@
       <button class="btn btn-next" onclick="next()">❯</button>
     </div>
 
-<script src="css/sptb.js"></script>
      
 
 
@@ -190,3 +189,4 @@
         </div>
       </div>
     </div>
+<script src="../css/js.js"></script>
