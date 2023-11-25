@@ -2,17 +2,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100vh; /* Đảm bảo cao đầy đủ màn hình */
+    height: 100vh; 
 }
-
 .col-md-4 {
-    flex: 0 0 calc(33.33% - 10px); /* Chia layout thành 3 cột và thêm khoảng cách 10px */
-    margin-right: 10px; /* Khoảng cách giữa các cột */
+    flex: 0 0 calc(33.33% - 10px); 
+    margin-right: 10px; 
 }
 
 .banner_item {
-    height: 700px; /* Chiều cao của mỗi cột */
-    background-size: cover;
+    height: 700px; 
     background-position: center;
     position: relative;
 }
@@ -22,7 +20,7 @@
     top: 80%;
     right: 70%;
     transform: translate(-50%, -50%);
-    background-color: rgba(98, 92, 92, 0.7); /* Trong suốt với màu trắng */
+    background-color: rgba(98, 92, 92, 0.7); 
     padding: 20px;
     text-align: center;
     border-radius: 10px;
