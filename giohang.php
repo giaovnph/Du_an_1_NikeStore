@@ -75,11 +75,11 @@
 
 
             <div class="tien">
-                <span>Chọn kích cỡ</span>
+                <span>Tổng phụ</span>
 
             </div>
             <div class="tien">
-                <span>Chọn kích cỡ</span>
+                <span>Giao hàng/Vận chuyển</span>
 
             </div>
             <hr>
