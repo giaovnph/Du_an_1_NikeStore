@@ -2,7 +2,7 @@
 session_start();
 include "model/pdo.php";
 include "view/header.php";
-include "model/global.php";
+include "global.php";
 include "model/taikhoan.php";
 
 if (isset($_GET['act']) && ($_GET['act'] != "")) {
