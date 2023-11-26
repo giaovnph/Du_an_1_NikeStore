@@ -1,27 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Quản Trị</title>
-    <link rel="stylesheet" href="css/style.css  ">
+    <meta charset="utf-8">
+    <title>Admin</title>
+    <!-- CSS của ứng dụng -->
+    <link href="assets\css\app.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css ">
+
 </head>
-    <div class="mn">
-        <div class="logo"> 
-            <h2>ADMIN</h2>
-            <a href="index.php"><img src="../images/Logo.png" alt="" /></a>
-        </div> 
-      <div class="menu">
-        <ul>
-                <li><a href="http://localhost/Du_an_1_NikeStore/admin/">Trang chủ</a></li>
-                <li><a href="index.php?act=listdm">Danh mục</a></li>
-                <li><a href="index.php?act=listsp">Hàng hóa</a></li>
-                <li><a href="index.php?act=dskh">Khách hàng</a></li>
-                <li><a href="index.php?act=dsdh">Đơn hàng</a></li>
-                <li><a href="index.php?act=dsbl">Bình luận</a></li>
-                <li><a href="index.php?act=thongke">Thống kê</a></li>
-        </ul>
-      </div>
-      
+
+<body>
+    <!-- Bắt đầu trang -->
+    <div class="all">
+        <div class="mnn">
+
+            <div class="ex">
+                <a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                <div class="thoat"><a href="http://localhost/Du_an_1_NikeStore/">Thoát</a> </div>
+            </div>
+            <div class="ex ex1">
+                <a href=""><i id="adm" class="fa-solid fa-user"></i></a>
+                <div class="thoat"><a href=""> Admin</a> </div>
+            </div>
+            
+         </div>
+
+        <!-- Thanh bên trái -->
+        <div class="mnd">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../images/Logo.png" alt="">
+                </a>
+            </div>
+
+            <ul class="menu" id="side-menu">
+                
+                <li class="chu-lon">
+                    <a href="javascript: void(0);">
+                        <p><i id="ic" class="fa-solid fa-house" style="font-size: 13px;"></i> TRANG CHỦ </p>
+                    </a>
+                </li>
+
+                <li class="chu-lon">
+
+                    <a href="javascript: void(0);">
+                        <p><i style="font-size: 13px;" id="ic" class="fa-solid fa-shop"></i> SẢN PHẨM  <i id="angne" class="fa-solid fa-angle-right"></i></i></p> 
+                        
+                    </a>
+                    <ul class="chu-be" aria-expanded="false">
+                        <li>
+                            <a href="index.php?act=listdm"><i id="ic" class="fa-regular fa-file"></i> Danh mục</a>
+                        </li>
+                        <li>
+                            <a href=""><i id="ic" class="fa-solid fa-shoe-prints"></i> Hàng hóa</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="chu-lon">
+
+                    <a href="javascript: void(0);">
+                        <p><i style="font-size: 13px;" id="ic" class="fa-solid fa-users"></i> KHÁCH HÀNG <i id="angne" class="fa-solid fa-angle-right"></i></p>
+                    </a>
+                    <ul class="chu-be" aria-expanded="false">
+                        <li>
+                            <a href=""><i id="ic" class="fa-solid fa-user"></i> Tài khoản</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="chu-lon">
+
+                    <a href="javascript: void(0);">
+                        <p><i style="font-size: 13px;" id="ic" class="fa-solid fa-cart-shopping"></i> GIỎ HÀNG <i id="angne" class="fa-solid fa-angle-right"></i></p>
+                    </a>
+                    <ul class="chu-be" aria-expanded="false">
+                        <li>
+                            <a href="">Hộp thư đến</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="chu-lon">
+
+                    <a href="javascript: void(0);">
+                        <p><i style="font-size: 13px;"  id="ic"class="fa-solid fa-comment"></i> BÌNH LUẬN <i id="angne" class="fa-solid fa-angle-right"></i></p>
+                    </a>
+                    <ul class="chu-be" aria-expanded="false">
+                        <li>
+                            <a href="">Hộp thư đến</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="chu-lon">
+
+                    <a href="javascript: void(0);">
+                        <p><i style="font-size: 13px;" id="ic" class="fa-solid fa-chart-simple"></i> BIỂU ĐỒ <i id="angne" class="fa-solid fa-angle-right"></i></p>
+                    </a>
+                    <ul class="chu-be" aria-expanded="false">
+                        <li>
+                            <a href="">Hộp thư đến</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Kết thúc thanh bên trái -->
+        </div>
     </div>
+    <!-- Kết thúc wrapper -->
+
+    <!-- JS của các vendor -->
+    <script src="assets\js\vendor.min.js"></script>
+    <script src="assets\js\app.min.js"></script>
+</body>
+
+</html>

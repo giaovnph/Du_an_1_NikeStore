@@ -97,7 +97,7 @@
   </div>
 
   <!-- Sản phẩm tiêu biểu -->
-  <div class="ct">
+<div class="ct">
     <div class="ct1">
       <div class="ct0">
         <img onmouseover="changeImg(this, './Anh_Giay/g5.5.webp')" onmouseout="normalImg(this,'./Anh_Giay/g5.webp')" src="./Anh_Giay/g5.webp" />
@@ -161,7 +161,7 @@
       <div class="col-md-4">
         <div
           class="banner_item align-items-center"
-          style="background-image: url(images/banner_1.jpg)"
+style="background-image: url(images/banner_1.jpg)"
         >
           <div class="banner_category">
             <a href="">Nam</a>
@@ -189,4 +189,4 @@
         </div>
       </div>
     </div>
-<script src="../css/js.js"></script>
+<script src="/css/js.js"></script>
