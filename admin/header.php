@@ -53,7 +53,7 @@
                             <a href="index.php?act=listdm"><i id="ic" class="fa-regular fa-file"></i> Danh mục</a>
                         </li>
                         <li>
-                            <a href=""><i id="ic" class="fa-solid fa-shoe-prints"></i> Hàng hóa</a>
+                            <a href="index.php?act=listsp"><i id="ic" class="fa-solid fa-shoe-prints"></i> Hàng hóa</a>
                         </li>
                     </ul>
                 </li>
@@ -65,7 +65,7 @@
                     </a>
                     <ul class="chu-be" aria-expanded="false">
                         <li>
-                            <a href=""><i id="ic" class="fa-solid fa-user"></i> Tài khoản</a>
+                            <a href="index.php?act=dskh"><i id="ic" class="fa-solid fa-user"></i>Khách hàng</a>
                         </li>
                     </ul>
                 </li>
@@ -77,7 +77,7 @@
                     </a>
                     <ul class="chu-be" aria-expanded="false">
                         <li>
-                            <a href="">Hộp thư đến</a>
+                            <a href="index.php?act=dsdh">Danh sách đơn hàng</a>
                         </li>
                     </ul>
                 </li>
@@ -88,7 +88,7 @@
                     </a>
                     <ul class="chu-be" aria-expanded="false">
                         <li>
-                            <a href="">Hộp thư đến</a>
+                            <a href="index.php?act=dsbl">Danh sách bình luận</a>
                         </li>
                     </ul>
                 </li>
@@ -99,7 +99,7 @@
                     </a>
                     <ul class="chu-be" aria-expanded="false">
                         <li>
-                            <a href="">Hộp thư đến</a>
+                            <a href="index.php?act=thongke">Biểu đồ thống kê</a>
                         </li>
                     </ul>
                 </li>

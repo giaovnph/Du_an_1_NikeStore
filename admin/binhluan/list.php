@@ -1,10 +1,10 @@
 <div class="row">
-    <div class="row frmtitle">
+    <div class=" frmtitle">
         <h1>DANH SÁCH BÌNH LUẬN</h1>
     </div>
-    <div class="row frmcontent ">
+    <div class=" frmcontent ">
         <form action="index.php?act=dsbl" method="POST">
-            <div class="row mb10 frmdsloai">
+            <div class=" mb10 frmdsloai">
                 <table>
                     <tr>
                         <th></th>
@@ -35,7 +35,7 @@
 
                 </table>
             </div>
-            <div class="row mb10 ">
+            <div class=" mb10 ">
                 <input  type="button" value="CHỌN TẤT CẢ">
                 <input  type="button" value="BỎ CHỌN TẤT CẢ">
             </div>

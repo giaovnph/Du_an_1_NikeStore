@@ -1,9 +1,9 @@
 <div class="row">
-        <div class="row frmtitle mb">
+        <div class=" frmtitle mb">
           <h1>THỐNG KÊ</h1>
         </div>
-        <div class="row frmcontent">
-            <div class="row mb10 frmdsloai">
+        <div class=" frmcontent">
+            <div class=" mb10 frmdsloai">
                 <table>
                     <tr>
                         <th>STT</th>
@@ -35,12 +35,12 @@
 
         </div>
       </div>
-      <div class="row">
-        <div class="row frmtitle mb">
+      <div class="bieudo">
+        <div class=" frmtitle mb">
           <h1>THỐNG KÊ DẠNG BIỂU ĐỒ</h1>
         </div>
-        <div class="row frmcontent">
-        <div class="row mb10">
+        <div class=" frmcontent">
+        <div class=" mb10">
                <?php
                     include "bieudo.php";
                ?>             

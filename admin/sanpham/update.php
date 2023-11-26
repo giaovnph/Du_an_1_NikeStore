@@ -13,13 +13,13 @@
 ?>
 
 <div class="row">
-        <div class="row frmtitle">
+        <div class=" frmtitle">
             <h1>CẬP NHẬT SẢN PHẨM</h1>
         </div>
-        <div class="row frmcontent">
+        <div class=" frmcontent">
             <form action="index.php?act=updatesp" method="post" enctype="multipart/form-data">
                 <input type="hidden" name="id" value="<?=$id?>">
-                <div class="row mb10">
+                <div class=" mb10">
                     Danh mục<br>
                     <select name="iddm" id="">
                         <?php
@@ -33,15 +33,15 @@
                         ?>
                     </select> 
                 </div>
-                <div class="row mb10">
+                <div class=" mb10">
                     Tên sản phẩm<br>
                     <input type="text" name="tensp" id="" value="<?=$ten?>">
                 </div>
-                <div class="row mb10">
+                <div class=" mb10">
                     Giá<br>
                     <input type="text" name="giasp" id="" value="<?=$gia?>">
                 </div>
-                <div class="row mb10">
+                <div class=" mb10">
                     Hình<br>
                     <input type="file" name="hinhsp">
                     <input type="hidden" name="hinhspcu" value="<?=$img?>">
@@ -49,11 +49,11 @@
                         echo $hinh;
                     ?>
                 </div>
-                <div class="row mb10">
+                <div class=" mb10">
                     Mô tả<br>
-                    <textarea name="motasp" id="" cols="30" rows="10"><?=$mota?></textarea>
+                    <textarea name="motasp" id="" cols="30" s="10"><?=$mota?></textarea>
                 </div>
-                <div class="row mb10">
+                <div class=" mb10">
                     <input type="submit" name="capnhat" value="Cập nhật">
                     <input type="reset" value="Nhập lại">
                     <a href="index.php?act=listsp"><input type="button" value="Danh sách"></a>

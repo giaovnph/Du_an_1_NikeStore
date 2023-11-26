@@ -1,9 +1,9 @@
 <div class="row">
-        <div class="row frmtitle mb">
+        <div class=" frmtitle mb">
           <h1>DANH SÁCH SẢN PHẨM</h1>
         </div>
-        <form action="index.php?act=listsp" method="post">  
-                <input type="text" name="kyw">
+        <form class="search-form" action="index.php?act=listsp" method="post">  
+                <input type="text" name="kyw" placeholder="Tìm kiếm...">
                 <select name="iddm" id="">
                   <option value="0" selected>Tất cả</option>
                         <?php
@@ -15,8 +15,8 @@
                   </select> 
                   <input type="submit" name="listspok" value="GO">
               </form>
-        <div class="row frmcontent">
-            <div class="row mb10 frmdsloai">
+        <div class=" frmcontent">
+            <div class=" mb10 frmdsloai">
                 <table>
                     <tr>
                         <th></th>
@@ -58,7 +58,7 @@
                     ?>
                 </table>
             </div>
-          <div class="row mb10">
+          <div class=" mb10">
             <input type="button" name="select-all" value="Chọn All" />
             <input type="button" name="deselectAll" value="Bỏ chọn All" />
             <input type="button" value="Xóa mục đã chọn" />

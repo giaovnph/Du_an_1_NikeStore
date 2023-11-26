@@ -4,7 +4,9 @@ body {
     overflow-x: hidden;
     margin: 0;
     background-color: #f4f4f4;
-
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
 .all {
@@ -187,4 +189,99 @@ i{
         margin-left: 0;
         padding: 20px;
     }
+}
+/*---------- CSS phần bảng trong admin -------------*/
+.row {
+    width: 100%;
+    padding-left: 230px;
+    box-sizing: border-box;
+}
+.formtaikhoan input[type="text"],
+.formtaikhoan input[type="password"],
+.formtaikhoan input[type="email"],
+.frmcontent input[type="text"] {
+    width: 100%;
+    border: 1px #CCC solid;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.formtaikhoan input[type="submit"],
+.formtaikhoan input[type="reset"],
+.frmcontent input[type="submit"],
+.frmcontent input[type="reset"],
+.frmcontent input[type="button"] {
+    background-color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.ghinho {
+    background-color: white;
+    border: 1px #CCC solid;
+    border-radius: 5px;
+}
+
+.formtaikhoan input[type="submit"]:hover,
+.formtaikhoan input[type="reset"]:hover,
+.frmcontent input[type="submit"]:hover,
+.frmcontent input[type="reset"]:hover,
+.frmcontent input[type="button"]:hover {
+    background-color: #CCC;
+}
+
+.frmtitle {
+    background-color: #EEE;
+    border: 1px #CCC solid;
+    border-radius: 5px;
+    color: #666;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.frmcontent {
+    padding: 20px 0px
+}
+
+.frmdsloai table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.frmdsloai table th {
+    padding: 20px;
+    background-color: #CCC;
+}
+.frmdsloai table td {
+    padding: 10px 20px;
+    border: 1px #999 solid;
+}
+.mb10 {
+    margin-bottom: 10px;
+}
+.row table{
+    text-align: center;
+}
+.bieudo{
+    margin-left: 230px;
+
+}
+.search-form input[type="text"]{
+    padding: 10px 20px;
+    border: none;
+    background-color: #dbdada;
+}
+.search-form input[type="submit"]{
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+}
+.search-form input[type="submit"]:hover{
+    background-color: #CCC;
 }

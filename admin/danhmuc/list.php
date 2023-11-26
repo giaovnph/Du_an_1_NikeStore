@@ -1,9 +1,9 @@
 <div class="row">
-        <div class="row frmtitle">
+        <div class=" frmtitle">
           <h1>DANH SÁCH LOẠI HÀNG</h1>
         </div>
-        <div class="row frmcontent">
-            <div class="row mb10 frmdsloai">
+        <div class=" frmcontent">
+            <div class=" mb10 frmdsloai">
                 <table>
                     <tr>
                         <th></th>
@@ -32,7 +32,7 @@
                     ?>
                 </table>
             </div>
-          <div class="row mb10">
+          <div class=" mb10">
             <input type="button" value="Chọn All" />
             <input type="button" value="Bỏ chọn All" />
             <input type="button" value="Xóa mục đã chọn" />

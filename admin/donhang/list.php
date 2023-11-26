@@ -1,13 +1,13 @@
 <div class="row">
-        <div class="row frmtitle mb">
+        <div class=" frmtitle mb">
           <h1>DANH SÁCH ĐƠN HÀNG</h1>
         </div>
-        <form action="index.php?act=dsdh" method="post">  
-                <input type="text" name="kyw">
+        <form class="search-form" action="index.php?act=dsdh" method="post">  
+                <input type="text" name="kyw" placeholder="Tìm kiếm...">
                   <input type="submit" name="listdhok" value="GO">
               </form>
-        <div class="row frmcontent">
-            <div class="row mb10 frmdsloai">
+        <div class=" frmcontent">
+            <div class=" mb10 frmdsloai">
                 <table>
                     <tr>
                         <th></th>
@@ -44,7 +44,7 @@
                     ?>
                 </table>
             </div>
-          <div class="row mb10">
+          <div class=" mb10">
             <input type="button" value="Chọn All" />
             <input type="button" value="Bỏ chọn All" />
             <input type="button" value="Xóa mục đã chọn" />
