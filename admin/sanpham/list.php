@@ -25,7 +25,7 @@
                         <th>HÌNH</th>
                         <th>GIÁ</th>
                         <th>LƯỢT XEM</th>
-                        <th>Setting</th>
+                        <th>CÀI ĐẶT</th>
                     </tr>
                     
                     <?php

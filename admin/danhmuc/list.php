@@ -9,7 +9,7 @@
                         <th></th>
                         <th>MÃ LOẠI</th>
                         <th>TÊN LOẠI</th>
-                        <th>Setting</th>
+                        <th>CÀI ĐẶT</th>
                     </tr>
                     
                     <?php

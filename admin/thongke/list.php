@@ -11,7 +11,7 @@
                         <th>SỐ LƯỢNG</th>
                         <th>GIÁ CAO NHẤT</th>
                         <th>GIÁ THẤP NHẤT</th>
-                        <th>GIÁ Trung Bình</th>
+                        <th>GIÁ TRUNG BÌNH</th>
 
                     </tr>
                     
