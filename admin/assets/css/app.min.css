@@ -200,7 +200,7 @@ i{
 .formtaikhoan input[type="password"],
 .formtaikhoan input[type="email"],
 .frmcontent input[type="text"] {
-    width: 100%;
+    width: 50%;
     border: 1px #CCC solid;
     padding: 10px 20px;
     margin-top: 10px;
@@ -245,7 +245,10 @@ i{
 .frmcontent {
     padding: 20px 0px
 }
-
+.frmcontent div {
+    margin-left: 5px;
+    margin-right: 5px;
+}
 .frmdsloai table {
     width: 100%;
     border-collapse: collapse;
@@ -285,7 +288,7 @@ i{
 .search-form input[type="submit"]:hover{
     background-color: #CCC;
 }
-.search-form select{
+.search-form select, .frmcontent select{
     padding: 10px 20px ;
     border-radius: 5px;
     border: none;

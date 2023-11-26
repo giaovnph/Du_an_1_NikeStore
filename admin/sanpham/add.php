@@ -5,7 +5,7 @@
         <div class=" frmcontent">
             <form action="index.php?act=addsp" method="post" enctype="multipart/form-data">
                 <div class=" mb10">
-                    Danh mục<br>
+                    Danh mục
                     <select name="iddm" id="">
                         <?php
                             foreach($listdanhmuc as $danhmuc){
