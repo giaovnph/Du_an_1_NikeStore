@@ -232,6 +232,7 @@ h4{
   grid-template-columns: repeat(4, 27% 20% 18%  35%);
   font-weight: bold;
   font-size: 14px;
+  width: 100%;
 }
 .footer a {
   margin-top: 40px;
@@ -382,9 +383,9 @@ input {
   width: 167px;
   height: 50px;
   background-color: black;
-    border-radius: 5px;
-    color: white;
-    margin-bottom: 70px;
+  border-radius: 5px;
+  color: white;
+  margin-bottom: 70px;
 }
 .nut button:hover{
   background-color: rgb(66, 66, 66);
@@ -489,11 +490,7 @@ input {
   margin-left: 5px;
   
 }
-hr{
-  margin-top: 20px;
-  margin-left: 15px;
-  width: 295px;
-}
+
 .cl{
   width: 320px;
   font-size: 18.5px;
