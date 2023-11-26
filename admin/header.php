@@ -30,7 +30,7 @@
         <div class="mnd">
             <div class="logo">
                 <a href="index.html">
-                    <img src="../images/Logo.png" alt="">
+                    <img src="../images/Logo_Ad.png" alt="">
                 </a>
             </div>
 
