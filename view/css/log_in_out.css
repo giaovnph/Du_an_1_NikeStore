@@ -1,0 +1,77 @@
+/*====================== Đăng ký đăng nhập ==============*/
+:root {
+  --color-primary: black;
+  --color-secondary: white;
+  --color-thirdy: #707072;
+  --color-four: #5a5a5a;
+}
+
+.log-in {
+  display: flex;
+  width: 100%;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.log-in__box {
+  margin: auto;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.log-in__box h2 {
+  padding: 30px 0;
+}
+
+.log-in-row {
+  padding: 20px 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+.save-user {
+  display: flex;
+}
+
+.save-user input {
+  margin-right: 10px;
+}
+.log-in__text p{
+margin: 10px 0;
+}
+.log-in__text{
+  margin: 40px 0 20px 0;
+  color: var(--color-four)
+}
+.log-in__text a,.repass a,.join-user a{
+  text-decoration: underline;
+  color: var(--color-primary);
+  font-size: 15px;
+}
+.log-in__text a:hover,.repass a:hover,.join-user a:hover{
+  text-decoration: underline;
+  color: var(--color-thirdy);
+}
+.log-btn{
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  padding: 20px 0;
+  margin: 15px 0;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.log-btn:hover{
+  background-color: var(--color-thirdy);
+}
+.repass{
+  margin: 10px 0;
+}
+.repass,.join-user{
+  color: var(--color-four)
+}
+.log-out-btn{
+  color: red;
+}

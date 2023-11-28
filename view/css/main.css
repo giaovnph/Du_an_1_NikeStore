@@ -1,0 +1,485 @@
+/*------------CSS thuộc tính chung----------------*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+:root {
+    --color-primary: black;
+    --color-secondary: white;
+    --color-thirdy: #707072;
+}
+
+.cta-btn {
+    padding: 20px 30px;
+    background-color: black;
+    color: var(--color-secondary);
+    border-radius: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cta-btn:hover {
+    background-color: var(--color-thirdy);
+    color: var(--color-secondary);
+}
+/*----------------------Phần đầu trang----------------------*/
+.nikestore-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header-top {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #f5f5f5;
+    padding: 10px 5%;
+    box-sizing: border-box;
+}
+
+.sign-btn {
+    color: var(--color-primary);
+}
+
+.sign-btn:hover {
+    color: var(--color-thirdy);
+}
+
+.header-bot {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.header-menu {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.header-menu li {
+    font-size: 18px;
+    margin: 0 40px;
+
+}
+
+.header-menu li a {
+    color: var(--color-primary);
+}
+
+.header-menu li a:hover {
+    color: var(--color-thirdy);
+}
+
+/*------------icon header--------------*/
+.header-icon {
+    display: flex;
+    width: 300px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*---------------- Phần thanh tìm kiếm-----------------*/
+.search-form {
+    position: relative;
+}
+
+.search-box__text {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #e5e5e5;
+    border: none;
+    width: 200px;
+}
+
+.search-icon {
+    width: 20px;
+    opacity: .3;
+}
+
+.search-btn {
+    background-color: rgb(255, 255, 255, 0);
+    position: absolute;
+    border: none;
+    top: 6px;
+    right: 5px;
+    cursor: pointer;
+}
+
+/* Banner */
+.mySlides {
+    position: relative;
+    display: none;
+    width: 90%;
+    margin: auto;
+}
+
+.number-text {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+/*----------------Tiêu đề giữa trang--------------- */
+.listsp-des {
+    text-align: center;
+}
+
+.listsp-des h1 {
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+.listsp-des p {
+    margin: 20px 0 80px 0;
+}
+
+.listsp-des__btn {}
+
+/* -----------------Slide sản phẩm-------------------*/
+
+/* ----Fading animation----- */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .6
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .6
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 65%;
+    margin: 100px auto;
+
+
+}
+
+.product-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.product {
+    width: 250px;
+    margin: 0 10px;
+    padding: 10px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    position: relative;
+}
+
+.product-des {
+    font-weight: bold;
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+}
+.product-des p{
+    white-space: pre;
+}
+.product-des a{
+    color: var(--color-primary);
+}
+.product-des a:hover{
+    color: var(--color-thirdy);
+}
+.product-des span{
+    color:rgb(255, 187, 0);
+}
+.product img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.btn-prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(160, 179, 192, 0.3);
+    color: var(--color-secondary);
+    /* Màu chữ */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    left: 0;
+}
+
+.btn-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(160, 179, 192, 0.3);
+    color: var(--color-secondary);
+    /* Màu chữ */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    right: 0;
+}
+
+.btn-prev:hover {
+    background-color: rgba(160, 179, 192, 0.7);
+}
+
+.btn-next:hover {
+    background-color: rgba(160, 179, 192, 0.7);
+}
+
+/*--------Banner giữa trang-----------*/
+.mid-des {
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+
+.mid-des img {
+    width: 80%;
+}
+
+/*----------Banner theo độ tuổi và giới tính --------------*/
+.bot-banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 0 5%;
+}
+
+.bot-banner__item {
+    position: relative;
+}
+
+.bot-banner img {
+    width: 100%;
+}
+
+.bot-banner-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    min-width: 60px;
+    text-align: center;
+}
+
+/*----------------phần footer----------------*/
+
+.nikestore-footer {
+    background-color: #111111;
+    padding: 50px 5%;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.top-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.top-footer__item {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.top-footer-col h4 {
+    color: var(--color-secondary);
+    margin-bottom: 30px;
+}
+
+.top-footer-col p {
+    color: var(--color-thirdy);
+    margin-bottom: 30px;
+}
+
+/*-------------phần icon cuối trang-----------*/
+
+.top-footer__logo {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-footer__icon {
+    margin-left: 20px;
+}
+
+.bot-footer {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 200px;
+}
+
+.bot-footer__local {
+    display: flex;
+    align-items: center;
+}
+
+.bot-footer__local p {
+    margin-left: 40px;
+}
+
+.bot-footer__item {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.bot-footer__local h4 {
+    color: var(--color-secondary);
+    margin-left: 10px;
+}
+
+.bot-footer__item p,
+.bot-footer__local p {
+    color: var(--color-thirdy);
+}
+
+/*---------- Trang sản phẩm --------------*/
+
+.product-col {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+.product-col-left {}
+
+.product-col-right {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product-box {
+    margin-bottom: 60px;
+}
+
+.product-box__img {
+    width: 100%;
+}
+
+.product-box__des {}
+
+.product-name {
+    margin: 10px 0;
+    color: var(--color-primary);
+}
+.product-name:hover {
+    color: var(--color-thirdy);
+}
+
+.product-price {}
+
+/*--------- Phần thông số bên phải------------*/
+.box-chitiet {
+    margin: 100px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    padding: 0 5%;
+}
+
+.box-chitiet__text {
+    line-height: 24px;
+    width: 50%;
+}
+
+.box-chitiet__col {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.box-chitiet__col-img {
+    width: 80%;
+}
+
+.box-chitiet__des h3 {
+    margin: 20px 0;
+}
+
+.btn-cart {
+    background-color: var(--color-primary);
+    border-radius: 30px;
+    padding: 16px 0;
+    color: var(--color-secondary);
+    font-size: 20px;
+    margin-bottom: 30px;
+    width: 300px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-cart:hover {
+    background-color: var(--color-thirdy);
+}
+
+.btn-love {
+    cursor: pointer;
+    margin-top: 70px;
+    background-color: var(--color-secondary);
+    border-radius: 30px;
+    padding: 14px 0;
+    border: 1px solid #b9b9b9;
+    margin: 30px 0;
+    width: 300px;
+    font-size: 20px;
+    text-align: center;
+    color: var(--color-primary);
+}
+
+.btn-love:hover {
+    border: 1px solid var(--color-primary);
+}
+
+.btn-love img {
+    width: 15px;
+}
+
+/*---------------Chọn kích cỡ------------------*/
+.select-size {
+    border: none;
+    width: 50px;
+}

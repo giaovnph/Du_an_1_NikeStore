@@ -1,31 +1,32 @@
-<body>
-    <div class="all2">
-        <div class="logo2">
-            <img src="images/th.jpg" alt="">
-        </div>
-        <h2>TRỞ THÀNH THÀNH VIÊN NIKE</h2>
-        <?php if (isset($thongbao)) { echo $thongbao . "<br>"; } ?>
-
-        <!-- Form đăng ký -->
-        <form method="post" action="index.php?act=dangky">
-            <input type="text" name="user" placeholder="Tên đăng nhập"><br>
-            <input type="password" name="pass" placeholder="Mật khẩu"><br>
-            <input type="email" name="email" placeholder="Email"><br>
-            <input type="text" name="sdt" placeholder="Số điện thoại"><br>
-
-
-            <div class="cs">
-                Bằng cách đăng ký, bạn đồng ý với<br>
-                <a href="https://agreementservice.svs.nike.com/rest/agreement?agreementType=privacyPolicy&country=VN&language=en&mobileStatus=false&requestType=redirect&uxId=com.nike.commerce.nikedotcom.web">Chính sách quyền riêng tư</a>
-                và
-                <a href="https://agreementservice.svs.nike.com/rest/agreement?agreementType=termsOfUse&country=VN&language=en&mobileStatus=false&requestType=redirect&uxId=com.nike.commerce.nikedotcom.web">Điều khoản sử dụng của Nike.</a>
-            </div>
-            <div class="dn">
-                <div class="dangky">
-                    <button type="submit" name="dangky">Đăng Ký</button>
-                </div>
-            </div>
-        </form>
-        <div class="dk">Đã là thành viên hay chưa? <a href="index.php?act=dangnhap">Đăng nhập.</a> </div>
+<div class="log-in">
+  <div class="log-in__box">
+    <div class="log-in-logo">
+      <img src="/view/images/Nike_logo.png" alt="">
     </div>
-</body>
+    <h2>TRỞ THÀNH THÀNH VIÊN NIKESTORE</h2>
+    <!-- Form đăng ký -->
+    <form action="index.php?act=dangky" method="post">
+      <input class="w100 log-in-row" type="text" name="user" id="" placeholder="Tên đăng nhập" required><br>
+      <input class="w100 log-in-row" type="password" name="pass" id="" placeholder="Mật khẩu" required><br>
+      <input class="w100 log-in-row" type="email" name="email" id="" placeholder="Email" required><br>
+      <input class="w100 log-in-row" type="text" name="diachi" id="" placeholder="Địa chỉ" required><br>
+      <input class="w100 log-in-row" type="number" name="sdt" id="" placeholder="Số điện thoại" required><br>
+      <div class="log-in__text">
+      <p class="thongbao" style="color:green ;">
+      <?php
+      if (isset($thongbao) && $thongbao != "") {
+        echo $thongbao;
+      }
+      ?>
+    </p>
+        <p>Bằng cách đăng ký, bạn đồng ý với</p>
+        <a href="">Chính sách quyền riêng tư</a> và <a href="">Điều khoản sử dụng của Nike.</a>
+      </div>
+      <div>
+        <input class="log-btn w100" type="submit" name="dangky" value="Đăng ký">
+      </div>
+     
+    </form>
+    <div class="repass"> Bạn là thành viên của NikeStore ? <a href="index.php?act=dangnhap">Đăng nhập</a> </div>
+  </div>
+</div>

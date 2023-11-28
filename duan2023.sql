@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 22, 2023 at 07:17 PM
+-- Generation Time: Nov 28, 2023 at 02:13 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -103,12 +103,33 @@ CREATE TABLE `sanpham` (
   `id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `gia` double DEFAULT 0,
-  `giagoc` double NOT NULL,
   `img` varchar(255) DEFAULT NULL,
   `mota` text DEFAULT NULL,
   `luotxem` int(11) DEFAULT 0,
   `danhmuc` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `sanpham`
+--
+
+INSERT INTO `sanpham` (`id`, `name`, `gia`, `img`, `mota`, `luotxem`, `danhmuc`) VALUES
+(30, 'Nike J', 45, 'product_1.png', 'Mẫu giày mới nhất của nhãn hiệu Nike năm 2023. Kiểu dáng thể thao kết hợp phong cách đường phố. Sự lựa chọn hoàn hảo cho các bạn trẻ năng động', 0, 16),
+(31, 'Nike Air RPK', 89, 'product_2.png', 'Mẫu giày mới nhất của nhãn hiệu Nike năm 2023. Kiểu dáng thể thao kết hợp phong cách đường phố. Sự lựa chọn hoàn hảo cho các bạn trẻ năng động', 0, 16),
+(32, 'Nike S9 KaMo', 99, 'product_3.png', 'Mẫu giày mới nhất của nhãn hiệu Nike năm 2023. Kiểu dáng thể thao kết hợp phong cách đường phố. Sự lựa chọn hoàn hảo cho các bạn trẻ năng động', 0, 16),
+(33, 'Nike Royal C9', 68, 'product_4.png', 'Mẫu giày mới nhất của nhãn hiệu Nike năm 2023. Kiểu dáng thể thao kết hợp phong cách đường phố. Sự lựa chọn hoàn hảo cho các bạn trẻ năng động', 0, 19),
+(34, 'Nike Air Star', 78, 'product_5.png', 'Mẫu giày mới nhất của nhãn hiệu Nike năm 2023. Kiểu dáng thể thao kết hợp phong cách đường phố. Sự lựa chọn hoàn hảo cho các bạn trẻ năng động', 0, 19),
+(35, 'Nike Baby Z', 45, 'product_6.png', 'Mẫu giày mới nhất của nhãn hiệu Nike năm 2023. Kiểu dáng thể thao kết hợp phong cách đường phố. Sự lựa chọn hoàn hảo cho các bạn trẻ năng động', 0, 18),
+(36, 'Nike JK 3R', 89, 'product_7.png', 'Mẫu giày mới nhất của nhãn hiệu Nike năm 2023. Kiểu dáng thể thao kết hợp phong cách đường phố. Sự lựa chọn hoàn hảo cho các bạn trẻ năng động', 0, 18),
+(37, 'Nike Barret 3z', 67, 'product_8.png', 'Mẫu giày mới nhất của nhãn hiệu Nike năm 2023. Kiểu dáng thể thao kết hợp phong cách đường phố. Sự lựa chọn hoàn hảo cho các bạn trẻ năng động', 0, 18),
+(38, 'Nike Royal C3', 67, 'product_9.png', 'Mẫu giày mới nhất của nhãn hiệu Nike năm 2023. Kiểu dáng thể thao kết hợp phong cách đường phố. Sự lựa chọn hoàn hảo cho các bạn trẻ năng động', 0, 18),
+(39, 'Nike S9 K3', 45, 'product_10.webp', 'Mẫu giày mới nhất của nhãn hiệu Nike năm 2023. Kiểu dáng thể thao kết hợp phong cách đường phố. Sự lựa chọn hoàn hảo cho các bạn trẻ năng động', 0, 19),
+(40, 'Nike Cola A1', 56, 'product_11.webp', 'Mẫu giày mới nhất của nhãn hiệu Nike năm 2023. Kiểu dáng thể thao kết hợp phong cách đường phố. Sự lựa chọn hoàn hảo cho các bạn trẻ năng động', 0, 19),
+(41, 'Nike JK C1', 90, 'product_12.webp', 'Mẫu giày mới nhất của nhãn hiệu Nike năm 2023. Kiểu dáng thể thao kết hợp phong cách đường phố. Sự lựa chọn hoàn hảo cho các bạn trẻ năng động', 0, 17),
+(42, 'Nike Lady Killer', 88, 'product_13.webp', 'Mẫu giày mới nhất của nhãn hiệu Nike năm 2023. Kiểu dáng thể thao kết hợp phong cách đường phố. Sự lựa chọn hoàn hảo cho các bạn trẻ năng động', 0, 17),
+(43, 'Nike Men L1', 90, 'product_14.webp', 'Mẫu giày mới nhất của nhãn hiệu Nike năm 2023. Kiểu dáng thể thao kết hợp phong cách đường phố. Sự lựa chọn hoàn hảo cho các bạn trẻ năng động', 0, 16),
+(44, 'Nike Raper 2C', 45, 'product_15.webp', 'Mẫu giày mới nhất của nhãn hiệu Nike năm 2023. Kiểu dáng thể thao kết hợp phong cách đường phố. Sự lựa chọn hoàn hảo cho các bạn trẻ năng động', 0, 17),
+(45, 'Nike Women 6S', 34, 'product_16.webp', 'Mẫu giày mới nhất của nhãn hiệu Nike năm 2023. Kiểu dáng thể thao kết hợp phong cách đường phố. Sự lựa chọn hoàn hảo cho các bạn trẻ năng động', 0, 17);
 
 -- --------------------------------------------------------
 
@@ -205,19 +226,19 @@ ALTER TABLE `cart`
 -- AUTO_INCREMENT for table `danhmuc`
 --
 ALTER TABLE `danhmuc`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- AUTO_INCREMENT for table `sanpham`
 --
 ALTER TABLE `sanpham`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
 -- AUTO_INCREMENT for table `taikhoan`
 --
 ALTER TABLE `taikhoan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- Constraints for dumped tables

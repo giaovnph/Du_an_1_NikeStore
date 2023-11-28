@@ -1,7 +1,7 @@
 <div class="row mb">
   <div class="boxtrai mr">
   <div class="row mb">
-      <div class="boxtitle"></div>
+      <div class="boxtitle">CÁM ƠN</div>
       <div class="row boxcontent" style="text-align: center">
           <h2>Cám ơn quý khách đã đặt hàng</h2>
       </div>
@@ -76,5 +76,10 @@
             </div>
       </div>
     </div>
+  </div>
+  <div class="boxphai">
+    <?php       
+      include "view/boxphai.php";
+    ?>
   </div>
 </div>

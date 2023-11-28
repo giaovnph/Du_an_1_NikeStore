@@ -5,8 +5,8 @@
             return $listdanhmuc;
         }
 
-        function insert_taikhoan($email, $user, $pass, $sdt){
-            $sql="insert into taikhoan(email, user, pass, sdt) values('$email','$user','$pass','$sdt')";
+        function insert_taikhoan($email, $user, $pass, $diachi, $sdt){
+            $sql="insert into taikhoan(email, user, pass, diachi, sdt) values('$email','$user','$pass','$diachi','$sdt')";
             pdo_execute($sql);
         }
 

@@ -1,67 +1,81 @@
-<!-- Phần footer -->
-<footer>
-    <div class="footer">
-        <div class="ft1">
-            <a style="color: #fff;" href="https://www.google.com/maps/search/Nike/@21.0281042,105.8302773,16z/data=!3m1!4b1?entry=ttu">TÌM 1 CỬA HÀNG</a>
-            <a href="index.php?act=dangky" style="color: #fff;">TRỞ THÀNH 1 THÀNH VIÊN</a>
-            <a href="" style="color: #fff;">ĐĂNG KÝ EMAIL</a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <div>
-            <a href="" style="color: #fff;font-size: 20px ; margin-right: 5px;"><i class="fa-solid fa-location-dot"></i></a>
-            <a href="" class="vn">Việt Nam </a>
-            <a  class="chuft"> © 2023 Nike, Inc. Mọi quyền được bảo lưu</a>
+ <!-- Cuối trang -->
+ <footer class="nikestore-footer">
+        <div class="top-footer">
+            <div class="top-footer__item">
+                <div class="top-footer-col">
+                    <a href="">
+                        <h4>Hệ thống cửa hàng</h4>
+                    </a>
+                    <a href="">
+                        <h4>Bộ sưu tập</h4>
+                    </a>
+                    <a href="">
+                        <h4>Tin tức thị trường</h4>
+                    </a>
+                </div>
+                <div class="top-footer-col">
+                    <a href="">
+                        <h4>Hỗ trợ khách hàng</h4>
+                    </a>
+                    <a href="">
+                        <p>Vận chuyển</p>
+                    </a>
+                    <a href="">
+                        <p>Trả lại hàng</p>
+                    </a>
+                    <a href="">
+                        <p>Quy trình thanh toán</p>
+                    </a>
+                    <a href="">
+                        <p>Liên hệ chúng tôi</p>
+                    </a>
+                </div>
+                <div class="top-footer-col">
+                    <a href="">
+                        <h4>Giới thiệu về NikeStore</h4>
+                    </a>
+                    <a href="">
+                        <p>Triết lý kinh doanh</p>
+                    </a>
+                    <a href="">
+                        <p>Tổ chức - sự kiện</p>
+                    </a>
+                    <a href="">
+                        <p>Nhà đầu tư</p>
+                    </a>
+                    <a href="">
+                        <p>Lịch sử phát triển</p>
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="ft2">
-            <a href="" style="color: #fff;">HỖ TRỢ KHÁCH HÀNG</a>
-            <a href="" class="chuft">Tình Trạng Đặt Hàng</a>
-            <a href="" class="chuft">Vận Chuyển</a>
-            <a href="" class="chuft">Trả Lại Hàng</a>
-            <a href="" class="chuft">Liên Hệ Cho Chúng Tôi</a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-        </div>
-        <div class="ft2">
-            <a href="" style="color: #fff;">GIỚI THIỆU NIKE</a>
-            <a href="" class="chuft">Tin Tức</a>
-            <a href="" class="chuft">Nghề Nghiệp </a>
-            <a href="" class="chuft">Nhà Đầu Tư</a>
-            <a href="" class="chuft">Sự Bền Vững</a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-        </div>
-        
-        
-        <div class="ft3">
-            <div style="margin-left: 250px ;">
-            <a href="https://twitter.com/Nike" class="icon"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://www.facebook.com/nike" class="icon"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.youtube.com/user/nike" class="icon"><i class="fa-brands fa-youtube"></i></a>
-            <a href="https://www.instagram.com/nike/" class="icon"><i class="fa-brands fa-instagram"></i></a>
-        </div>
-            <div class="chuft2">
-                <a href="https://www.eshopworld.com/shoppers/help/retailer/nike/terms-and-conditions-of-sale-en/">Điều khoản bán hàng</a>
-                <a href="https://agreementservice.svs.nike.com/vn/en_gb/rest/agreement?agreementType=termsOfUse&uxId=com.nike&country=VN&language=en&requestType=redirect">Điều khoản sử dụng</a>
-                <a href="https://agreementservice.svs.nike.com/vn/en_gb/rest/agreement?agreementType=privacyPolicy&uxId=com.nike.unite&country=VN&language=en&requestType=redirect">Chính sách quyền riêng tư của NIKE </a>
+            <div class="top-footer__logo">
+                <div class="top-footer__icon"><a href=""><img src="view/images/twiter.png" alt=""></a></div>
+                <div class="top-footer__icon"><a href=""><img src="view/images/facebook.png" alt=""></a></div>
+                <div class="top-footer__icon"><a href=""><img src="view/images/youtube.png" alt=""></a></div>
+                <div class="top-footer__icon"><a href=""><img src="view/images/instagram.png" alt=""></a></div>
+
 
             </div>
         </div>
-    </div>
-</footer>
-  <!-- End footer -->
-  </div>
+        <div class="bot-footer">
+            <div class="bot-footer__local">
+                <div><img src="view/images/local.png" alt=""></div>
+                <h4>VietNam</h4>
+                <p>© 2023 Nike, Inc. Mọi quyền được bảo lưu</p>
+            </div>
+            <div class="bot-footer__item">
+                <a href="">
+                    <p>Điều khoản bán hàng</p>
+                </a>
+                <a href="">
+                    <p>Điều khoản sử dụng</p>
+                </a>
+                <a href="">
+                    <p>Chính sách quyền riêng tư</p>
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
-<script src="js.js">
-  function query(giao) {
-    return document.querySelector(giao);
-  }
-</script>
 
 </html>

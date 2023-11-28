@@ -1,52 +1,64 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Header</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/sptb.css">
-  <link rel="stylesheet" href="css/sptgt.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css ">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="view/css/main.css">
+    <link rel="stylesheet" href="view/css/log_in_out.css">
+    <title>Document</title>
 </head>
 
-<body>
-<header> <!-- Phần Menu ngang -->
-    <div class="mn">
-      <div class="logo"> <a href="index.php"><img src="images/Logo.png" alt="" /></a>
-
-      </div>
-      <div class="menu">
-        <ul>
-          <li><a href="danhsach.php">Mới và nổi bật</a></li>
-          <li><a href=" ">Nam </a></li>
-          <li><a href=" ">Nữ</a></li>
-          <li><a href=" ">trẻ em</a></li>
-        </ul>
-      </div>
-      <form method="post" ?>
-        <div class="tk">
-          <div class="search-box" style="margin-left: 120px;">
-            <div style=" border-right: 1px solid gray">
-            </div>
-            <div style="padding-left: 20px">
-              <input id="search-input" placeholder="Tìm kiếm" name="tk" type="email" />
-            </div>
-            <div>
-              <button id="search-button" type="submit">
-                <img src="images/timkiem.png" alt="" width="20px" height="20px" style="margin-right: 20px;" />
-              </button>
-            </div>
-          </div>
-          <div>
-            <a href="index.php?act=dangnhap">
-              <img src="images/user.png" alt="" width="70px" height="45px" style="margin-left: 70px; padding-top:5px;" />
-            </a>
-          </div>
+<body class="nikestore">
+    <!-- Menu Top -->
+    <header class="nikestore-header">
+        <div class="header-top">
+            <?php
+            if (isset($_SESSION['user'])) {
+                extract($_SESSION['user']);
+            ?>
+            <?php if($role==1){?>
+                <a href="admin/index.php">
+                <?php } ?>
+                    <h4 class="user-btn sign-btn">Hi. <?= $user ?></h4>
+                </a>
+                <div class=""><a href="index.php?act=thoat" style="font-size: 14px; text-decoration: underline; margin-left: 10px;">Thoát</a></div>
+            <?php
+            } else {
+            ?>
+                <a href="index.php?act=dangnhap">
+                    <h4 class="sign-btn">Sign in</h4>
+                </a>
+            <?php
+            }
+            ?>
         </div>
-      </form>
-    </div>
-  </header>
+        <div class="header-bot">
+            <div class="logo-nike"><a href="index.php"><img src="view/images/Logo.png" alt=""></a></div>
+            <ul class="header-menu">
+                <?php
+                foreach ($listmenu as $menu) {
+                    extract($menu);
+                    $link = "index.php?act=sanpham&iddm=" . $id;
+                    echo '<li><a href="' . $link . '">' . $name . '</a></li>';
+                }
+                ?>
+            </ul>
+            <div class="header-icon">
+                <div class="search-box">
+                    <form class="search-form" action="index.php?act=sanpham" method="post">
+                        <button class="search-btn" type="submit">
+                            <img class="search-icon" src="view/images/search-icon.png" alt="Search">
+                        </button>
+                        <input class="search-box__text" type="text" name="kyw" placeholder="Tìm kiếm" id="" required>
+                    </form>
+                </div>
+                <div class="love-icon">
+                    <a href=""><img src="view/images/heart-icon.png" alt=""></a>
+                </div>
+                <div class="cart-icon">
+                    <a href=""><img src="view/images/cart-icon.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </header>

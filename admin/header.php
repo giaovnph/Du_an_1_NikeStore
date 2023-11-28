@@ -17,7 +17,7 @@
 
             <div class="ex">
                 <a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
-                <div class="thoat"><a href="http://localhost/Du_an_1_NikeStore/">Thoát</a> </div>
+                <div class="thoat"><a href="http://localhost/php/Du_an_1_NikeStore/index.php?act=thoat">Thoát</a> </div>
             </div>
             <div class="ex ex1">
                 <a href=""><i id="adm" class="fa-solid fa-user"></i></a>
@@ -29,7 +29,7 @@
         <!-- Thanh bên trái -->
         <div class="mnd">
             <div class="logo">
-                <a href="index.html">
+                <a href="http://localhost/php/Du_an_1_NikeStore/index.php">
                     <img src="../images/Logo_Ad.png" alt="">
                 </a>
             </div>

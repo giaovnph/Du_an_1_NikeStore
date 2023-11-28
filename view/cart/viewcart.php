@@ -28,4 +28,9 @@
       </div>
     </div>
   </div>
+  <div class="boxphai">
+    <?php       
+      include "view/boxphai.php";
+    ?>
+  </div>
 </div>
