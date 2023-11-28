@@ -22,7 +22,7 @@
                 <?php } ?>
                     <h4 class="user-btn sign-btn">Hi. <?= $user ?></h4>
                 </a>
-                <div class=""><a href="index.php?act=thoat" style="font-size: 14px; text-decoration: underline; margin-left: 10px;">Thoát</a></div>
+                <div class=""><a href="index.php?act=thoat" style="font-size: 12px; text-decoration: underline; margin-left: 10px; padding: 10px 0;">Thoát</a></div>
             <?php
             } else {
             ?>

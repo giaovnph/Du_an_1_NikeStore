@@ -105,6 +105,3 @@
         <span>Sản phẩm bạn cũng có thể yêu thích</span>
     </div>
 </div>
-<?php
-include "./view/footer.php";
-?>

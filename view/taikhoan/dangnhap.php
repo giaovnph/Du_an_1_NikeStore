@@ -1,7 +1,7 @@
 <div class="log-in">
   <div class="log-in__box">
     <div class="log-in-logo">
-      <img src="/view/images/Nike_logo.png" alt="">
+      <img src="view/images/Nike_logo.png" alt="">
     </div>
     <h2>ĐĂNG NHẬP TÀI KHOẢN NIKESTORE</h2>
     <!-- Form đăng nhập -->
