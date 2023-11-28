@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="view/css/main.css">
     <link rel="stylesheet" href="view/css/log_in_out.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css ">
+
     <title>Document</title>
 </head>
 
@@ -20,14 +22,15 @@
             <?php if($role==1){?>
                 <a href="admin/index.php">
                 <?php } ?>
-                    <h4 class="user-btn sign-btn">Hi. <?= $user ?></h4>
+                    <h4 class=" sign-btn">Hi, <?= $user ?><i id="sign-icon" class="fa-regular fa-user"></i></h4>
                 </a>
-                <div class=""><a href="index.php?act=thoat" style="font-size: 12px; text-decoration: underline; margin-left: 10px; padding: 10px 0;">Thoát</a></div>
+                <span class="sign-gach">|</span>
+                <div ><a class="sign-exit" href="index.php?act=thoat">Đăng xuất<i id="sign-icon" class="fa-solid fa-arrow-right-from-bracket"></i></a></div>
             <?php
             } else {
             ?>
                 <a href="index.php?act=dangnhap">
-                    <h4 class="sign-btn">Sign in</h4>
+                    <span class="sign-btn">Sign in <i id="sign-icon" class="fa-regular fa-user"></i></span>
                 </a>
             <?php
             }
