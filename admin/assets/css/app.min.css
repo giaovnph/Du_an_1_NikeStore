@@ -231,6 +231,7 @@ i{
 .frmcontent input[type="reset"]:hover,
 .frmcontent input[type="button"]:hover {
     background-color: #CCC;
+    color: black;
 }
 
 .frmtitle {
@@ -287,6 +288,7 @@ i{
 }
 .search-form input[type="submit"]:hover{
     background-color: #CCC;
+
 }
 .search-form select, .frmcontent select{
     padding: 10px 20px ;
