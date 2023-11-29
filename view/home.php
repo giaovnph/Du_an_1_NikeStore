@@ -1,4 +1,48 @@
    <!-- Slide banner -->
+   <style>
+    
+.product_tb {
+  height: auto;
+  margin: 150px 0;
+  font-size: 31px;
+}
+
+.product_tb1 {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  margin: 160px 0px;
+}
+.product_tb2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 160px 0px;
+}
+
+
+.product_tb img {
+  width: 500px;
+  height: auto;
+}
+.product_tb1 img {
+    margin-left: 190px;
+}
+.product_tb2 img {
+    margin-left: 80px;
+}
+
+
+.product_tt{
+ width: 300px;
+ margin: 0 220px;
+}
+.product_tt1{
+  width: 300px;
+   margin: 0 190px;
+ }
+
+
+   </style>
+   
    <div class="container">
        <div class="slide-banner">
            <div class="mySlides fade">
@@ -94,6 +138,32 @@
            <a class="bot-banner-btn cta-btn" href="">Kid's</a>
        </div>
    </div>
+  <!-- Sản phẩm tiêu biểu -->
+  <div class="product_tb">
+    <div class="product_tb1">
+      <div class="product_tb0">
+        <img onmouseover="changeImg(this, './view/images/g5.5.webp')" onmouseout="normalImg(this,'./view/images/g5.webp')" src="./view/images/g5.webp" />
+      </div>
+      <div class="product_tt">
+        Vào những năm 70, Nike là mẫu giày mới trên thị trường, quá mới mẻ, chúng tôi vẫn đang thâm nhập
+        vào lĩnh vực bóng rổ và thử nghiệm các nguyên mẫu trên đôi chân của đội địa phương của chúng tôi. Tất nhiên,
+        thiết kế đã được cải thiện qua nhiều năm, nhưng cái tên vẫn không thay đổi. Nike Blazer Mid '77 Vintage—cổ
+        điển ngay từ đầu.
+      </div>
+    </div>
+
+    <div class="product_tb2">
+      <div class="product_tt1">
+        Air Jordan 1 Hi FlyEase kết hợp phong cách đáng thèm muốn của đôi giày thể thao đặc trưng đầu tiên của Michael
+        Jordan với hệ thống nhập bằng một tay nhanh chóng và dễ dàng. Không có dây để buộc, chỉ có một khóa kéo bao
+        quanh và hai dây đai để đảm bảo vừa vặn tùy chỉnh.
+      </div>
+      <div class="product_tb0">
+
+        <img onmouseover="changeImg(this, './view/images/g6.6.webp')" onmouseout="normalImg(this,'./view/images/g6.webp')" src="./view/images/g6.webp" />
+      </div>
+    </div>
+  </div>
    <script>
        var slideIndex = 0;
        showSlides();
@@ -145,4 +215,13 @@
            currentIndex2 = (currentIndex2 - 1 + 10) % 10;
            showProducts2();
        }
+
+
+       //hover ảnh sản phẩm
+function changeImg(img, src) {
+    img.src = src;
+  }
+  function normalImg(img, src) {
+    img.src = src;
+  }
    </script>
