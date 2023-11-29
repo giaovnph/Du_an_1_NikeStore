@@ -33,6 +33,8 @@
                 if(isset($_POST['dangky'])&&($_POST['dangky'])){
                     insert_taikhoan($_POST['email'], $_POST['user'], $_POST['pass'], $_POST['diachi'], $_POST['sdt']);
                     $thongbao="Đăng ký thành công";
+                    // header('Location: index.php?act=dangnhap');
+
                 }
                 include "view/taikhoan/dangky.php";
                 break;
