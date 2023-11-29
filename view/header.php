@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="view/css/main.css">
     <link rel="stylesheet" href="view/css/log_in_out.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css ">
 
     <title>Document</title>
 </head>
@@ -19,19 +19,28 @@
             if (isset($_SESSION['user'])) {
                 extract($_SESSION['user']);
             ?>
-            <?php if($role==1){?>
-                <a href="admin/index.php">
+                <?php if ($role == 1) { ?>
+                    <div class="header-top__box-icon">
+                        <a href="admin/index.php">
+                        <?php } ?>
+                        <div class="header-top__box-icon">
+                            <h4 class=" sign-btn">Hi, <?= $user ?><i id="sign-icon" class="fa-regular fa-user"></i></h4>
+                        </div>
+                        <?php if ($role == 1) { ?>
+                        </a>
+                    </div>
                 <?php } ?>
-                    <h4 class=" sign-btn">Hi, <?= $user ?><i id="sign-icon" class="fa-regular fa-user"></i></h4>
-                </a>
                 <span class="sign-gach">|</span>
-                <div ><a class="sign-exit" href="index.php?act=thoat">Đăng xuất<i id="sign-icon" class="fa-solid fa-arrow-right-from-bracket"></i></a></div>
+                <div class="header-top__box-icon"><a class="sign-exit" href="index.php?act=thoat">Đăng xuất<i id="sign-icon" class="fa-solid fa-arrow-right-from-bracket"></i></a></div>
+
             <?php
             } else {
             ?>
-                <a href="index.php?act=dangnhap">
-                    <span class="sign-btn">Sign in <i id="sign-icon" class="fa-regular fa-user"></i></span>
-                </a>
+                <div class="header-top__box-icon">
+                    <a href="index.php?act=dangnhap">
+                        <span class="sign-btn">Sign in <i id="sign-icon" class="fa-regular fa-user"></i></span>
+                    </a>
+                </div>
             <?php
             }
             ?>

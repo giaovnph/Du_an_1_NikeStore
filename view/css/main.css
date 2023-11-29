@@ -57,7 +57,7 @@ a {
     font-weight: bolder;
     padding: 2px 0;
     margin-top: -3px;
-    
+
 }
 
 #sign-icon {
@@ -72,7 +72,7 @@ a {
     margin-top: -1px;
     margin-left: 20px;
     font-weight: bold;
-    margin-right:9px ;
+    margin-right: 9px;
 }
 
 .sign-exit {
@@ -83,11 +83,14 @@ a {
     color: var(--color-primary);
     margin-top: -1px;
 }
-
-.sign-btn:hover,.sign-exit:hover,#sign-icon:hover {
+.header-top__box-icon:hover .sign-btn,
+.header-top__box-icon:hover .sign-exit,
+.header-top__box-icon:hover #sign-icon {
     color: var(--color-thirdy);
 }
-
+.header-top__box-icon{
+    cursor: pointer;
+}
 .header-bot {
     width: 90%;
     display: flex;

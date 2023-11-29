@@ -65,7 +65,7 @@
                     </a>
                     <ul class="chu-be" aria-expanded="false">
                         <li>
-                            <a href="index.php?act=dskh"><i id="ic" class="fa-solid fa-user"></i>Tài khoản</a>
+                            <a href="index.php?act=dskh"><i id="ic" class="fa-solid fa-user"></i> Tài khoản</a>
                         </li>
                     </ul>
                 </li>
@@ -77,7 +77,7 @@
                     </a>
                     <ul class="chu-be" aria-expanded="false">
                         <li>
-                            <a href="index.php?act=dsdh"><i id="ic" class="fa-regular fa-file"></i> Danh sách đơn hàng</a>
+                            <a href="index.php?act=dsdh"><i id="ic" class="fa-regular fa-file"></i> DS đơn hàng</a>
                         </li>
                     </ul>
                 </li>
