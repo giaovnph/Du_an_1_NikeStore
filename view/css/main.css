@@ -83,14 +83,17 @@ a {
     color: var(--color-primary);
     margin-top: -1px;
 }
+
 .header-top__box-icon:hover .sign-btn,
 .header-top__box-icon:hover .sign-exit,
 .header-top__box-icon:hover #sign-icon {
     color: var(--color-thirdy);
 }
-.header-top__box-icon{
+
+.header-top__box-icon {
     cursor: pointer;
 }
+
 .header-bot {
     width: 90%;
     display: flex;
@@ -224,7 +227,7 @@ a {
     position: relative;
     overflow: hidden;
     width: 65%;
-    margin: 100px auto;
+    margin: 80px auto;
 
 
 }
@@ -348,56 +351,44 @@ a {
     min-width: 60px;
     text-align: center;
 }
+
 /*----------------sản phẩm tiêu biểu----------*/
 .product_tb {
-    height: auto;
-    margin: 150px 0;
-    font-size: 31px;
-  }
-  
-  .product_tb1 {
+    margin: auto;
+    width: 90%;
+    background-color: #f6f6f6;
+}
+
+.product_tb1 {
     display: grid;
-    grid-template-columns: 55% 45%;
-    margin: 160px 0px;
-  }
-  .product_tb2 {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    margin: 160px 0px;
-  }
-  
-  
-  .product_tb img {
-    width: 500px;
-    height: auto;
-  }
-  .product_tb1 img {
-      margin-left: 190px;
-  }
-  .product_tb2 img {
-      margin-left: 80px;
-  }
-  
-  
-  .product_tt{
-   width: 300px;
-   margin: 0 220px;
-  }
-  .product_tt1{
-    width: 300px;
-     margin: 0 190px;
-   }
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
 
+.product_tt1 {
+    margin: auto;
+    width: 60%;
+    line-height: 40px;
+    font-size: 20px;
+    font-variant: small-caps;
+}
 
-   
-  
+.product_tb0 {
+    display: flex;
+}
 
+.product_tb0 a {
+    margin: auto;
+}
+.product_tb0 img {
+    width: 100%;
+}
 /*----------------phần footer----------------*/
 
 .nikestore-footer {
     background-color: #111111;
     padding: 50px 5%;
-    margin-top: 20px;
+    margin-top: 80px;
     box-sizing: border-box;
 }
 
