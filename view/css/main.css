@@ -348,6 +348,49 @@ a {
     min-width: 60px;
     text-align: center;
 }
+/*----------------sản phẩm tiêu biểu----------*/
+.product_tb {
+    height: auto;
+    margin: 150px 0;
+    font-size: 31px;
+  }
+  
+  .product_tb1 {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    margin: 160px 0px;
+  }
+  .product_tb2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 160px 0px;
+  }
+  
+  
+  .product_tb img {
+    width: 500px;
+    height: auto;
+  }
+  .product_tb1 img {
+      margin-left: 190px;
+  }
+  .product_tb2 img {
+      margin-left: 80px;
+  }
+  
+  
+  .product_tt{
+   width: 300px;
+   margin: 0 220px;
+  }
+  .product_tt1{
+    width: 300px;
+     margin: 0 190px;
+   }
+
+
+   
+  
 
 /*----------------phần footer----------------*/
 
