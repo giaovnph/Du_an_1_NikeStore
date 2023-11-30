@@ -1,7 +1,7 @@
 <div class="cart-content mb">
   <div class="boxtrai mr">
     <div class="mb">
-      <div class="boxtitle">GIỎ HÀNG</div>
+      <div class="boxtitle">Giỏ hàng của bạn</div>
       <div class="boxcontent">
       <div class="mb10 frmdsloai">
                 <table>

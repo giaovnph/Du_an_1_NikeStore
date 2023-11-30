@@ -1,0 +1,143 @@
+
+
+/* ===========Giỏ hàng============*/ 
+.all-gh{
+  font-family: Arial;
+    font-size: 16px;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===========Thoát thanh toán============*/ 
+.eixt{
+  float: right;
+  margin-right: 65px;
+  margin-top: 0px;
+  font-size: 28px;
+  border: 1px solid #949494;
+}
+#ex{
+  color: #000000;
+  padding: 5px 5px;
+}
+#ex:hover{
+  color: #7f7f7f;
+}
+
+
+ 
+/* ============Thanh toán============*/
+  .all-tt {
+    display: grid;
+    grid-template-columns: 60% 25% 1fr;
+    font-family: Arial;
+    font-size: 16px;
+    color: black;
+    margin-top: 105px;
+  }
+  
+
+
+   .all-tt input {
+    width: 395px;
+    height: 60px;
+    border: 1px solid #c7c7c7;
+    border-radius: 5px;
+    color: #7f7f7f;
+    margin-top: 25px;
+    padding: 0 20px;
+  }
+
+  .all-tt input:focus {
+    color: black;
+    font-weight: 400;
+    font-size: 15px;
+  }
+  
+
+/* ============FORM thanh toán============*/
+
+  .form-tt {
+    margin-left: 300px;
+
+  }
+  .form-tt span{
+    font-size: 20px;
+  }
+  .tt select {
+    border: 1px solid #c7c7c7;
+    width: 437px;
+    height: 60px;
+    color: #7f7f7f;
+    padding-left: 17px;
+    margin: 25px 0;
+  }
+  .tt select option{
+    line-height: 100px;
+  }
+ 
+  .bttt p {
+    border: 2px solid #000000;
+    border-radius: 10px;
+    width: 435px;
+    height: 50px;
+    margin: 40px 0;
+    padding-top: 23px;
+
+  }
+  .bttt p a{
+  color: #000000;
+  padding: 0px 23px;
+  }
+  #icon-tich {
+    display: block;
+    font-size: 7px;
+    color: rgb(1, 183, 1);
+    margin-left: 400px;
+    margin-top: -13px;
+  }
+  #icon{
+    font-size: 22px;
+    margin-right: 20px;
+  }
+
+  .nut-tt button {
+    border-radius: 50px;
+    width: 437px;
+    height: 70px;
+    background-color: #000000;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 22px;
+  }
+  .nut-tt button:hover {
+    background-color: #393939;
+  }
+
+  /* ============Tóm tắt chi phí============*/
+.tieude-tt{
+  font-size: 25px;
+}
+.tomtat-tt{
+  color: #8d8d8d;
+  font-size: 17px;
+  margin: 0px 3px;
+}
+.tomtat-tt {
+  margin-bottom: 10px;
+}
+.tc-tt{
+  padding: 30px 0;
+  color: #000000;
+  font-size: 18px;
+}
