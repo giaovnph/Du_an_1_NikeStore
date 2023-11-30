@@ -1,0 +1,142 @@
+.cart-content {
+    margin: 100px auto;
+    width: 70%;
+}
+
+.mb {
+    margin-bottom: 30px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.formtaikhoan input[type="text"],
+.formtaikhoan input[type="password"],
+.formtaikhoan input[type="email"],
+.frmdsloai input[type="text"] {
+    width: 50%;
+    border: 1px #CCC solid;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.formtaikhoan input[type="submit"],
+.formtaikhoan input[type="reset"],
+.frmdsloai input[type="submit"],
+.frmdsloai input[type="reset"],
+.frmdsloai input[type="button"] {
+    background-color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.ghinho {
+    background-color: white;
+    border: 1px #CCC solid;
+    border-radius: 5px;
+}
+
+.formtaikhoan input[type="submit"]:hover,
+.formtaikhoan input[type="reset"]:hover,
+.frmdsloai input[type="submit"]:hover,
+.frmdsloai input[type="reset"]:hover,
+.frmdsloai input[type="button"]:hover {
+    background-color: #CCC;
+    color: black;
+}
+
+.frmtitle {
+    background-color: #EEE;
+    border: 1px #CCC solid;
+    border-radius: 5px;
+    color: #666;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.frmdsloai {
+    padding: 20px 0px
+}
+
+.frmdsloai div {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.frmdsloai table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.frmdsloai table th {
+    padding: 20px;
+    background-color: #CCC;
+    border: 1px #999 solid;
+}
+
+.frmdsloai table td {
+    padding: 10px 20px;
+    border: 1px #999 solid;
+    background-color: #f6f6f6;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.search-form select,
+.frmdsloai select {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.boxtitle {
+    color: #333;
+    padding: 10px;
+    background-color: #EEE;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 1px #CCC solid;
+}
+
+.boxcontent {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    min-height: 100px;
+    border-left: 1px #CCC solid;
+    border-right: 1px #CCC solid;
+    border-bottom: 1px #CCC solid;
+    padding: 20px
+}
+
+.boxcontent li {
+    margin-bottom: 10px;
+}
+
+.boxcontent input[type="radio"] {
+    margin: 0 5px 20px 0;
+}
+
+.box-thank {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.from-user-input input[type="text"] {
+    width: 250px;
+    margin: 10px 20px;
+}
+
+.from-user-output {
+    padding: 10px 20px;
+}
+strong{
+    font-size:14px ;
+}

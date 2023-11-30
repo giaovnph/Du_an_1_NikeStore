@@ -1,15 +1,15 @@
-<div class="row mb">
+<div class="cart-content mb">
   <div class="boxtrai mr">
-    <div class="row mb">
+    <div class="mb">
       <div class="boxtitle">ĐƠN HÀNG ĐÃ ĐẶT</div>
-      <div class="row boxcontent">
-      <div class="row mb10 frmdsloai">
+      <div class="boxcontent">
+      <div class="mb10 frmdsloai">
                 <table>
                     <tr>
                         <th>MÃ ĐƠN HÀNG</th>
                         <th>NGÀY ĐẶT</th>
                         <th>TỔNG GIÁ TRỊ ĐƠN HÀNG</th>
-                        <th>Tình trạng đơn hàng</th>
+                        <th>TÌNH TRẠNG ĐƠN HÀNG</th>
                     </tr>
                     
                     <?php
@@ -33,10 +33,5 @@
             </div>       
       </div>
     </div>
-  </div>
-  <div class="boxphai">
-    <?php       
-      include "view/boxphai.php";
-    ?>
   </div>
 </div>

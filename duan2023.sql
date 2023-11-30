@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 28, 2023 at 02:13 AM
+-- Generation Time: Nov 30, 2023 at 04:48 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -79,7 +79,7 @@ CREATE TABLE `cart` (
 --
 
 CREATE TABLE `danhmuc` (
-  `id` int(11) NOT NULL,
+  `id` int(10) NOT NULL,
   `name` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -100,13 +100,13 @@ INSERT INTO `danhmuc` (`id`, `name`) VALUES
 --
 
 CREATE TABLE `sanpham` (
-  `id` int(11) NOT NULL,
+  `id` int(10) NOT NULL,
   `name` varchar(255) NOT NULL,
   `gia` double DEFAULT 0,
   `img` varchar(255) DEFAULT NULL,
   `mota` text DEFAULT NULL,
-  `luotxem` int(11) DEFAULT 0,
-  `danhmuc` int(11) NOT NULL
+  `luotxem` int(10) DEFAULT 0,
+  `danhmuc` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -138,7 +138,7 @@ INSERT INTO `sanpham` (`id`, `name`, `gia`, `img`, `mota`, `luotxem`, `danhmuc`)
 --
 
 CREATE TABLE `taikhoan` (
-  `id` int(11) NOT NULL,
+  `id` int(10) NOT NULL,
   `user` varchar(50) NOT NULL,
   `pass` varchar(50) NOT NULL,
   `email` varchar(255) NOT NULL,
@@ -162,24 +162,19 @@ INSERT INTO `taikhoan` (`id`, `user`, `pass`, `email`, `diachi`, `sdt`, `role`) 
 -- Indexes for table `bill`
 --
 ALTER TABLE `bill`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `lk_Bill_User` (`iduser`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `binhluan`
 --
 ALTER TABLE `binhluan`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `iduser` (`iduser`),
-  ADD KEY `idsp` (`idsp`) USING BTREE;
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `cart`
 --
 ALTER TABLE `cart`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `lk_Cart_User` (`iduser`),
-  ADD KEY `lk_Cart_SP` (`idsp`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `danhmuc`
@@ -208,7 +203,7 @@ ALTER TABLE `taikhoan`
 -- AUTO_INCREMENT for table `bill`
 --
 ALTER TABLE `bill`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=94;
 
 --
 -- AUTO_INCREMENT for table `binhluan`
@@ -220,49 +215,29 @@ ALTER TABLE `binhluan`
 -- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
 
 --
 -- AUTO_INCREMENT for table `danhmuc`
 --
 ALTER TABLE `danhmuc`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- AUTO_INCREMENT for table `sanpham`
 --
 ALTER TABLE `sanpham`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
 
 --
 -- AUTO_INCREMENT for table `taikhoan`
 --
 ALTER TABLE `taikhoan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- Constraints for dumped tables
 --
-
---
--- Constraints for table `bill`
---
-ALTER TABLE `bill`
-  ADD CONSTRAINT `lk_Bill_User` FOREIGN KEY (`iduser`) REFERENCES `taikhoan` (`id`);
-
---
--- Constraints for table `binhluan`
---
-ALTER TABLE `binhluan`
-  ADD CONSTRAINT `lk_BL_SP` FOREIGN KEY (`idsp`) REFERENCES `sanpham` (`id`),
-  ADD CONSTRAINT `lk_BL_User` FOREIGN KEY (`iduser`) REFERENCES `taikhoan` (`id`);
-
---
--- Constraints for table `cart`
---
-ALTER TABLE `cart`
-  ADD CONSTRAINT `lk_Cart_SP` FOREIGN KEY (`idsp`) REFERENCES `sanpham` (`id`),
-  ADD CONSTRAINT `lk_Cart_User` FOREIGN KEY (`iduser`) REFERENCES `taikhoan` (`id`);
 
 --
 -- Constraints for table `sanpham`

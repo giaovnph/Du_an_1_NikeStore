@@ -1,9 +1,9 @@
-<div class="row mb">
+<div class="cart-content mb">
   <div class="boxtrai mr">
-    <div class="row mb">
+    <div class="mb">
       <div class="boxtitle">GIỎ HÀNG</div>
-      <div class="row boxcontent">
-      <div class="row mb10 frmdsloai">
+      <div class="boxcontent">
+      <div class="mb10 frmdsloai">
                 <table>
                     <tr>
                         <th>Hình</th>
@@ -21,16 +21,11 @@
                 </table>
                 
             </div>
-            <div class="row mb10">
+            <div class="mb10 frmdsloai">
                 <a href="index.php?act=bill"><input type="button" value="TIẾP TỤC ĐẶT HÀNG"></a>
                 <a href="index.php?act=delcart"><input type="button" value="XÓA GIỎ HÀNG"></a>
           </div>          
       </div>
     </div>
-  </div>
-  <div class="boxphai">
-    <?php       
-      include "view/boxphai.php";
-    ?>
   </div>
 </div>
