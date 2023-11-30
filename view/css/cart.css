@@ -13,7 +13,7 @@
 
 .formtaikhoan input[type="text"],
 .formtaikhoan input[type="password"],
-.formtaikhoan input[type="email"],
+.formtaikhoan input[type="email"], 
 .frmdsloai input[type="text"] {
     width: 50%;
     border: 1px #CCC solid;
@@ -98,11 +98,7 @@
 
 .boxtitle {
     color: #333;
-    padding: 10px;
-    background-color: #EEE;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border: 1px #CCC solid;
+    
 }
 
 .boxcontent {
