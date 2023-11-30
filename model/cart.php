@@ -41,14 +41,14 @@
         if($del==1){
             echo '
                 <tr>
-                <td colspan="4">Tổng đơn hàng</td>
+                <td colspan="4" style="text-align: left;">Tổng đơn hàng</td>
                 <td>'.$tong.'</td>
                 <td></td>
                 </tr>';
         }else{
             echo '
                 <tr>
-                <td colspan="4">Tổng đơn hàng</td>
+                <td colspan="4" style="text-align: left;">Tổng đơn hàng</td>
                 <td>'.$tong.'</td>
                 </tr>';
         }
@@ -81,7 +81,7 @@
         }
             echo '
                 <tr>
-                <td colspan="4">Tổng đơn hàng</td>
+                <td colspan="4" style="text-align: left;">Tổng đơn hàng</td>
                 <td>'.$tong.'</td>
                 </tr>';
 
@@ -136,7 +136,7 @@
                 $tt="Thanh toán online";
                 break;
             default:
-                $tt="Không trả đó";
+                $tt="Chưa xác nhận";
                 break;
         }
         return $tt;
