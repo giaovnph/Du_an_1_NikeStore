@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="view/css/log_in_out.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css ">
     <link rel="stylesheet" href="view/css/cart.css">
+    <link rel="stylesheet" href="view/css/bill.css">
     <title>Document</title>
 </head>
 
@@ -38,7 +39,7 @@
             ?>
                 <div class="header-top__box-icon">
                     <a href="index.php?act=dangnhap">
-                        <span class="sign-btn">Sign in <i id="sign-icon" class="fa-regular fa-user"></i></span>
+                        <span class="sign-btn">Đăng nhập <i id="sign-icon" class="fa-regular fa-user"></i></span>
                     </a>
                 </div>
             <?php

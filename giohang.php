@@ -8,7 +8,7 @@
 
 <div class="allgh">
     <div class="tuido">
-        <img src="images/th.jpg" alt="">
+        <img src="./view/images/Nike_logo.png" alt="">
         <div>
             <span>Túi đồ của bạn</span>
         </div>
@@ -22,7 +22,7 @@
     <div class="giohangtt">
 
         <div class="anhsp">
-            <img src="Anh_Giay/a1.jpg">
+            <img src="./view/images/product_11.webp">
             <hr>
         </div>
 
@@ -71,6 +71,7 @@
         </div>
 
         <div class="thanhtoan">
+            <form action="">
             <span class="tieude">Bảng tóm tắt thanh toán</span>
 
 
@@ -93,7 +94,7 @@
             <div class="nuttt">
                 <a href=""> <button>Thanh toán</button></a>
             </div>
-
+            </form>
         </div>
 
 

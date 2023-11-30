@@ -1,83 +1,92 @@
-<div class="cart-content mb">
-  <div class="mr">
+
+
+<!-- /* ===========Thoát thanh toán============*/ -->
+<div class="eixt">
+  <a href=""><i id="ex" class="fa-solid fa-arrow-right-from-bracket"></i></a>
+</div>
+
+
+
+<div class="all-tt">
+
+
+
+<!-- /* ===========Form thanh toán============*/ -->
+
+  <div class="form-tt">
     <form action="index.php?act=xnbill" method="post">
-      <div class="mb">
-        <div class="boxtitle">THÔNG TIN ĐẶT HÀNG</div>
-        <div class="boxcontent formtaikhoan from-user-input">
-          <table>
-            <?php
-            if (isset($_SESSION['user'])) {
-              $user = $_SESSION['user']['user'];
-              $diachi = $_SESSION['user']['diachi'];
-              $email = $_SESSION['user']['email'];
-              $sdt = $_SESSION['user']['sdt'];
-            } else {
-              $user = "";
-              $diachi = "";
-              $email = "";
-              $sdt = "";
-            }
-            ?>
-            <tr>
-              <td><strong>Nguời đặt hàng</strong></td>
-              <td colspan="2"><input type="text" name="name" id="" value="<?= $user ?>"></td>
-            </tr>
-            <tr>
-              <td><strong>Địa chỉ</strong></td>
-              <td><input type="text" name="diachi" id="" value="<?= $diachi ?>"></td>
-            </tr>
-            <tr>
-              <td><strong>Email</strong></td>
-              <td><input type="text" name="email" id="" value="<?= $email ?>"></td>
-            </tr>
-            <tr>
-              <td><strong>Điện thoại</strong></td>
-              <td><input type="text" name="sdt" id="" value="<?= $sdt ?>"></td>
-            </tr>
-          </table>
 
+      <?php
+      if (isset($_SESSION['user'])) {
+        $user = $_SESSION['user']['user'];
+        $diachi = $_SESSION['user']['diachi'];
+        $email = $_SESSION['user']['email'];
+        $sdt = $_SESSION['user']['sdt'];
+      } else {
+        $user = "";
+        $diachi = "";
+        $email = "";
+        $sdt = "";
+      }
+      ?>
+
+      <div>
+        <span>Bạn muốn nhận đơn hàng bằng cách nào?</span>
+        <div class="bttt">
+          <p><a href="#"><i id="icon" class="fa-solid fa-calendar-check"></i> Giao nó <i id="icon-tich" class="fa-solid fa-circle"></i></a></p>
         </div>
       </div>
-      <div class="mb">
-        <div class="boxtitle">PHƯƠNG THỨC THANH TOÁN</div>
-        <div class="boxcontent">
-          <table>
-            <tr>
-              <td><input type="radio" name="pttt" value="1" id="" checked>  Trả tiền khi nhận hàng</td>
-            </tr>
-            <tr>
-              <td><input type="radio" name="pttt" value="2" id="">  Chuyển khoản ngân hàng</td>
-            </tr>
-            <tr>
+      <div>
+        <span>Nhập tên và địa chỉ của bạn:</span><br>
 
-              <td><input type="radio" name="pttt" value="3" id="">  Thanh toán online</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-      <div class="mb">
-        <div class="boxtitle">THÔNG TIN GIỎ HÀNG</div>
-        <div class="boxcontent">
-          <div class="mb10 frmdsloai">
-            <table>
-              <tr>
-                <th>Hình</th>
-                <th>Sản phẩm</th>
-                <th>Đơn giá</th>
-                <th>Số lượng</th>
-                <th>Thành tiền</th>
-              </tr>
-              <?php
-              viewcart(0);
-              ?>
+        <input type="text" id="user" placeholder="Họ và tên" value="<?= $user ?>"><br>
 
-            </table>
-          </div>
+        <input type="text" id="diachi" placeholder="Địa chỉ" value="<?= $diachi ?>"><br>
+        <input type="text" id="diachi" placeholder="Tỉnh/Thành phố" value="<?= $diachi ?>"><br>
+
+        
+
+
+        <div class="bttt">
+          <p><a href="#"><i id="icon" class="fa-solid fa-location-dot"></i> Việt Nam <i id="icon-tich" class="fa-solid fa-circle"></i></a href="#"></p>
         </div>
+
       </div>
-      <div class="mb10 frmdsloai">
-        <input name="dongydathang" type="submit" value="XÁC NHẬN ĐẶT HÀNG">
+      <div>
+        <span>Thông tin liên lạc của bạn là gì?</span><br>
+
+        <input type="email" id="email" placeholder="Email" value="<?= $email ?>"> <br>
+
+        <input type="text" id="sdt" placeholder="Số điện thoại" value="<?= $sdt ?>">
+        <div class="tt">
+          <select name="" id="">
+            <option value="0">Phương thức thanh toán</option>
+
+            <option value="1">Thanh toán khi nhận hàng</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class="nut-tt">
+        <a href=""> <button type="submit" id="submitButton">Tiếp tục</button></a>
       </div>
     </form>
+  </div>
+
+
+
+  <!-- /* ============Tóm tắt chi phí============*/ -->
+
+  <div>
+        <p class="tieude-tt">Tóm tắt theo thứ tự</p><br>
+        <div class="tomtat-tt">
+          <p>Chi phí</p> <br>
+          <p style="margin-bottom: 20px;">Giao hàng/Vận chuyển</p> 
+          <hr>
+          <p class="tc-tt">Tổng cộng</p>
+          <hr>
+        </div>
+
   </div>
 </div>
