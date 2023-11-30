@@ -77,7 +77,7 @@
                     </a>
                     <ul class="chu-be" aria-expanded="false">
                         <li>
-                            <a href="index.php?act=dsdh"><i id="ic" class="fa-regular fa-file"></i> DS đơn hàng</a>
+                            <a href="index.php?act=dsdh"><i id="ic" class="fa-regular fa-file"></i> Ds đơn hàng</a>
                         </li>
                     </ul>
                 </li>
@@ -88,7 +88,7 @@
                     </a>
                     <ul class="chu-be" aria-expanded="false">
                         <li>
-                            <a href="index.php?act=dsbl">Danh sách bình luận</a>
+                            <a href="index.php?act=dsbl"><i id="ic" class="fa-regular fa-file"></i>Ds bình luận</a>
                         </li>
                     </ul>
                 </li>
@@ -99,7 +99,7 @@
                     </a>
                     <ul class="chu-be" aria-expanded="false">
                         <li>
-                            <a href="index.php?act=thongke">Biểu đồ thống kê</a>
+                            <a href="index.php?act=thongke"><i id="ic" class="fa-solid fa-chart-pie"></i> Biểu đồ thống kê</a>
                         </li>
                     </ul>
                 </li>

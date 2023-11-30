@@ -298,8 +298,9 @@ top10 a:hover {
     background-color: #EEE;
     border: 1px #CCC solid;
     border-radius: 5px;
-    color: #666;
+    color: #000;
     padding: 0px 20px;
+    text-align: center;
 }
 
 .frmcontent {
