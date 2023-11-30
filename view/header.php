@@ -69,7 +69,7 @@
                     <a href=""><img src="view/images/heart-icon.png" alt=""></a>
                 </div>
                 <div class="cart-icon">
-                    <a href=""><img src="view/images/cart-icon.png" alt=""></a>
+                    <a href="index.php?act=viewcart"><img src="view/images/cart-icon.png" alt=""></a>
                 </div>
             </div>
         </div>
