@@ -1,6 +1,7 @@
 
 <div class="product-col">
     <div class="product-col-left">
+        
     </div>
     <div class="product-col-right">
         <?php
