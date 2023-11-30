@@ -37,8 +37,8 @@
             <ul class="menu" id="side-menu">
                 
                 <li class="chu-lon">
-                    <a href="javascript: void(0);">
-                        <p><i id="ic" class="fa-solid fa-house" style="font-size: 13px;"></i> TRANG CHỦ </p>
+                    <a href="index.php">
+                        <p><i id="ic" class="fa-solid fa-house" style="font-size: 13px;"></i>TRANG CHỦ </p>
                     </a>
                 </li>
 
