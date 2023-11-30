@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="view/css/main.css">
     <link rel="stylesheet" href="view/css/log_in_out.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css ">
-
+    <link rel="stylesheet" href="view/css/cart.css">
     <title>Document</title>
 </head>
 
@@ -69,7 +69,7 @@
                     <a href=""><img src="view/images/heart-icon.png" alt=""></a>
                 </div>
                 <div class="cart-icon">
-                    <a href=""><img src="view/images/cart-icon.png" alt=""></a>
+                    <a href="index.php?act=viewcart"><img src="view/images/cart-icon.png" alt=""></a>
                 </div>
             </div>
         </div>

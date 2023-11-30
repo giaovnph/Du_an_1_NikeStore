@@ -26,8 +26,15 @@
         </a>
 
         <div class="box-chitiet__size">
-            <form action="" method="post">
-                <input type="submit" class="btn-cart" value="Thêm vào giỏ hàng"><br>
+            <form action="index.php?act=addtocart" method="post">
+                <?php
+                echo ' 
+                <input type="hidden" name="id" value="' . $id . '">
+                <input type="hidden" name="name" value="' . $name . '">
+                <input type="hidden" name="img" value="' . $img . '">
+                <input type="hidden" name="gia" value="' . $gia . '">';
+                ?>
+                <input type="submit" class="btn-cart" name="addtocart" value="Thêm vào giỏ hàng"><br>
                 <label for="">Chọn kích cỡ : </label>
                 <select name="" id="" class="select-size">
                     <option value=""></option>
@@ -56,11 +63,11 @@
         echo '
     <div class="product-box">
         <div>
-            <a href="'.$link.'"><img class="product-box__img" src="'.$hinh.'" alt=""></a>
+            <a href="' . $link . '"><img class="product-box__img" src="' . $hinh . '" alt=""></a>
         </div>
         <div class="product-box__des">
-            <a href="'.$link.'">
-                <h3 class="product-name">'.$name.'</h3>
+            <a href="' . $link . '">
+                <h3 class="product-name">' . $name . '</h3>
             </a>
             <h3 class="product-price"><span>' . $gia . '$</span></h3>
         </div>
