@@ -380,9 +380,11 @@ a {
 .product_tb0 a {
     margin: auto;
 }
+
 .product_tb0 img {
     width: 100%;
 }
+
 /*----------------phần footer----------------*/
 
 .nikestore-footer {
@@ -469,19 +471,19 @@ a {
 }
 
 /*---------- Trang sản phẩm --------------*/
-
 .product-col {
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns:15% 3% 85%;
     width: 90%;
     margin: auto;
     padding-bottom: 100px;
+    padding-top: 40px;
+    
 }
 
-.product-col-left {}
-
 .product-col-right {
-    margin-top: 100px;
+    margin-left: 40px;
+    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -512,6 +514,107 @@ a {
     font-weight: 300;
     color: #5d5d5d;
 }
+
+
+
+/*--------- menu trái trang sản phẩm------------*/
+.title-mnd {
+    font-size: 29px;
+    font-weight: bold;
+    margin-top: -10px;
+    margin-left: 5px;
+}
+
+.product-col-left {
+    margin-top: 50px;
+    list-style: none;
+    color: #111111;
+    margin-left: -200px;
+    max-height: 530px; /* Chiều cao tối đa của vùng chứa */
+    overflow-y: auto; /* Hiển thị thanh kéo khi nội dung vượt quá max-height */
+    scrollbar-width: thin; /* Cho Firefox */
+    scrollbar-color: gray #f1f1f1; /* Màu nền và màu của thanh kéo */
+}
+
+/*===============thanh kéo============== */
+::-webkit-scrollbar {
+    width: 8px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 10px; 
+}
+
+.mnd a {
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #111111;
+}
+
+.mnd a:active{
+    color: #111111;
+}
+
+.mnd a:hover{
+    color: #848484;
+}
+
+.mnd input{
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.product-col-left hr{
+    width: 210px;
+    color: #a5a5a5;
+    margin: 30px 0;
+}
+
+.hinh {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgb(200, 200, 200);
+    margin: 10px 15px;
+}
+
+
+.hinh:active {
+    border: 1px solid black;
+
+}
+/* Thiết lập giao diện checkbox */
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #bcbcbc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+/* Thiết lập giao diện checkbox khi được chọn */
+input[type="checkbox"]:checked {
+    background-color: #000000; 
+}
+
+
+
+#angne {
+    float: right;
+    padding-right: 20px;
+    padding-top: 3px;
+}
+
+
+
+
+
+
 
 /*--------- Phần thông số bên phải------------*/
 .box-chitiet {
