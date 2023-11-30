@@ -84,7 +84,7 @@
                 <li class="chu-lon">
 
                     <a href="javascript: void(0);">
-                        <p><i style="font-size: 13px;"  id="ic"class="fa-solid fa-comment"></i> BÌNH LUẬN <i id="angne" class="fa-solid fa-angle-right"></i></p>
+                        <p><i style="font-size: 13px;"  id="ic"class="fa-solid fa-comments"></i> BÌNH LUẬN <i id="angne" class="fa-solid fa-angle-right"></i></p>
                     </a>
                     <ul class="chu-be" aria-expanded="false">
                         <li>

@@ -238,10 +238,9 @@ i{
     background-color: #EEE;
     border: 1px #CCC solid;
     border-radius: 5px;
-    color: black;
+    color: #666;
     padding: 0px 20px;
     margin-bottom: 20px;
-    text-align: center;
 }
 
 .frmcontent {
