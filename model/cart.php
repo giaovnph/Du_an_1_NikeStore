@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css ">
+
 <?php
     function viewcart($del){
         global $img_path;
@@ -7,7 +9,7 @@
             $i=0;
             $hinhpath=$img_path.$sp['2'];
             $tong+=$sp['5'];
-            $xoasp='<a href="index.php?act=delcart&idcart='.$i.'"><input type="button" value="Xóa"></a>';
+            $xoasp = '<a href="index.php?act=delcart&idcart=' . $i . '"><button style="border:none"><i class="fas fa-trash-alt"></i></button></a>';
             if(is_file($hinhpath)){
               $hinh='<img src="'.$hinhpath.'" alt="" height="80">';
             }

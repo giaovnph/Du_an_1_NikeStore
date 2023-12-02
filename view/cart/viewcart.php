@@ -1,6 +1,9 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css ">
+
 <div class="cart-content mb">
   <div class="boxtrai mr">
     <div class="mb">
+      <div class="boxlogo"><img src="view/images/Nike_logo.png" width="40px"></div>
       <div class="boxtitle">Giỏ hàng của bạn</div>
       <div class="boxcontent">
       <div class="mb10 frmdsloai">
@@ -23,7 +26,7 @@
             </div>
             <div class="mb10 frmdsloai">
                 <a href="index.php?act=sanpham"><input type="button" value="TIẾP TỤC MUA HÀNG"></a>
-                <a href="index.php?act=bill"><input type="button" value="TIẾP TỤC ĐẶT HÀNG"></a>
+                <a href="index.php?act=bill"><input type="button" value="THANH TOÁN ĐƠN HÀNG"></a>
                 <a href="index.php?act=delcart"><input type="button" value="XÓA GIỎ HÀNG"></a>
           </div>          
       </div>
