@@ -11,7 +11,7 @@
 /* ============Thanh toán============*/
   .all-tt {
     display: grid;
-    grid-template-columns: 60% 25% 1fr;
+    grid-template-columns: 65% 25% 1fr;
     font-family: Arial;
     font-size: 16px;
     color: black;
@@ -21,7 +21,7 @@
 
 
    .all-tt input {
-    width: 395px;
+    width: 437px;
     height: 60px;
     border: 1px solid #c7c7c7;
     border-radius: 5px;
@@ -62,7 +62,7 @@
   .bttt p {
     border: 2px solid #000000;
     border-radius: 10px;
-    width: 435px;
+    width: 434px;
     height: 50px;
     margin: 40px 0;
     padding-top: 23px;
