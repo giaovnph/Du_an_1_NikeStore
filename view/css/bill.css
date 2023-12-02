@@ -7,34 +7,6 @@
     color: black;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-/* ===========Thoát thanh toán============*/ 
-.eixt{
-  float: right;
-  margin-right: 65px;
-  margin-top: 0px;
-  font-size: 28px;
-  border: 1px solid #949494;
-}
-#ex{
-  color: #000000;
-  padding: 5px 5px;
-}
-#ex:hover{
-  color: #7f7f7f;
-}
-
-
  
 /* ============Thanh toán============*/
   .all-tt {
@@ -81,6 +53,7 @@
     color: #7f7f7f;
     padding-left: 17px;
     margin: 25px 0;
+    border-radius: 5px;
   }
   .tt select option{
     line-height: 100px;
@@ -133,11 +106,17 @@
   font-size: 17px;
   margin: 0px 3px;
 }
-.tomtat-tt {
-  margin-bottom: 10px;
-}
+
 .tc-tt{
   padding: 30px 0;
   color: #000000;
   font-size: 18px;
+}
+.gia-tt{
+  float: right;
+}
+.thongtin-tt{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top:20px ;
 }

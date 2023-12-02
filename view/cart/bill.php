@@ -1,17 +1,12 @@
 
 
-<!-- /* ===========Thoát thanh toán============*/ -->
-<div class="eixt">
-  <a href=""><i id="ex" class="fa-solid fa-arrow-right-from-bracket"></i></a>
-</div>
-
 
 
 <div class="all-tt">
 
 
 
-<!-- /* ===========Form thanh toán============*/ -->
+  <!-- /* ===========Form thanh toán============*/ -->
 
   <div class="form-tt">
     <form action="index.php?act=xnbill" method="post">
@@ -44,7 +39,7 @@
         <input type="text" id="diachi" placeholder="Địa chỉ" value="<?= $diachi ?>"><br>
         <input type="text" id="diachi" placeholder="Tỉnh/Thành phố" value="<?= $diachi ?>"><br>
 
-        
+
 
 
         <div class="bttt">
@@ -79,14 +74,57 @@
   <!-- /* ============Tóm tắt chi phí============*/ -->
 
   <div>
-        <p class="tieude-tt">Tóm tắt theo thứ tự</p><br>
-        <div class="tomtat-tt">
-          <p>Chi phí</p> <br>
-          <p style="margin-bottom: 20px;">Giao hàng/Vận chuyển</p> 
-          <hr>
-          <p class="tc-tt">Tổng cộng</p>
-          <hr>
+    <p class="tieude-tt">Tóm tắt theo thứ tự</p><br>
+    <div class="tomtat-tt">
+      <span>Chi phí</span> <span class="gia-tt">2000000</span>
+      <br>
+
+      <span>Giao hàng/Vận chuyển</span> <span class="gia-tt">Miễn phí</span>
+      <hr>
+
+      <span class="tc-tt">Tổng cộng</span><span class="gia-tt">2000000</span>
+      <hr>
+      <div class="thongtin-tt">
+        <div>
+          <img src="view/images/product_10.webp" alt="" width="150px">
         </div>
+        <div>
+          <div>Nike </div>
+          <div>Kích cỡ: 41</div>
+          <div>Số lượng: 1</div>
+        </div>
+      </div>
+      <div class="thongtin-tt">
+        <div>
+          <img src="view/images/product_10.webp" alt="" width="150px">
+        </div>
+        <div>
+          <div>Nike </div>
+          <div>Kích cỡ: 41</div>
+          <div>Số lượng: 1</div>
+        </div>
+      </div>
+      <div class="thongtin-tt">
+        <div>
+          <img src="view/images/product_10.webp" alt="" width="150px">
+        </div>
+        <div>
+          <div>Nike </div>
+          <div>Kích cỡ: 41</div>
+          <div>Số lượng: 1</div>
+        </div>
+      </div>
+      <div class="thongtin-tt">
+        <div>
+          <img src="view/images/product_10.webp" alt="" width="150px">
+        </div>
+        <div>
+          <div>Nike </div>
+          <div>Kích cỡ: 41</div>
+          <div>Số lượng: 1</div>
+        </div>
+      </div>
+    </div>
 
   </div>
 </div>
