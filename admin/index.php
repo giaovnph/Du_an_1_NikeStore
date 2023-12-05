@@ -152,7 +152,7 @@ if (isset($_GET['act'])) {
                 update_bill($trangthai, $id);
                 $thongbao = "Cập nhật thành công";
             }
-            $dsdh = loadall_bill($kyw, 0);
+            $dsdh = loadall_bill("", 0);
             include "donhang/list.php";
             break;
         case 'thongke':
