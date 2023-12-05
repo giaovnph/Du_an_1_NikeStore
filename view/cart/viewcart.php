@@ -11,6 +11,7 @@
                     <tr>
                         <th>Hình</th>
                         <th>Sản phẩm</th>
+                        <th>Kích cỡ</th>
                         <th>Đơn giá</th>
                         <th>Số lượng</th>
                         <th>Thành tiền</th>

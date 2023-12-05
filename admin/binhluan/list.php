@@ -10,8 +10,8 @@
                         <th></th>
                         <th>ID</th>
                         <th>NỘI DUNG</th>
-                        <th>User</th>
-                        <th>Sản Phẩm</th>
+                        <th>USER</th>
+                        <th>SẢN PHẨM</th>
                         <th>NGÀY BÌNH LUẬN</th>
                         <th></th>
                     </tr>
@@ -36,8 +36,8 @@
                 </table>
             </div>
             <div class=" mb10 ">
-                <input  type="button" value="CHỌN TẤT CẢ">
-                <input  type="button" value="BỎ CHỌN TẤT CẢ">
+                <input  type="button" value="Xóa mục đã chọn">
+                <!-- <input  type="button" value="BỎ CHỌN TẤT CẢ"> -->
             </div>
         </form>
     </div>

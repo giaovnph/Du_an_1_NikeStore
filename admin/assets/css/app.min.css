@@ -1,20 +1,10 @@
-@import url(css.css);
 
 body {
     overflow-x: hidden;
     margin: 0;
     background-color: #f4f4f4;
     display: flex;
-    align-items: flex-start;
     flex-direction: column;
-}
-
-.all {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    font-family: Arial;
-    
 }
 
 /*============MENU DỌC==========*/
@@ -154,7 +144,6 @@ body {
 .ex{
     float: right;
     margin-right: 10px;
-    margin-top: -12px;
 }
 i{
     padding-left: 10px;
@@ -169,27 +158,6 @@ i{
 
 }
 
-
-
-@media (max-width: 767.98px) {
-    .mnd {
-        display: none;
-    }
-
-    .all {
-        margin-left: 0;
-    }
-
-    .mnn {
-        margin-left: 0;
-    }
-
-    .content-page,
-    .content-page.enlarged .mnd + .content-page {
-        margin-left: 0;
-        padding: 20px;
-    }
-}
 /*---------- CSS phần bảng trong admin -------------*/
 .row {
     width: 100%;

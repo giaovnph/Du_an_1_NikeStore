@@ -35,9 +35,8 @@
                 <input type="hidden" name="gia" value="' . $gia . '">';
                 ?>
                 <input type="submit" class="btn-cart" name="addtocart" value="Thêm vào giỏ hàng"><br>
-                <label for="">Chọn kích cỡ : </label>
-                <select name="" id="" class="select-size">
-                    <option value=""></option>
+                <label for="">Kích cỡ : </label>
+                <select name="kichco" id="" class="select-size">
                     <option value="36">36</option>
                     <option value="37">37</option>
                     <option value="38">38</option>
@@ -48,6 +47,20 @@
                     <option value="43">43</option>
                     <option value="44">44</option>
                     <option value="45">45</option>
+                </select>
+                <span class="spchitiet-gach">|</span>
+                <label for="">Số lượng : </label>
+                <select name="soluong" id="" class="select-size">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
                 </select>
             </form>
         </div>

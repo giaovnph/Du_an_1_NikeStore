@@ -1,26 +1,9 @@
 
-
-/* ===========Giỏ hàng============*/ 
-.all-gh{
-  font-family: Arial;
-    font-size: 16px;
-    color: black;
-}
-
- 
-/* ============Thanh toán============*/
-  .all-tt {
-    display: grid;
-    grid-template-columns: 65% 25% 1fr;
-    font-family: Arial;
-    font-size: 16px;
-    color: black;
-    margin-top: 105px;
+  .form-tt {
+    margin-top: 100px;
   }
   
-
-
-   .all-tt input {
+   .form-tt input {
     width: 437px;
     height: 60px;
     border: 1px solid #c7c7c7;
@@ -30,7 +13,7 @@
     padding: 0 20px;
   }
 
-  .all-tt input:focus {
+  .form-tt input:focus {
     color: black;
     font-weight: 400;
     font-size: 15px;
@@ -39,9 +22,10 @@
 
 /* ============FORM thanh toán============*/
 
-  .form-tt {
-    margin-left: 300px;
-
+  .form-tt form{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
   }
   .form-tt span{
     font-size: 20px;
@@ -84,16 +68,17 @@
     margin-right: 20px;
   }
 
-  .nut-tt button {
+  .nut-tt input {
     border-radius: 50px;
     width: 437px;
     height: 70px;
     background-color: #000000;
     color: #fff;
-    margin-top: 20px;
+    margin-top: 50px;
     font-size: 22px;
+    cursor: pointer;
   }
-  .nut-tt button:hover {
+  .nut-tt input:hover {
     background-color: #393939;
   }
 
@@ -103,7 +88,7 @@
 }
 .tomtat-tt{
   color: #8d8d8d;
-  font-size: 17px;
+  font-size: 16px;
   margin: 0px 3px;
 }
 
@@ -114,9 +99,12 @@
 }
 .gia-tt{
   float: right;
+  font-weight: bold;
+  color: rgb(80, 80, 80);
 }
 .thongtin-tt{
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top:20px ;
+  line-height:1.5;
 }

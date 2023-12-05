@@ -22,8 +22,7 @@
                     <?php
                         foreach($dsdh as $dh){
                             extract($dh);
-                            $suasp='index.php?act=suasp&id='.$id;
-                            $xoasp='index.php?act=xoasp&id='.$id;
+                            $suabill='index.php?act=suabill&id='.$dh['id'];
                             $kh=$dh['name'].
                             '<br>'.$dh['email'].
                             '<br>'.$dh['diachi'].
@@ -33,11 +32,11 @@
                             <tr>
                                 <td><input type="checkbox" name="" id=""></td>
                                 <td>DH'.$dh['id'].'</td>
-                                <td>'.$kh.'</td>
+                                <td style="text-align: left;">'.$kh.'</td>
                                 <td>'.$dh['tong'].'</td>
                                 <td>'.$ttdh.'</td>
                                 <td>'.$dh['ngaydathang'].'</td>
-                              
+                                <td><a href="'.$suabill.'"><input type="button" value="Cập nhật"></a></td>
                             </tr>
                             ';
                         }
@@ -45,10 +44,10 @@
                 </table>
             </div>
           <div class=" mb10">
-            <input type="button" value="Chọn All" />
-            <input type="button" value="Bỏ chọn All" />
-            <input type="button" value="Xóa mục đã chọn" />
-            <a href="index.php?act=addsp"><input type="button" value="Nhập thêm" /></a>
+            <!-- <input type="button" value="Chọn All" />
+            <input type="button" value="Bỏ chọn All" /> -->
+            <!-- <input type="button" value="Xóa mục đã chọn" />
+            <a href="index.php?act=addsp"><input type="button" value="Nhập thêm" /></a> -->
           </div>
         </div>
       </div>

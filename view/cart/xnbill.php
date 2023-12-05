@@ -1,6 +1,3 @@
-<? 
-include "model/cart.php";
-?>
 <div class="cart-content mb">
   <div class="boxtrai mr">
     <div class="mb">
@@ -34,10 +31,10 @@ include "model/cart.php";
             $email = $_SESSION['user']['email'];
             $sdt = $_SESSION['user']['sdt'];
           } else {
-            $user = "";
-            $diachi = "";
-            $email = "";
-            $sdt = "";
+            $user = $_POST['name'];
+            $diachi = $_POST['diachi'];
+            $email = $_POST['email'];
+            $sdt = $_POST['sdt'];
           }
           ?>
           <tr>
@@ -68,6 +65,7 @@ include "model/cart.php";
             <tr>
               <th>Hình</th>
               <th>Sản phẩm</th>
+              <th>Kích cỡ</th>
               <th>Đơn giá</th>
               <th>Số lượng</th>
               <th>Thành tiền</th>
@@ -78,6 +76,9 @@ include "model/cart.php";
           </table>
         </div>
       </div>
+      <div class="mb10 frmdsloai">
+                <a href="index.php?act=sanpham"><input type="button" value="TIẾP TỤC MUA HÀNG"></a>
+          </div> 
     </div>
   </div>
 </div>

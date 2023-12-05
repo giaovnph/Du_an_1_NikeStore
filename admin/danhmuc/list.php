@@ -33,8 +33,8 @@
                 </table>
             </div>
           <div class=" mb10">
-            <input type="button" value="Chọn All" />
-            <input type="button" value="Bỏ chọn All" />
+            <!-- <input type="button" value="Chọn All" />
+            <input type="button" value="Bỏ chọn All" /> -->
             <input type="button" value="Xóa mục đã chọn" />
             <a href="index.php?act=adddm"><input type="button" value="Nhập thêm" /></a>
           </div>

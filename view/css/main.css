@@ -75,7 +75,9 @@ a {
     font-weight: bold;
     margin-right: 9px;
 }
-
+.spchitiet-gach{
+margin: 0 20px;
+}
 .sign-exit {
     font-weight: bold;
     display: block;
@@ -685,4 +687,6 @@ input[type="checkbox"]:checked {
 .select-size {
     border: none;
     width: 50px;
+    font-weight: bold;
+    font-size: 18px;
 }

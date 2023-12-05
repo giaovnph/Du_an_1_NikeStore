@@ -7,8 +7,8 @@
         foreach($_SESSION['mycart'] as $sp){
             extract($sp);
             $i=0;
-            $hinhpath=$img_path.$sp['2'];
-            $tong+=$sp['5'];
+            $hinhpath=$img_path.$sp['3'];
+            $tong+=$sp['6'];
             $xoasp = '<a href="index.php?act=delcart&idcart=' . $i . '"><button style="border:none"><i class="fas fa-trash-alt"></i></button></a>';
             if(is_file($hinhpath)){
               $hinh='<img src="'.$hinhpath.'" alt="" height="80">';
@@ -21,21 +21,23 @@
                     <tr>
                         <td>'.$hinh.'</td>
                         <td>'.$sp['1'].'</td>
-                        <td>'.$sp['3'].'</td>
+                        <td>'.$sp['2'].'</td>
                         <td>'.$sp['4'].'</td>
                         <td>'.$sp['5'].'</td>
+                        <td>'.$sp['6'].'</td>
                         <td>'.$xoasp.'</td>
                     </tr>
                     ';
             }else{
                 echo '
-            <tr>
-                <td>'.$hinh.'</td>
-                <td>'.$sp['1'].'</td>
-                <td>'.$sp['3'].'</td>
-                <td>'.$sp['4'].'</td>
-                <td>'.$sp['5'].'</td>
-            </tr>
+                    <tr>
+                        <td>'.$hinh.'</td>
+                        <td>'.$sp['1'].'</td>
+                        <td>'.$sp['2'].'</td>
+                        <td>'.$sp['4'].'</td>
+                        <td>'.$sp['5'].'</td>
+                        <td>'.$sp['6'].'</td>
+                    </tr>
             ';
             }
           $i+=1;
@@ -43,14 +45,14 @@
         if($del==1){
             echo '
                 <tr>
-                <td colspan="4" style="text-align: left;">Tổng đơn hàng</td>
+                <td colspan="5" style="text-align: left;">Tổng đơn hàng</td>
                 <td>'.$tong.'</td>
                 <td></td>
                 </tr>';
         }else{
             echo '
                 <tr>
-                <td colspan="4" style="text-align: left;">Tổng đơn hàng</td>
+                <td colspan="5" style="text-align: left;">Tổng đơn hàng</td>
                 <td>'.$tong.'</td>
                 </tr>';
         }
@@ -74,6 +76,7 @@
             <tr>
                 <td>'.$hinh.'</td>
                 <td>'.$sp['name'].'</td>
+                <td>'.$sp['kichco'].'</td>
                 <td>'.$sp['gia'].'</td>
                 <td>'.$sp['soluong'].'</td>
                 <td>'.$sp['thanhtien'].'</td>
@@ -83,17 +86,51 @@
         }
             echo '
                 <tr>
-                <td colspan="4" style="text-align: left;">Tổng đơn hàng</td>
+                <td colspan="5" style="text-align: left;">Tổng đơn hàng</td>
+                <td>'.$tong.'</td>
+                </tr>';
+
+    }
+    function billchitiet_ad($billct){
+        global $img_path;
+        $tong=0;
+        foreach($billct as $sp){
+            extract($sp);
+            $i=0;
+            $hinhpath="./uploads/".$sp['img'];
+            $tong+=$sp['thanhtien'];
+            if(is_file($hinhpath)){
+              $hinh='<img src="'.$hinhpath.'" alt="" height="80">';
+            }
+            else{
+              $hinh="no";
+            }
+                echo '
+            <tr>
+                <td>'.$hinh.'</td>
+                <td>'.$sp['name'].'</td>
+                <td>'.$sp['kichco'].'</td>
+                <td>'.$sp['gia'].'</td>
+                <td>'.$sp['soluong'].'</td>
+                <td>'.$sp['thanhtien'].'</td>
+            </tr>
+            ';
+          $i+=1;
+        }
+            echo '
+                <tr>
+                <td colspan="5" style="text-align: left;">Tổng đơn hàng</td>
                 <td>'.$tong.'</td>
                 </tr>';
 
     }
 
+
     function tongdonhang(){
         $tong=0;
         foreach($_SESSION['mycart'] as $sp){
             extract($sp);
-            $tong+=$sp['5'];
+            $tong+=$sp['6'];
             }
         return $tong;
     }
@@ -101,8 +138,8 @@
         $sql="insert into bill(iduser, name, email, diachi, sdt, pttt, ngaydathang, tong) values ('$iduser','$name', '$email', '$diachi', '$sdt', '$pttt', '$ngaydathang', '$tong')";
         return pdo_execute_return($sql);
     }
-    function insert_cart($iduser, $idsp, $img, $name, $gia, $soluong, $thanhtien, $idbill){
-        $sql="insert into cart(iduser, idsp, img, name, gia, soluong, thanhtien, idbill) values ('$iduser', '$idsp', '$img', '$name', '$gia', '$soluong', '$thanhtien', '$idbill')";
+    function insert_cart($iduser, $idsp, $img, $name,$kichco, $gia, $soluong, $thanhtien, $idbill){
+        $sql="insert into cart(iduser, idsp, img, name, kichco, gia, soluong, thanhtien, idbill) values ('$iduser', '$idsp', '$img', '$name', '$kichco', '$gia', '$soluong', '$thanhtien', '$idbill')";
         pdo_execute($sql);
     }
 
@@ -164,5 +201,9 @@
         }
         return $tt;
     }
-
+    function update_bill($trangthai,$id){
+        $sql = "UPDATE bill SET trangthai = $trangthai WHERE id = $id";
+        pdo_execute($sql);
+    }
 ?>
+

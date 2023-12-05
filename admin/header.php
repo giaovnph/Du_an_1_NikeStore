@@ -6,7 +6,7 @@
     <title>Admin</title>
     <!-- CSS của ứng dụng -->
     <link href="assets\css\app.min.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css ">
 
 </head>
 
@@ -19,12 +19,12 @@
                 <a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
                 <div class="thoat"><a href="http://localhost/Du_an_1_NikeStore/index.php?act=thoat">Thoát</a> </div>
             </div>
-            <div class="ex ex1">
+            <!-- <div class="ex ex1">
                 <a href=""><i id="adm" class="fa-solid fa-user"></i></a>
                 <div class="thoat"><a href=""> Admin</a> </div>
-            </div>
-            
-         </div>
+            </div> -->
+
+        </div>
 
         <!-- Thanh bên trái -->
         <div class="mnd">
@@ -35,7 +35,7 @@
             </div>
 
             <ul class="menu" id="side-menu">
-                
+
                 <li class="chu-lon">
                     <a href="index.php">
                         <p><i id="ic" class="fa-solid fa-house" style="font-size: 13px;"></i>TRANG CHỦ </p>
@@ -45,8 +45,8 @@
                 <li class="chu-lon">
 
                     <a href="javascript: void(0);">
-                        <p><i style="font-size: 13px;" id="ic" class="fa-solid fa-shop"></i> SẢN PHẨM  <i id="angne" class="fa-solid fa-angle-right"></i></i></p> 
-                        
+                        <p><i style="font-size: 13px;" id="ic" class="fa-solid fa-shop"></i> SẢN PHẨM <i id="angne" class="fa-solid fa-angle-right"></i></i></p>
+
                     </a>
                     <ul class="chu-be" aria-expanded="false">
                         <li>
@@ -73,7 +73,7 @@
                 <li class="chu-lon">
 
                     <a href="javascript: void(0);">
-                        <p><i style="font-size: 13px;" id="ic" class="fa-solid fa-cart-shopping"></i> GIỎ HÀNG <i id="angne" class="fa-solid fa-angle-right"></i></p>
+                        <p><i style="font-size: 13px;" id="ic" class="fa-solid fa-cart-shopping"></i> ĐƠN HÀNG <i id="angne" class="fa-solid fa-angle-right"></i></p>
                     </a>
                     <ul class="chu-be" aria-expanded="false">
                         <li>
@@ -84,7 +84,7 @@
                 <li class="chu-lon">
 
                     <a href="javascript: void(0);">
-                        <p><i style="font-size: 13px;"  id="ic"class="fa-solid fa-comments"></i> BÌNH LUẬN <i id="angne" class="fa-solid fa-angle-right"></i></p>
+                        <p><i style="font-size: 13px;" id="ic" class="fa-solid fa-comments"></i> BÌNH LUẬN <i id="angne" class="fa-solid fa-angle-right"></i></p>
                     </a>
                     <ul class="chu-be" aria-expanded="false">
                         <li>
