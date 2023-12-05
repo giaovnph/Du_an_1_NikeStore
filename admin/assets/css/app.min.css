@@ -2,7 +2,7 @@
 body {
     overflow-x: hidden;
     margin: 0;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
 }
@@ -11,7 +11,7 @@ body {
 
 .mnd {
     background-color: #000000;
-    width: 230px;
+    width: 270px;
     bottom: 0;
     padding: 0;
     position: fixed;
@@ -24,7 +24,7 @@ body {
 .logo img {
     width: 100px;
     margin-top: 50px;
-    margin-left: 69px;
+    margin-left: 85px;
     height: 50px;
 }
 
@@ -71,14 +71,14 @@ body {
     color: #ffffff;
     text-decoration: none;
     display: block;
-    padding:10px 30px;
+    padding:10px 50px;
 }
 
 .menu p {
     line-height: 5px;
 }
 .chu-lon >a{
-    font-size: 13px;
+    font-size: 14px;
 } 
 
 .chu-be li a {
@@ -119,25 +119,26 @@ body {
 #angne{
 
     float: right;
-    margin-right: -10px;
+    margin-right: -25px;
 }
 
 #ic{
-    margin-right: 5px;
+    margin-right: 10px;
     color: #5f5f5f;
     
 }
 /*============MENU NGANG==========*/
 
 .mnn {
-    background-color: #000000;
     padding: 26px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #343434;
 }
 .mnn a {
     font-weight: bold;
-    color: #fff;
+    color: #000000;
     text-decoration: none ;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .ex{
@@ -161,7 +162,8 @@ i{
 /*---------- CSS phần bảng trong admin -------------*/
 .row {
     width: 100%;
-    padding-left: 230px;
+    padding-left: 279px;
+    padding-right: 10px;
     box-sizing: border-box;
 }
 .formtaikhoan input[type="text"],
@@ -215,8 +217,7 @@ i{
     padding: 20px 0px
 }
 .frmcontent div {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 80px;
 }
 .frmdsloai table {
     width: 100%;

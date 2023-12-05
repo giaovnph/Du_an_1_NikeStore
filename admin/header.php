@@ -14,7 +14,9 @@
     <!-- Bắt đầu trang -->
     <div class="all">
         <div class="mnn">
-
+            <div>
+                <span style="color: black;float: left;margin-left: 280px;font-size: 20px;margin-top: -12px;font-weight: bold;">ADMIN</span>
+            </div>
             <div class="ex">
                 <a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
                 <div class="thoat"><a href="http://localhost/Du_an_1_NikeStore/index.php?act=thoat">Thoát</a> </div>
