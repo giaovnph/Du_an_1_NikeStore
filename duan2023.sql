@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 30, 2023 at 04:48 AM
+-- Generation Time: Dec 05, 2023 at 03:16 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -66,6 +66,7 @@ CREATE TABLE `cart` (
   `idsp` int(10) NOT NULL,
   `img` varchar(255) NOT NULL,
   `name` varchar(255) NOT NULL,
+  `kichco` int(10) NOT NULL,
   `gia` int(10) NOT NULL,
   `soluong` int(3) NOT NULL,
   `thanhtien` int(10) NOT NULL,
@@ -129,7 +130,7 @@ INSERT INTO `sanpham` (`id`, `name`, `gia`, `img`, `mota`, `luotxem`, `danhmuc`)
 (42, 'Nike Lady Killer', 88, 'product_13.webp', 'Mẫu giày mới nhất của nhãn hiệu Nike năm 2023. Kiểu dáng thể thao kết hợp phong cách đường phố. Sự lựa chọn hoàn hảo cho các bạn trẻ năng động', 0, 17),
 (43, 'Nike Men L1', 90, 'product_14.webp', 'Mẫu giày mới nhất của nhãn hiệu Nike năm 2023. Kiểu dáng thể thao kết hợp phong cách đường phố. Sự lựa chọn hoàn hảo cho các bạn trẻ năng động', 0, 16),
 (44, 'Nike Raper 2C', 45, 'product_15.webp', 'Mẫu giày mới nhất của nhãn hiệu Nike năm 2023. Kiểu dáng thể thao kết hợp phong cách đường phố. Sự lựa chọn hoàn hảo cho các bạn trẻ năng động', 0, 17),
-(45, 'Nike Women 6S', 34, 'product_16.webp', 'Mẫu giày mới nhất của nhãn hiệu Nike năm 2023. Kiểu dáng thể thao kết hợp phong cách đường phố. Sự lựa chọn hoàn hảo cho các bạn trẻ năng động', 0, 17);
+(45, 'Nike Women 6S', 35, 'product_16.webp', 'Mẫu giày mới nhất của nhãn hiệu Nike năm 2023. Kiểu dáng thể thao kết hợp phong cách đường phố. Sự lựa chọn hoàn hảo cho các bạn trẻ năng động', 0, 17);
 
 -- --------------------------------------------------------
 
@@ -152,7 +153,8 @@ CREATE TABLE `taikhoan` (
 --
 
 INSERT INTO `taikhoan` (`id`, `user`, `pass`, `email`, `diachi`, `sdt`, `role`) VALUES
-(1, 'admin', '123456', 'truongtk@gmail.com', '88 Vĩnh Phúc', '126789', 1);
+(1, 'admin', '123456', 'truongtk@gmail.com', '88 Vĩnh Phúc', '126789', 1),
+(28, 'chien', '123', 'truongtkph40588@fpt.edu.vn', 'vinh phuc', '092133432423', 0);
 
 --
 -- Indexes for dumped tables
@@ -203,7 +205,7 @@ ALTER TABLE `taikhoan`
 -- AUTO_INCREMENT for table `bill`
 --
 ALTER TABLE `bill`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=94;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=131;
 
 --
 -- AUTO_INCREMENT for table `binhluan`
@@ -215,7 +217,7 @@ ALTER TABLE `binhluan`
 -- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=124;
 
 --
 -- AUTO_INCREMENT for table `danhmuc`
@@ -227,13 +229,13 @@ ALTER TABLE `danhmuc`
 -- AUTO_INCREMENT for table `sanpham`
 --
 ALTER TABLE `sanpham`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 
 --
 -- AUTO_INCREMENT for table `taikhoan`
 --
 ALTER TABLE `taikhoan`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- Constraints for dumped tables
