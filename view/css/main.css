@@ -145,6 +145,7 @@ display: block;
     display: flex;
     list-style: none;
     justify-content: center;
+    margin-left: 196px;
 }
 
 .header-menu li {
@@ -161,6 +162,35 @@ display: block;
 .header-menu li a:hover {
     color: var(--color-thirdy);
 }
+
+
+
+.header-bot-1{
+    width: 100%;
+    text-align: center;
+    background-color: #f3f3f3;
+    height: 75px;
+    padding-top: 10px;
+    margin-bottom: 30px;
+
+}
+.header-bot-1 span{
+    font-size: 19px;
+}
+.header-bot-1 p{
+    font-size: 13px;
+    padding-top: 5px ;
+    display: block;
+}
+.header-bot-1 .a{
+    padding: 5px 0;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000000;
+}
+
+
 
 /*------------icon header--------------*/
 .header-icon {

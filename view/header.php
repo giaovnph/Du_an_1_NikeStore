@@ -16,35 +16,51 @@
     <!-- Menu Top -->
     <header class="nikestore-header">
         <div class="header-top">
+            <div>
+                <img src="./view/images/Nike_logo.png" style="margin-left: -1291px;width: 35px; height: auto;margin-top: -3px;">
+            </div>
             <?php
             if (isset($_SESSION['user'])) {
                 extract($_SESSION['user']);
             ?>
-                        <div class="header-top__box-item">
-                            <a class="header-top__box-icon" href=""><h4 class=" sign-btn" >Hi, <?= $user ?><i id="sign-icon" class="fa-regular fa-user"></i></h4></a>
-                            <ul>
-                            <?php if($role==0){?>
-                            <a href="index.php?act=edittk"><li>Thông tin cá nhân</li></a>
-                            <?php } ?>
-                            <a href="index.php?act=mybill"><li>Đơn hàng của tôi</li></a>
-                            <?php if($role==1){?>
-                            <a href="admin/index.php"><li>Trang quản trị</li></a>
-                            <?php } ?>
-                            <a class="sign-exit" href="index.php?act=thoat"><li>Đăng xuất<i id="sign-icon" class="fa-solid fa-arrow-right-from-bracket"></i></li></a>
-                            </ul>
-                        </div>
+                <div class="header-top__box-item">
+                    <a class="header-top__box-icon" href="">
+                        <h4 class=" sign-btn">Hi, <?= $user ?><i id="sign-icon" class="fa-regular fa-user"></i></h4>
+                    </a>
+                    <ul>
+                        <?php if ($role == 0) { ?>
+                            <a href="index.php?act=edittk">
+                                <li>Hồ sơ của bạn</li>
+                            </a>
+                        <?php } ?>
+                        <a href="index.php?act=mybill">
+                            <li>Đơn hàng của tôi</li>
+                        </a>
+                        <?php if ($role == 1) { ?>
+                            <a href="admin/index.php">
+                                <li>Trang quản trị</li>
+                            </a>
+                        <?php } ?>
+                        <a class="sign-exit" href="index.php?act=thoat">
+                            <li>Đăng xuất<i id="sign-icon" class="fa-solid fa-arrow-right-from-bracket"></i></li>
+                        </a>
+                    </ul>
+                </div>
                 <!-- <span class="sign-gach">|</span> -->
 
             <?php
             } else {
             ?>
                 <div class="header-top__box-item">
-                    <a href="index.php?act=dangnhap" class="header-top__box-icon" href=""><h4 class=" sign-btn" >Đăng nhập<i id="sign-icon" class="fa-regular fa-user"></i></h4></a>
+                    <a href="index.php?act=dangnhap" class="header-top__box-icon" href="">
+                        <h4 class=" sign-btn">Đăng nhập<i id="sign-icon" class="fa-regular fa-user"></i></h4>
+                    </a>
                 </div>
             <?php
             }
             ?>
         </div>
+        
         <div class="header-bot">
             <div class="logo-nike"><a href="index.php"><img src="view/images/Logo.png" alt=""></a></div>
             <ul class="header-menu">
@@ -73,4 +89,5 @@
                 </div>
             </div>
         </div>
+       
     </header>

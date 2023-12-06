@@ -1,5 +1,10 @@
 
    <!-- Slide banner -->
+   <div class="header-bot-1">
+            <span >Di chuyển, mua sắm, tùy chỉnh và ăn mừng cùng chúng tôi.</span>
+            <p>Cho dù hôm nay bạn muốn làm gì thì điều đó vẫn tốt hơn khi là Thành viên.</p>
+            <p class="a">Chúng tôi luôn đồng hành cùng bạn</p>
+        </div>
    <div class="container">
        <div class="slide-banner">
            <div class="mySlides fade">
