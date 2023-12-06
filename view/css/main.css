@@ -32,6 +32,14 @@ a {
     width: 100px;
 }
 
+.logo-header img {
+
+    margin-left: -1291px;
+    width: 35px;
+    height: auto;
+    margin-top: -3px;
+}
+
 .nikestore-header {
     display: flex;
     flex-direction: column;
@@ -75,9 +83,10 @@ a {
     font-weight: bold;
     margin-right: 9px;
 } */
-.spchitiet-gach{
-margin: 0 20px;
+.spchitiet-gach {
+    margin: 0 20px;
 }
+
 .sign-exit {
     font-weight: bold;
     display: block;
@@ -94,20 +103,24 @@ margin: 0 20px;
 .header-top__box-icon {
     cursor: pointer;
 }
-.header-top__box-item{
+
+.header-top__box-item {
     padding: 15px 0;
     display: flex;
     align-items: center;
     position: relative;
     margin-top: -10px;
 }
-.header-top__box-item ul{
+
+.header-top__box-item ul {
     display: none;
 }
-.header-top__box-item:hover ul{
-display: block;
+
+.header-top__box-item:hover ul {
+    display: block;
 }
-.header-top__box-item ul{
+
+.header-top__box-item ul {
     position: absolute;
     right: 20px;
     top: 30px;
@@ -115,7 +128,8 @@ display: block;
     z-index: 1;
 
 }
-.header-top__box-item li{
+
+.header-top__box-item li {
     width: 180px;
     list-style: none;
     padding-left: 25px;
@@ -129,9 +143,9 @@ display: block;
 }
 
 
-.header-top__box-item li:hover{
+.header-top__box-item li:hover {
     color: #000000;
-}  
+}
 
 .header-bot {
     width: 90%;
@@ -165,7 +179,7 @@ display: block;
 
 
 
-.header-bot-1{
+.header-bot-1 {
     width: 100%;
     text-align: center;
     background-color: #f3f3f3;
@@ -174,15 +188,18 @@ display: block;
     margin-bottom: 30px;
 
 }
-.header-bot-1 span{
+
+.header-bot-1 span {
     font-size: 19px;
 }
-.header-bot-1 p{
+
+.header-bot-1 p {
     font-size: 13px;
-    padding-top: 5px ;
+    padding-top: 5px;
     display: block;
 }
-.header-bot-1 .a{
+
+.header-bot-1 .a {
     padding: 5px 0;
     display: block;
     font-size: 12px;
@@ -540,12 +557,12 @@ display: block;
 /*---------- Trang sản phẩm --------------*/
 .product-col {
     display: grid;
-    grid-template-columns:15% 3% 85%;
+    grid-template-columns: 15% 3% 85%;
     width: 90%;
     margin: auto;
     padding-bottom: 100px;
     padding-top: 40px;
-    
+
 }
 
 .product-col-right {
@@ -595,20 +612,24 @@ display: block;
     list-style: none;
     color: #111111;
     margin-left: -200px;
-    max-height: 530px; /* Chiều cao tối đa của vùng chứa */
-    overflow-y: auto; /* Hiển thị thanh kéo khi nội dung vượt quá max-height */
-    scrollbar-width: thin; /* Cho Firefox */
-    scrollbar-color: gray #f1f1f1; /* Màu nền và màu của thanh kéo */
+    max-height: 530px;
+    /* Chiều cao tối đa của vùng chứa */
+    overflow-y: auto;
+    /* Hiển thị thanh kéo khi nội dung vượt quá max-height */
+    scrollbar-width: thin;
+    /* Cho Firefox */
+    scrollbar-color: gray #f1f1f1;
+    /* Màu nền và màu của thanh kéo */
 }
 
 /*===============thanh kéo============== */
 ::-webkit-scrollbar {
-    width: 8px; 
+    width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: gray;
-    border-radius: 10px; 
+    border-radius: 10px;
 }
 
 .mnd a {
@@ -618,20 +639,20 @@ display: block;
     color: #111111;
 }
 
-.mnd a:active{
+.mnd a:active {
     color: #111111;
 }
 
-.mnd a:hover{
+.mnd a:hover {
     color: #848484;
 }
 
-.mnd input{
+.mnd input {
     margin-top: 10px;
     font-size: 16px;
 }
 
-.product-col-left hr{
+.product-col-left hr {
     width: 210px;
     color: #a5a5a5;
     margin: 30px 0;
@@ -651,6 +672,7 @@ display: block;
     border: 1px solid black;
 
 }
+
 /* Thiết lập giao diện checkbox */
 input[type="checkbox"] {
     appearance: none;
@@ -664,7 +686,7 @@ input[type="checkbox"] {
 
 /* Thiết lập giao diện checkbox khi được chọn */
 input[type="checkbox"]:checked {
-    background-color: #000000; 
+    background-color: #000000;
 }
 
 

@@ -16,13 +16,16 @@
     <!-- Menu Top -->
     <header class="nikestore-header">
         <div class="header-top">
-            <div>
-                <img src="./view/images/Nike_logo.png" style="margin-left: -1291px;width: 35px; height: auto;margin-top: -3px;">
-            </div>
+
             <?php
             if (isset($_SESSION['user'])) {
                 extract($_SESSION['user']);
             ?>
+
+            
+                <div class="logo-header">
+                    <img src="./view/images/Nike_logo.png">
+                </div>
                 <div class="header-top__box-item">
                     <a class="header-top__box-icon" href="">
                         <h4 class=" sign-btn">Hi, <?= $user ?><i id="sign-icon" class="fa-regular fa-user"></i></h4>
@@ -60,7 +63,7 @@
             }
             ?>
         </div>
-        
+
         <div class="header-bot">
             <div class="logo-nike"><a href="index.php"><img src="view/images/Logo.png" alt=""></a></div>
             <ul class="header-menu">
@@ -89,5 +92,5 @@
                 </div>
             </div>
         </div>
-       
+
     </header>
