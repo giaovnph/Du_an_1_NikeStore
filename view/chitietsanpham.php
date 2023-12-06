@@ -66,7 +66,7 @@
         </div>
     </div>
 </div>
-    <div class="row mb">
+    <!-- <div class="row mb">
       <div class="boxtitle">BÌNH LUẬN</div>
             <div class="row boxcontent">
                 <table>
@@ -87,7 +87,7 @@
                 </form>
             </div>
         </div>
-    </div>      
+    </div>       -->
 <h2 style="margin: 0 5% 100px 5% ;">CÓ THỂ BẠN QUAN TÂM</h2>
 <div class="product-col-right" style="margin: 0 5%;">
     <?php
