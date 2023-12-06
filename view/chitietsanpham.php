@@ -66,6 +66,28 @@
         </div>
     </div>
 </div>
+    <div class="row mb">
+      <div class="boxtitle">BÌNH LUẬN</div>
+            <div class="row boxcontent">
+                <table>
+                    <?php foreach($binhluan as $value): ?>
+                    <tr>
+                        <td><?php echo $value['user']?></td>
+                        <td><?php echo date("d/m/y", strtotime($value['ngaybinhluan'])) ?></td>
+                        <td><?php echo $value['noidung']?></td>
+                    </tr>
+                    <?php endforeach; ?>
+                </table>
+            </div>
+            <div class="box_search">
+                <form action="index.php?act=sanphamct&idsp=<?=$id?>" method="POST">
+                    <input type="hidden" name="idsp" value="<?=$id?>">
+                    <input type="text" name="noidung" required>
+                    <input type="submit" name="guibinhluan" value="Gửi bình luận">
+                </form>
+            </div>
+        </div>
+    </div>      
 <h2 style="margin: 0 5% 100px 5% ;">CÓ THỂ BẠN QUAN TÂM</h2>
 <div class="product-col-right" style="margin: 0 5%;">
     <?php
