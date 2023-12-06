@@ -26,7 +26,9 @@ a {
     background-color: var(--color-thirdy);
     color: var(--color-secondary);
 }
-
+tr,td,th{
+    white-space: nowrap;
+}
 /*----------------------Phần đầu trang----------------------*/
 
 .header-top-logo img {
