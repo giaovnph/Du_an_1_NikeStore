@@ -47,7 +47,7 @@ a {
     background-color: #f3f3f3;
     padding: 10px 5%;
     box-sizing: border-box;
-    height: 39px;
+    height: 30px;
 }
 
 .sign-btn {
@@ -99,6 +99,7 @@ margin: 0 20px;
     display: flex;
     align-items: center;
     position: relative;
+    margin-top: -10px;
 }
 .header-top__box-item ul{
     display: none;
@@ -108,21 +109,28 @@ display: block;
 }
 .header-top__box-item ul{
     position: absolute;
-    right: 0px;
-    top: 29px;
-    background-color: #f3f3f3;
+    right: 20px;
+    top: 30px;
+    background-color: #fff;
     z-index: 1;
+
 }
 .header-top__box-item li{
-    width: 150px;
+    width: 180px;
     list-style: none;
-    padding: 10px 20px;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    /* padding: 10px 20px; */
     font-weight: bold;
-    font-size: 12px;
+    font-size: 14px;
     color: var(--color-primary);
+    color: #9a9a9a;
 }
+
+
 .header-top__box-item li:hover{
-background-color: var(--color-thirdy);
+    color: #000000;
 }  
 
 .header-bot {
