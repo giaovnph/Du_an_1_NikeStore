@@ -19,7 +19,7 @@
             </div>
             <div class="ex">
                 <a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
-                <div class="thoat"><a href="http://localhost/Du_an_1_NikeStore/index.php?act=thoat">Thoát</a> </div>
+                <div class="thoat"><a href="index.php?act=thoat">Thoát</a> </div>
             </div>
             <!-- <div class="ex ex1">
                 <a href=""><i id="adm" class="fa-solid fa-user"></i></a>

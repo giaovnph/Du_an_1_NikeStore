@@ -1,4 +1,9 @@
 <?php
+session_start();
+if(!isset($_SESSION['user'])){
+    echo '<script>window.location.href = "http://localhost/PHP/Du_an_1_NikeStore/index.php?act=dangnhap";</script>';
+    die;
+}
 include "../model/pdo.php";
 include "../model/danhmuc.php";
 include "../model/sanpham.php";
@@ -154,6 +159,9 @@ if (isset($_GET['act'])) {
             }
             $dsdh = loadall_bill("", 0);
             include "donhang/list.php";
+            echo '<script>
+            alert("Cập nhật thành công");
+                 </script>';
             break;
         case 'thongke':
             $dstk = loadallthongke();
@@ -172,8 +180,10 @@ if (isset($_GET['act'])) {
             $listBinhLuan = loadall_binhluan(0);
             include "binhluan/list.php";
             break;
-
-
+            case 'thoat':
+                session_unset();
+                echo '<script>window.location.href = "http://localhost/PHP/Du_an_1_NikeStore/index.php?act=dangnhap";</script>';
+                break;
 
             //default
         default:

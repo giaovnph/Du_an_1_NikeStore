@@ -36,8 +36,8 @@
         </div>
       </div>
       <div class="bieudo">
-        <div class=" frmtitle mb">
-          <h1>THỐNG KÊ DẠNG BIỂU ĐỒ</h1>
+        <div class="mb">
+          <h2>THỐNG KÊ DẠNG BIỂU ĐỒ</h2>
         </div>
         <div class=" frmcontent">
         <div class=" mb10">

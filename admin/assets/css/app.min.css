@@ -166,6 +166,10 @@ i{
     padding-right: 10px;
     box-sizing: border-box;
 }
+.w60{
+    width: 60%;
+    margin: auto;
+}
 .formtaikhoan input[type="text"],
 .formtaikhoan input[type="password"],
 .formtaikhoan input[type="email"],
@@ -210,15 +214,13 @@ i{
     border-radius: 5px;
     padding: 0px 20px;
     margin-bottom: 20px;
-    text-align: center;
+
 }
 
 .frmcontent {
-    padding: 20px 0px
+    padding-bottom:10px;
 }
-.frmcontent div {
-    margin-left: 80px;
-}
+
 .frmdsloai table {
     width: 100%;
     border-collapse: collapse;
@@ -238,10 +240,13 @@ i{
 .row table{
     text-align: center;
 }
-.bieudo{
-    margin-left: 230px;
-
+.bieudo{    
+    margin:0 10px 0 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 .search-form input[type="text"]{
     padding: 10px 20px;
     border: none;

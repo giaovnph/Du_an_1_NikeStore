@@ -40,7 +40,7 @@
           <div class=" mb10">
             <!-- <input type="button" name="select-all" value="Chọn All" />
             <input type="button" name="deselectAll" value="Bỏ chọn All" /> -->
-            <input type="button" value="Xóa mục đã chọn" />
+            <!-- <input type="button" value="Xóa mục đã chọn" /> -->
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 <div class="product-col">
-    <div class="title-mnd">Giày thể thao</div>
+    <div class="title-mnd"></div>
 
     <div class="product-col-left">
         <div class="mnd">

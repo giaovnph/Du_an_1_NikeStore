@@ -20,27 +20,26 @@
             if (isset($_SESSION['user'])) {
                 extract($_SESSION['user']);
             ?>
-                <?php if ($role == 1) { ?>
-                    <div class="header-top__box-icon">
-                        <a href="admin/index.php">
-                        <?php } ?>
-                        <div class="header-top__box-icon">
-                            <h4 class=" sign-btn">Hi, <?= $user ?><i id="sign-icon" class="fa-regular fa-user"></i></h4>
+                        <div class="header-top__box-item">
+                            <a class="header-top__box-icon" href=""><h4 class=" sign-btn" >Hi, <?= $user ?><i id="sign-icon" class="fa-regular fa-user"></i></h4></a>
+                            <ul>
+                            <?php if($role==0){?>
+                            <a href="index.php?act=edittk"><li>Thông tin cá nhân</li></a>
+                            <?php } ?>
+                            <a href="index.php?act=mybill"><li>Đơn hàng của tôi</li></a>
+                            <?php if($role==1){?>
+                            <a href="admin/index.php"><li>Trang quản trị</li></a>
+                            <?php } ?>
+                            <a class="sign-exit" href="index.php?act=thoat"><li>Đăng xuất<i id="sign-icon" class="fa-solid fa-arrow-right-from-bracket"></i></li></a>
+                            </ul>
                         </div>
-                        <?php if ($role == 1) { ?>
-                        </a>
-                    </div>
-                <?php } ?>
-                <span class="sign-gach">|</span>
-                <div class="header-top__box-icon"><a class="sign-exit" href="index.php?act=thoat">Đăng xuất<i id="sign-icon" class="fa-solid fa-arrow-right-from-bracket"></i></a></div>
+                <!-- <span class="sign-gach">|</span> -->
 
             <?php
             } else {
             ?>
-                <div class="header-top__box-icon">
-                    <a href="index.php?act=dangnhap">
-                        <span class="sign-btn">Đăng nhập <i id="sign-icon" class="fa-regular fa-user"></i></span>
-                    </a>
+                <div class="header-top__box-item">
+                    <a href="index.php?act=dangnhap" class="header-top__box-icon" href=""><h4 class=" sign-btn" >Đăng nhập<i id="sign-icon" class="fa-regular fa-user"></i></h4></a>
                 </div>
             <?php
             }

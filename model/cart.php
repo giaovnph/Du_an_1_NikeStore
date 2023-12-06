@@ -205,5 +205,9 @@
         $sql = "UPDATE bill SET trangthai = $trangthai WHERE id = $id";
         pdo_execute($sql);
     }
+    function huy_bill($id){
+        $sql = "DELETE FROM bill WHERE id = $id";
+        pdo_execute($sql);
+    }
 ?>
 

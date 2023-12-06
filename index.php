@@ -11,7 +11,6 @@ $listmenu = loadall_danhmuc();
 include "view/header.php";
 if (!isset($_SESSION['mycart'])) $_SESSION['mycart'] = [];
 $top15sp = loadall_sanpham_top15();
-
 if (isset($_GET['act']) && ($_GET['act'] != "")) {
     $act = $_GET['act'];
     switch ($act) {
@@ -21,8 +20,12 @@ if (isset($_GET['act']) && ($_GET['act'] != "")) {
                 $user = kttaikhoan($_POST['user'], $_POST['pass']);
                 if (is_array($user)) {
                     $_SESSION['user'] = $user;
-                    header('Location: index.php');
-                    //$thongbao="Đăng nhập thành công.";
+                    if ($_SESSION['user']['user'] == 'admin' && $_SESSION['user']['pass'] == '123456') {
+                        header('Location: admin/index.php');
+                    } else {
+                        header('Location: index.php');
+                        //$thongbao="Đăng nhập thành công.";
+                    }
                 } else {
                     $thongbao = "Tài khoản hoặc mật khẩu sai, vui lòng thử lại";
                 }
@@ -49,7 +52,9 @@ if (isset($_GET['act']) && ($_GET['act'] != "")) {
                 $sdt = $_POST['sdt'];
                 update_taikhoan($id, $email, $user, $pass, $diachi, $sdt);
                 $_SESSION['user'] = kttaikhoan($user, $pass);
-                header('Location: index.php?act=edittk');
+                echo '<script>
+                            alert("Cập nhật thành công");
+                        </script>';
             }
             include "view/taikhoan/edittk.php";
             break;
@@ -71,8 +76,12 @@ if (isset($_GET['act']) && ($_GET['act'] != "")) {
             break;
 
         case 'sanphamct':
-            if (isset($_POST['guibinhluan'])) {
-                insert_binhluan($_POST['idsp'], $_POST['noidung']);
+            if (isset($_POST['guibinhluan'])&&isset($_SESSION['user'])) {
+                insert_binhluan($_POST['idsp'], $_POST['noidung'], $_SESSION['user']['id']);
+            }else{
+                echo '<script>
+                alert("Bạn chỉ có thể để lại bình luận sau khi đăng nhập !");
+             </script>';
             }
             if (isset($_GET['idsp']) && ($_GET['idsp'] > 0)) {
                 $id = $_GET['idsp'];
@@ -153,7 +162,10 @@ if (isset($_GET['act']) && ($_GET['act'] != "")) {
                 if ($tongdonhang > 0) {
                     $idbill = insertbill($iduser, $user, $email, $diachi, $sdt, $pttt, $ngaydathang, $tongdonhang);
                 } else {
-                    header('Location: index.php?act=sanpham');
+                    echo '<script>
+                            alert("Bạn chưa chọn mua sản phẩm nào !");
+                            window.location.href = "http://localhost/PHP/Du_an_1_NikeStore/index.php?act=sanpham";
+                        </script>';
                 }
                 foreach ($_SESSION['mycart'] as $cart) {
                     insert_cart($iduser, $cart[0], $cart[3], $cart[1], $cart[2], $cart[4], $cart[5], $cart[6], $idbill);
@@ -164,6 +176,9 @@ if (isset($_GET['act']) && ($_GET['act'] != "")) {
             $bill = loadone_bill($idbill);
             $billct = loadone_cart($idbill);
             include "view/cart/xnbill.php";
+            echo '<script>
+            alert("Đặt hàng thành công !");
+                 </script>';
             break;
         case 'xoabill':
             $allbill = loadall_bill("", $_SESSION['user']['id']);
@@ -172,6 +187,25 @@ if (isset($_GET['act']) && ($_GET['act'] != "")) {
         case 'mybill':
             $allbill = loadall_bill("", $_SESSION['user']['id']);
             include "view/cart/mybill.php";
+            break;
+        case 'suabill':
+            if (isset($_GET['id']) && $_GET['id'] > 0) {
+                $bill = loadone_bill($_GET['id']);
+                $billct = loadone_cart($_GET['id']);
+            }
+            include "view/cart/huybill.php";
+            break;
+        case 'huybill':
+            if (isset($_POST['huydonhang']) && $_POST['huydonhang']) {
+                $id = $_POST['id'];
+                huy_bill($id);
+                // $thongbao = "Cập nhật thành công";
+            }
+            $allbill = loadall_bill("", $_SESSION['user']['id']);
+            include "view/cart/mybill.php";
+            echo '<script>
+                    alert("Bạn đã hủy đơn hàng !");
+                 </script>';
             break;
         default:
             include "view/home.php";

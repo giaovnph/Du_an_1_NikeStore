@@ -48,15 +48,13 @@
             <span >Lựa chọn phương thức thanh toán ?</span><br>
               <select name="pttt" id="">
                 <option value="1" >Thanh toán khi nhận hàng</option>
-                <option value="2" >Chuyển khoản ngân hàng</option>
-                <option value="3" >Thanh toán online</option>
               </select>
             </div>
 
           </div>
 
           <div class="nut-tt">
-            <a href=""><input type="submit" name="dongydathang" value="Tiếp tục"></a>
+            <a href=""><input type="submit" name="dongydathang" value="Đặt hàng"></a>
           </div>
         </div>
         <!-- /* ============Tóm tắt chi phí============*/ -->
