@@ -33,7 +33,7 @@
                                 <td><input type="checkbox" name="" id=""></td>
                                 <td>DH'.$dh['id'].'</td>
                                 <td style="text-align: left;">'.$kh.'</td>
-                                <td>'.$dh['tong'].'</td>
+                                <td>'.$dh['tong'].' $</td>
                                 <td>'.$ttdh.'</td>
                                 <td>'.$dh['ngaydathang'].'</td>
                                 <td><a href="'.$suabill.'"><input type="button" value="Cập nhật"></a></td>

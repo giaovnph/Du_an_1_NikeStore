@@ -16,15 +16,15 @@
     <!-- Menu Top -->
     <header class="nikestore-header">
         <div class="header-top">
-            <div>
+            <!-- <div>
                 <img src="./view/images/Nike_logo.png" style="margin-left: -1291px;width: 35px; height: auto;margin-top: -3px;">
-            </div>
+            </div> -->
             <?php
             if (isset($_SESSION['user'])) {
                 extract($_SESSION['user']);
             ?>
                 <div class="header-top__box-item">
-                    <a class="header-top__box-icon" href="">
+                    <a class="header-top__box-icon" <?php if ($role == 0) { ?> href="index.php?act=edittk" <?php } ?>>
                         <h4 class=" sign-btn">Hi, <?= $user ?><i id="sign-icon" class="fa-regular fa-user"></i></h4>
                     </a>
                     <ul>
@@ -42,7 +42,7 @@
                             </a>
                         <?php } ?>
                         <a class="sign-exit" href="index.php?act=thoat">
-                            <li>Đăng xuất<i id="sign-icon" class="fa-solid fa-arrow-right-from-bracket"></i></li>
+                            <li>Đăng xuất<i id="sign-icon-out" class="fa-solid fa-arrow-right-from-bracket"></i></li>
                         </a>
                     </ul>
                 </div>

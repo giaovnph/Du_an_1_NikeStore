@@ -123,9 +123,16 @@ if (isset($_GET['act']) && ($_GET['act'] != "")) {
                 $gia = $_POST['gia'];
                 $soluong = $_POST['soluong'];
                 $thanhtien = $soluong * $gia;
-                $addsp = [$id, $name, $kichco, $img, $gia, $soluong, $thanhtien];
-                array_push($_SESSION['mycart'], $addsp);
-            }
+                
+                // Check trùng sản phẩm
+                if(checktrungsp($id)>=0){
+                    update_soluong(checktrungsp($id));
+                }else{
+                    $addsp = [$id, $name, $kichco, $img, $gia, $soluong, $thanhtien];
+                    array_push($_SESSION['mycart'], $addsp);
+                }           
+            }   
+            
             header('Location: index.php?act=viewcart');
             break;
         case 'delcart':

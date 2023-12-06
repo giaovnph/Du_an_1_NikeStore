@@ -4,6 +4,13 @@ if(!isset($_SESSION['user'])){
     echo '<script>window.location.href = "http://localhost/PHP/Du_an_1_NikeStore/index.php?act=dangnhap";</script>';
     die;
 }
+if($_SESSION['user']['user']!="admin" && $_SESSION['user']['pass']!="123456"){
+    echo '<script>
+    window.location.href = "http://localhost/PHP/Du_an_1_NikeStore/index.php";
+    alert("Bạn chưa được cấp quyền truy cập trang quản trị !");
+    </script>';
+    die;
+}
 include "../model/pdo.php";
 include "../model/danhmuc.php";
 include "../model/sanpham.php";

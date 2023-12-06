@@ -4,7 +4,7 @@
   <div class="boxtrai mr">
     <div class="mb">
       <div class="boxlogo"><img src="view/images/Nike_logo.png" width="40px"></div>
-      <div class="boxtitle" style="text-align: center;">Giỏ hàng của bạn</div>
+      <div class="boxtitle" style="text-align: center; font-size: 20px; font-weight: bold;">Giỏ hàng của bạn</div>
       <div class="boxcontent">
       <div class="mb10 frmdsloai">
                 <table>

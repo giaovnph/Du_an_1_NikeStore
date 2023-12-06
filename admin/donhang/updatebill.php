@@ -135,7 +135,7 @@ strong{
         <div class="boxcontent">
           <li><strong>Mã đơn hàng</strong> : DH<?= $bill['id'] ?></li>
           <li><strong>Ngày đặt hàng</strong> : <?= $bill['ngaydathang'] ?></li>
-          <li><strong>Tổng đơn hàng</strong> : <?= $bill['tong'] ?></li>
+          <li><strong>Tổng đơn hàng</strong> : <?= $bill['tong']?> $</li>
           <li><select name="ttdh" id="">
               <?php
               

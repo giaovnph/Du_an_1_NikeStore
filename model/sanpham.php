@@ -51,5 +51,21 @@
         $sql="delete from sanpham where id=".$id;
         pdo_execute($sql);
     }
-
+    function update_soluong($vitri){
+        for ($i=0; $i < sizeof($_SESSION['mycart']); $i++) { 
+            if($i==$vitri){
+                $_SESSION['mycart'][$i][5]+=$_POST['soluong'];
+            }
+        }
+    }
+    function checktrungsp($id){
+        $vitri=-1;
+        for ($i=0; $i < sizeof($_SESSION['mycart']); $i++) { 
+            if($_SESSION['mycart'][$i][0]==$id){
+                $vitri=$i;
+            }
+        }
+        return $vitri;
+    }
+    
 ?>
