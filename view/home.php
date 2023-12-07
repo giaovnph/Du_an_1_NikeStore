@@ -103,7 +103,7 @@
            <div class="product_tt1">
                Air Jordan 1 hi flyease kết hợp phong cách đáng thèm muốn của đôi giày thể thao đặc trưng đầu tiên của Michael
                Jordan với hệ thống nhập bằng một tay nhanh chóng và dễ dàng. Không có dây để buộc, chỉ có một khóa kéo bao
-               quanh và hai dây đai để đảm bảo vừa vặn tùy chỉnh.
+               quanh và hai dây đai để đảm bảo vừa vặn tùy chỉnh..
            </div>
            <div class="product_tb0">
                <a href=""><img onmouseover="changeImg(this,'view/images/NikeRed_Two.png')" onmouseout="normalImg(this,'view/images/NikeRed_One.png')" src="view/images/NikeRed_One.png" /></a>
