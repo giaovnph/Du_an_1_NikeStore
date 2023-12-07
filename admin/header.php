@@ -31,7 +31,7 @@
         <!-- Thanh bên trái -->
         <div class="mnd">
             <div class="logo">
-                <a href="http://localhost/Du_an_1_NikeStore/index.php">
+                <a href="http://localhost/php/Du_an_1_NikeStore/index.php">
                     <img src="../view/images/Logo_Ad.png" alt="">
                 </a>
             </div>

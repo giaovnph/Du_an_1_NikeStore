@@ -76,13 +76,15 @@ if (isset($_GET['act']) && ($_GET['act'] != "")) {
             break;
 
         case 'sanphamct':
-            // if (isset($_POST['guibinhluan'])&&isset($_SESSION['user'])) {
-            //     insert_binhluan($_POST['idsp'], $_POST['noidung'], $_SESSION['user']['id']);
-            // }else{
-            //     echo '<script>
-            //     alert("Bạn chỉ có thể để lại bình luận sau khi đăng nhập !");
-            //  </script>';
-            // }
+            if (isset($_POST['guibinhluan'])) {
+                if(isset($_SESSION['user'])){
+                    insert_binhluan($_POST['idsp'], $_POST['noidung'], $_SESSION['user']['id']);
+                }else{
+                    echo '<script>
+                    alert("Bạn chỉ có thể để lại bình luận sau khi đăng nhập !");
+                 </script>';
+                }  
+            }
             if (isset($_GET['idsp']) && ($_GET['idsp'] > 0)) {
                 $id = $_GET['idsp'];
                 $spct = loadone_sanpham($id);
@@ -94,7 +96,6 @@ if (isset($_GET['act']) && ($_GET['act'] != "")) {
                 include "view/home.php";
             }
             break;
-
         case 'sanpham':
             if (isset($_POST['kyw']) && ($_POST['kyw'] != "")) {
                 $kyw = $_POST['kyw'];

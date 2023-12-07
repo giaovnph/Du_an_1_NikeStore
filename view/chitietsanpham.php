@@ -66,29 +66,27 @@
         </div>
     </div>
 </div>
-    <!-- <div class="row mb">
-      <div class="boxtitle">BÌNH LUẬN</div>
-            <div class="row boxcontent">
-                <table>
+<h2 style="margin: 0 5% 20px 5% ;">DANH SÁCH BÌNH LUẬN</h2>
+<div class="box-binhluan">
+            <div class="box-search-output">
                     <?php foreach($binhluan as $value): ?>
-                    <tr>
-                        <td><?php echo $value['user']?></td>
-                        <td><?php echo date("d/m/y", strtotime($value['ngaybinhluan'])) ?></td>
-                        <td><?php echo $value['noidung']?></td>
-                    </tr>
+                    <div class="box-search-item">
+                        <div class="font-bold"><?php echo $value['user']?></div>
+                        <span class="binhluan-gach">|</span>
+                        <div class="font-bold"><?php echo date("d/m/y", strtotime($value['ngaybinhluan'])) ?></div>
+                    </div>
+                    <div class="binhluan_text"><?php echo $value['noidung']?></div>
                     <?php endforeach; ?>
-                </table>
             </div>
-            <div class="box_search">
+            <div class="box-search-input">
                 <form action="index.php?act=sanphamct&idsp=<?=$id?>" method="POST">
                     <input type="hidden" name="idsp" value="<?=$id?>">
-                    <input type="text" name="noidung" required>
-                    <input type="submit" name="guibinhluan" value="Gửi bình luận">
+                    <input class="box-noidung" type="text" name="noidung" required><br>
+                    <input class="cta-btn binhluan-btn" type="submit" name="guibinhluan" value="Gửi bình luận">
                 </form>
             </div>
-        </div>
-    </div>       -->
-<h2 style="margin: 0 5% 100px 5% ;">CÓ THỂ BẠN QUAN TÂM</h2>
+</div>          
+<h2 style="margin: 100px 5% 100px 5% ;">CÓ THỂ BẠN QUAN TÂM</h2>
 <div class="product-col-right" style="margin: 0 5%;">
     <?php
     foreach ($spcungloai as $sp) {

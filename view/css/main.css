@@ -16,6 +16,7 @@
     background-color: black;
     color: var(--color-secondary);
     border-radius: 30px;
+    cursor: pointer;
 }
 
 a {
@@ -788,4 +789,54 @@ input[type="checkbox"]:checked {
     width: 50px;
     font-weight: bold;
     font-size: 18px;
+}
+
+/*-----------Phần bình luận--------------*/
+
+.box-binhluan{
+    width: 90%;
+    margin: auto;
+}
+.box-search-output{
+    border-radius: 10px;
+    border: 2px solid #c4c4c4;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+.box-search-item{
+    display: flex;
+    max-width: 200px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #c4c4c4;
+    margin: 20px;
+}
+.font-bold{
+    font-weight: bold;
+    
+}
+.box-search-input{
+    margin-top: 20px;
+}
+.box-search-input form{
+width: 80%;
+
+}
+.box-noidung{
+width: 100%;
+padding: 5px 10px;
+border-radius: 5px;
+margin-bottom: 20px;
+border-color: #c4c4c4;
+}
+.binhluan-gach{
+    margin: 0 5px;
+}
+.binhluan-btn{
+    padding: 10px 20px;
+    border: none;
+}
+.binhluan_text{
+    margin-left: 20px;
 }
