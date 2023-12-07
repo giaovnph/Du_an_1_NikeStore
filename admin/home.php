@@ -8,7 +8,7 @@
     </div>
 
     <script>
-        // Dữ liệu từ PHP
+        // Dữ liệu từ PHP (đã lấy từ cơ sở dữ liệu)
         var listdanhmuc = <?php echo json_encode($listdanhmuc); ?>;
 
         // Tạo mảng cho biểu đồ
@@ -50,51 +50,48 @@
     <div class=" mb" style="text-align: center;">
         <h2>THỐNG KÊ</h2>
     </div>
-    <div class=" frmcontent w60">
-        <div class=" mb10 frmdsloai">
-            <table>
-                <tr>
-                    <th>STT</th>
-                    <th>LOẠI HÀNG</th>
-                    <th>SỐ LƯỢNG</th>
-                    <th>GIÁ CAO NHẤT</th>
-                    <th>GIÁ THẤP NHẤT</th>
-                    <th>GIÁ TRUNG BÌNH</th>
+    <div class="frmcontent w60">
+        <canvas id="myBarChart"></canvas>
+    </div>
 
-                </tr>
+    <script>
+        // Dữ liệu từ PHP
+        var dstk = <?php echo json_encode($dstk); ?>;
 
-                <?php
-                foreach ($dstk as $tk) {
-                    extract($tk);
-                    echo '
-                            <tr>
-                                <td>' . $id . '</td>
-                                <td>' . $name . '</td>
-                                <td>' . $countsp . '</td>
-                                <td>' . $maxgia . '</td>
-                                <td>' . $mingia . '</td>
-                                <td>' . $avg . '</td>
-                            </tr>
-                            ';
+        // Tạo mảng cho biểu đồ
+        var labels = [];
+        var countspData = [];
+
+        dstk.forEach(function(tk) {
+            labels.push(tk.name);
+            countspData.push(tk.countsp);
+        });
+
+        // Tạo biểu đồ bar
+        var ctx = document.getElementById('myBarChart').getContext('2d');
+        var myBarChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Số lượng',
+                    data: countspData,
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
                 }
-                ?>
-            </table>
-        </div>
+            }
+        });
+    </script>
+</div>
 
-    </div>
-</div>
-<div class="bieudo">
-    <div class="mb" style="text-align: center;">
-        <h2>THỐNG KÊ DẠNG BIỂU ĐỒ</h2>
-    </div>
-    <div class=" frmcontent">
-        <div class=" mb10">
-            <?php
-            include "./thongke/bieudo.php";
-            ?>
-        </div>
-    </div>
-</div>
 
 <!-- DANH SACH TAI KHOAN -->
 <div class="row">
