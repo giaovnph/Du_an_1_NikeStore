@@ -2,28 +2,47 @@
     <div class="" style="text-align: center;">
         <h2>DANH SÁCH LOẠI HÀNG</h2>
     </div>
-    <div class=" frmcontent w60">
-        <div class=" mb10 frmdsloai">
-            <table>
-                <tr>
-                    <th>MÃ LOẠI</th>
-                    <th>TÊN LOẠI</th>
-                </tr>
-                <?php
-                foreach ($listdanhmuc as $danhmuc) {
-                    extract($danhmuc);
-
-                    echo '
-                            <tr>
-                                <td>' . $id . '</td>
-                                <td>' . $name . '</td>
-                            </tr>
-                            ';
-                }
-                ?>
-            </table>
-        </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <div class="frmcontent w60">
+        <canvas id="myChart"></canvas>
     </div>
+
+    <script>
+        // Dữ liệu từ PHP
+        var listdanhmuc = <?php echo json_encode($listdanhmuc); ?>;
+
+        // Tạo mảng cho biểu đồ
+        var labels = [];
+        var data = [];
+
+        listdanhmuc.forEach(function(danhmuc) {
+            labels.push(danhmuc.name);
+            data.push(danhmuc.id);
+        });
+
+        // Tạo biểu đồ
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'MÃ LOẠI',
+                    data: data,
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
 </div>
 
 <!-- thong ke -->
