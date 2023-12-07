@@ -8,10 +8,8 @@
     </div>
 
     <script>
-        // Dữ liệu từ PHP (đã lấy từ cơ sở dữ liệu)
         var listdanhmuc = <?php echo json_encode($listdanhmuc); ?>;
 
-        // Tạo mảng cho biểu đồ
         var labels = [];
         var data = [];
 
@@ -20,7 +18,6 @@
             data.push(danhmuc.id);
         });
 
-        // Tạo biểu đồ
         var ctx = document.getElementById('myChart').getContext('2d');
         var myChart = new Chart(ctx, {
             type: 'bar',
@@ -51,14 +48,12 @@
         <h2>THỐNG KÊ</h2>
     </div>
     <div class="frmcontent w60">
-        <canvas id="myBarChart"></canvas>
+        <canvas id="myLineChart"></canvas>
     </div>
 
     <script>
-        // Dữ liệu từ PHP
-        var dstk = <?php echo json_encode($dstk); ?>;
 
-        // Tạo mảng cho biểu đồ
+        var dstk = <?php echo json_encode($dstk); ?>;
         var labels = [];
         var countspData = [];
 
@@ -67,18 +62,17 @@
             countspData.push(tk.countsp);
         });
 
-        // Tạo biểu đồ bar
-        var ctx = document.getElementById('myBarChart').getContext('2d');
-        var myBarChart = new Chart(ctx, {
-            type: 'bar',
+        var ctx = document.getElementById('myLineChart').getContext('2d');
+        var myLineChart = new Chart(ctx, {
+            type: 'line',
             data: {
                 labels: labels,
                 datasets: [{
                     label: 'Số lượng',
                     data: countspData,
-                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
                     borderColor: 'rgba(75, 192, 192, 1)',
-                    borderWidth: 1
+                    borderWidth: 2,
+                    fill: false
                 }]
             },
             options: {
