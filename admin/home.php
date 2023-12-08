@@ -1,4 +1,9 @@
 <div class="row">
+    <div class="tonghop">
+        <div>
+            <span></span>
+        </div>
+    </div>
     <div class="" style="text-align: center;">
         <h2>DANH SÁCH LOẠI HÀNG</h2>
     </div>

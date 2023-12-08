@@ -1,12 +1,11 @@
 <div class="row">
         <div class=" frmtitle mb">
-          <h1>DANH SÁCH TÀI KHOẢN</h1>
+          <h1>Danh Sách Tài Khoản</h1>
         </div>
         <div class=" frmcontent">
             <div class=" mb10 frmdsloai">
                 <table>
                     <tr>
-                        <th></th>
                         <th>MÃ TK</th>
                         <th>USERNAME</th>
                         <th>MẬT KHẨU</th>
@@ -23,7 +22,6 @@
                             $xoatk='index.php?act=xoasp&id='.$id;
                             echo '
                             <tr>
-                                <td><input type="checkbox" name="" id=""></td>
                                 <td>'.$id.'</td>
                                 <td>'.$user.'</td>
                                 <td>'.$pass.'</td>

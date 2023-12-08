@@ -33,7 +33,7 @@
         <div class="mnd">
             <div class="logo">
                 <a href="http://localhost/php/Du_an_1_NikeStore/index.php">
-                    <img src="../view/images/Logo.png" alt="">
+                    <img src="../view/images/logadmin.jpg" alt="">
                 </a>
             </div>
 

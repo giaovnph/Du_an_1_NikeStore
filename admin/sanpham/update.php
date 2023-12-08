@@ -14,7 +14,7 @@
 
 <div class="row">
         <div class=" frmtitle">
-            <h1>CẬP NHẬT SẢN PHẨM</h1>
+            <h1>Cập Nhật Sản Phẩm</h1>
         </div>
         <div class=" frmcontent">
             <form action="index.php?act=updatesp" method="post" enctype="multipart/form-data">

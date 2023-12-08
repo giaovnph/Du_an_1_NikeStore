@@ -1,10 +1,10 @@
 <div class="row">
         <div class=" frmtitle mb">
-          <h1>DANH SÁCH ĐƠN HÀNG</h1>
+          <h1>Danh Sách Đơn Hàng</h1>
         </div>
         <form class="search-form" action="index.php?act=dsdh" method="post">  
                 <input type="text" name="kyw" placeholder="Tìm kiếm...">
-                  <input type="submit" name="listdhok" value="GO">
+                <button type="submit" class="listspok"><i class="fa-solid fa-magnifying-glass"></i></button>
               </form>
         <div class=" frmcontent">
             <div class=" mb10 frmdsloai">

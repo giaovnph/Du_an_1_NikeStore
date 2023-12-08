@@ -6,7 +6,7 @@
 
 <div class="row">
         <div class=" frmtitle">
-            <h1>CẬP NHẬT LOẠI HÀNG HÓA</h1>
+            <h1>Cập Nhật Loại Hàng Hóa</h1>
         </div>
         <div class=" frmcontent">
             <form action="index.php?act=updatedm" method="post">

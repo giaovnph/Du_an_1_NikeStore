@@ -1,6 +1,6 @@
 <div class="row">
         <div class=" frmtitle">
-            <h1>THÊM MỚI SẢN PHẨM</h1>
+            <h1>Thêm Mới Sản Phẩm</h1>
         </div>
         <div class=" frmcontent">
             <form action="index.php?act=addsp" method="post" enctype="multipart/form-data">

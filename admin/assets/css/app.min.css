@@ -1,7 +1,7 @@
 body {
     overflow-x: hidden;
     margin: 0;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(241, 241, 241);
     display: flex;
     flex-direction: column;
     /* border-right: 8px solid rgb(255, 110, 110); */
@@ -32,10 +32,10 @@ body {
 
 .logo  {
     margin-top: 25px;
-    margin-left: 105px;
+    margin-left: 35px;
 }
 img{
-    width: 70px;
+    width: 200px;
     height: auto;
 
 }
@@ -43,7 +43,7 @@ img{
 .menu {
     padding: 0;
     list-style: none;
-    margin-top: 60px;
+    margin-top: 20px;
 
 }
 
@@ -217,13 +217,17 @@ img{
 
 
 /*---------- CSS phần bảng trong admin -------------*/
+
 .row {
-    width: 100%;
+    width: 1350px;
     padding-left: 279px;
     padding-right: 10px;
     box-sizing: border-box;
-    color: #dbdada;
+    background-color: #fff;
+    margin-left: 20px;
+    border: 5px solid #ececec;
 }
+
 
 .w60 {
     width: 60%;
@@ -246,11 +250,12 @@ img{
 .frmcontent input[type="submit"],
 .frmcontent input[type="reset"],
 .frmcontent input[type="button"] {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 44, 73);
     border: none;
     padding: 10px 20px;
     color: #fff;
     cursor: pointer;
+    border-radius: 20px;
 }
 
 .ghinho {
@@ -264,16 +269,14 @@ img{
 .frmcontent input[type="submit"]:hover,
 .frmcontent input[type="reset"]:hover,
 .frmcontent input[type="button"]:hover {
-    background-color: #CCC;
+    background-color: rgb(0, 66, 110);
+    
 }
 
 .frmtitle {
-    background-color: #000000;
-    border: 1px #CCC solid;
-    border-radius: 5px;
-    padding: 0px 20px;
     margin-bottom: 20px;
-    color: white;
+    color: rgb(0, 44, 73);
+    font-size: 10px;
 
 }
 
@@ -284,17 +287,17 @@ img{
 .frmdsloai table {
     width: 100%;
     border-collapse: collapse;
-    color: #fff;
+    color: rgb(0, 44, 73);
 }
 
 .frmdsloai table th {
     padding: 20px;
-    background-color: #CCC;
+    background-color: rgb(0, 44, 73);
+    color: #ffffff;
 }
 
 .frmdsloai table td {
     padding: 10px 20px;
-    border: 1px #999 solid;
 }
 
 .mb10 {
@@ -315,11 +318,11 @@ img{
 .search-form input[type="text"] {
     padding: 10px 20px;
     border: none;
-    background-color: #dbdada;
+    background-color: rgb(0, 44, 73);
 }
 
 .search-form input[type="submit"] {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 44, 73);
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
@@ -328,7 +331,6 @@ img{
 }
 
 .search-form input[type="submit"]:hover {
-    background-color: #CCC;
 
 }
 
@@ -338,3 +340,15 @@ img{
     border-radius: 5px;
     border: none;
 }
+
+.listspok{
+    background-color: rgb(0, 44, 73);
+    color: #dbdbdb;
+    height: 38px;
+    border-radius: 5px;
+    width: 55px;
+    font-size: 17px;
+}
+
+
+

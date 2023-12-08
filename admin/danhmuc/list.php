@@ -1,15 +1,16 @@
+
 <div class="row">
         <div class=" frmtitle">
-          <h1>DANH SÁCH LOẠI HÀNG</h1>
+          <h1>Danh Sách Loại Hàng</h1>
         </div>
         <div class=" frmcontent">
             <div class=" mb10 frmdsloai">
                 <table>
                     <tr>
                         <th></th>
-                        <th>MÃ LOẠI</th>
-                        <th>TÊN LOẠI</th>
-                        <th>CÀI ĐẶT</th>
+                        <th>Mã Loại</th>
+                        <th>Tên Loại</th>
+                        <th>Cài Đặt</th>
                     </tr>
                     
                     <?php
