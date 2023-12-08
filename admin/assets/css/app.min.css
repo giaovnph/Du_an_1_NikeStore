@@ -1,49 +1,66 @@
-
 body {
     overflow-x: hidden;
     margin: 0;
-    background-color: #ffffff;
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
+    /* border-right: 8px solid rgb(255, 110, 110); */
+    border-right: 7px solid rgb(0, 44, 73);
+    border-radius: 40px;
+    font-family: Arial;
+    margin-top: 4px;
+
+
 }
 
 /*============MENU DỌC==========*/
 
 .mnd {
-    background-color: #000000;
+    background-color: #ffffff;
     width: 270px;
     bottom: 0;
     padding: 0;
     position: fixed;
-    margin-top: 33px;
     height: 100%;
     overflow-y: auto;
-    
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-right: 5px solid #ececec;
+    border-left: 7px solid rgb(0, 44, 73);
+
 }
 
-.logo img {
-    width: 100px;
-    margin-top: 50px;
-    margin-left: 85px;
-    height: 50px;
+.logo  {
+    margin-top: 25px;
+    margin-left: 105px;
+}
+img{
+    width: 70px;
+    height: auto;
+
 }
 
 .menu {
     padding: 0;
     list-style: none;
     margin-top: 60px;
-    
+
 }
 
 .menu li {
-    position:relative ;
+    position: relative;
+    margin-left: 35px;
 }
 
 .menu ul .chu-be {
     position: absolute;
+
 }
+
 .menu ul {
     padding: 0;
+    list-style: none;
+
 }
 
 .menu ul li {
@@ -68,96 +85,136 @@ body {
 }
 
 .menu a {
-    color: #ffffff;
+    color: #6d6d6d;
     text-decoration: none;
     display: block;
-    padding:10px 50px;
+    padding: 10px 10px;
+    font-weight: bold;
 }
 
 .menu p {
     line-height: 5px;
 }
-.chu-lon >a{
+
+.chu-lon>a {
     font-size: 14px;
-} 
+}
 
 .chu-be li a {
-    padding: 10px 20px;
-    color: rgb(255, 255, 255);
+    padding: 10px 10px;
+    color: #6d6d6d;
     display: block;
     position: relative;
     transition: all 0.4s;
-    margin-left: 60px;
-    border: 0.1px solid #343434;
+    font-size: 12px;
+
+
+}
+
+.chu-lon a:hover {
+    color: rgb(0, 51, 85);
+    border-left: 4px solid rgb(0, 51, 85);
+    background-color: #f7f7f7;
+}
+
+
+.chu-lon:hover #ic,
+.chu-lon:hover #angne,
+.chu-be:hover #icn {
+    color: rgb(0, 51, 85);
+}
+
+#angne {
+    float: right;
+    margin-right: 10px;
+    color: #6d6d6d;
+    margin-top: -3px;
+}
+
+#ic {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #6d6d6d;
+    font-size: 12px;
+
+}
+
+#icn {
+    margin-right: 5px;
+    color: #6d6d6d;
     font-size: 12px;
 
 }
 
 
 
-.menu .chu-lon a:hover {
-    background-color: rgb(34, 34, 34);
-    color: #fff;
-    border: 1px solid #d8d8d8;
-
-}
-.menu .chu-lon a{
-    border-bottom: 0.1px solid #343434;
-    
-}
-
-.menu .chu-be li {
-    background-color: #000000;
-}
-
-.menu .chu-be a:hover {
-    background-color: rgb(34, 34, 34);
-    border: 1px solid #7d7d7d;
-}
-
-
-#angne{
-
-    float: right;
-    margin-right: -25px;
-}
-
-#ic{
-    margin-right: 10px;
-    color: #5f5f5f;
-    
-}
 /*============MENU NGANG==========*/
 
 .mnn {
-    padding: 26px 0;
     margin-bottom: 20px;
-    border-bottom: 1px solid #343434;
+    color: #000000;
+    border-top-right-radius: 34px;
+    background-color: rgb(0, 44, 73);
+    margin-left: 280px;
+    border-bottom: 1px solid #6d6d6d;
+    height: 70px;
+    border-left: 5ox solid #404040;
 }
+
+
+.search-box {
+    margin-left: 50px;
+    position: relative;
+
+}
+
+.search-box__text {
+
+    margin-top: 20px;
+    padding: 8px;
+    border-radius: 50px;
+    border: none;
+    width: 180px;
+}
+
+.search-icon {
+    display: block;
+    border: none;
+    background-color: #ffffff;
+    margin-left: 145px;
+    font-size: 18px;
+    border-radius: 40px;
+    margin-top: -25px;
+    color: #6d6d6d;
+
+}
+
+
 .mnn a {
     font-weight: bold;
-    color: #000000;
-    text-decoration: none ;
+    text-decoration: none;
     font-size: 15px;
+    color: #ffffff;
+
 }
 
-.ex{
+.ex {
+
     float: right;
-    margin-right: 10px;
-    margin-top: -13px;
-}
-i{
-    padding-left: 10px;
-}
-
-#adm{
-    padding-left: 14px;
-
-}
-.ex1{
     margin-right: 30px;
-
+    margin-top: 21px;
 }
+
+.ex i {
+    font-size: 28px;
+    color: #ffffff;
+}
+
+
+
+
+
+
 
 /*---------- CSS phần bảng trong admin -------------*/
 .row {
@@ -165,11 +222,14 @@ i{
     padding-left: 279px;
     padding-right: 10px;
     box-sizing: border-box;
+    color: #dbdada;
 }
-.w60{
+
+.w60 {
     width: 60%;
     margin: auto;
 }
+
 .formtaikhoan input[type="text"],
 .formtaikhoan input[type="password"],
 .formtaikhoan input[type="email"],
@@ -205,54 +265,60 @@ i{
 .frmcontent input[type="reset"]:hover,
 .frmcontent input[type="button"]:hover {
     background-color: #CCC;
-    color: black;
 }
 
 .frmtitle {
-    background-color: #EEE;
+    background-color: #000000;
     border: 1px #CCC solid;
     border-radius: 5px;
     padding: 0px 20px;
     margin-bottom: 20px;
+    color: white;
 
 }
 
 .frmcontent {
-    padding-bottom:10px;
+    padding-bottom: 10px;
 }
 
 .frmdsloai table {
     width: 100%;
     border-collapse: collapse;
+    color: #fff;
 }
 
 .frmdsloai table th {
     padding: 20px;
     background-color: #CCC;
 }
+
 .frmdsloai table td {
     padding: 10px 20px;
     border: 1px #999 solid;
 }
+
 .mb10 {
     margin-bottom: 10px;
 }
-.row table{
+
+.row table {
     text-align: center;
 }
-.bieudo{    
-    margin:0 10px 0 280px;
+
+.bieudo {
+    margin: 0 10px 0 280px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.search-form input[type="text"]{
+.search-form input[type="text"] {
     padding: 10px 20px;
     border: none;
     background-color: #dbdada;
 }
-.search-form input[type="submit"]{
+
+.search-form input[type="submit"] {
     background-color: rgb(0, 0, 0);
     border: none;
     border-radius: 5px;
@@ -260,12 +326,15 @@ i{
     color: #fff;
     cursor: pointer;
 }
-.search-form input[type="submit"]:hover{
+
+.search-form input[type="submit"]:hover {
     background-color: #CCC;
 
 }
-.search-form select, .frmcontent select{
-    padding: 10px 20px ;
+
+.search-form select,
+.frmcontent select {
+    padding: 10px 20px;
     border-radius: 5px;
     border: none;
 }
