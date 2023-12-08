@@ -1,29 +1,44 @@
 <div id="piechart"></div>
 
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-<script type="text/javascript">
-// Load google charts
-google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
+<canvas id="myMixedChart" width="800" height="600"></canvas>
 
-// Draw the chart and set the chart values
-function drawChart() {
-  var data = google.visualization.arrayToDataTable([
-  ['Danh mục', 'Số lượng sản phẩm'],
-  <?php
-        foreach($dstk as $tk){
-            extract($tk);
-            echo "['".$tk['name']."',".$tk['countsp']."],";
-        } 
-    ?>
-]);
+<div class="frmcontent w60">
+        <canvas id="myLineChart"></canvas>
+    </div>
 
-  // Optional; add a title and set the width and height of the chart
-  var options = {'title':'DANH MỤC SẢN PHẨM KINH DOANH', 'width':550, 'height':400};
+    <script>
+        var dstk = <?php echo json_encode($dstk); ?>;
+        var labels = [];
+        var countspData = [];
 
-  // Display the chart inside the <div> element with id="piechart"
-  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-  chart.draw(data, options);
-}
-</script>
+        dstk.forEach(function(tk) {
+            labels.push(tk.name);
+            countspData.push(tk.countsp);
+        });
+
+        var ctx = document.getElementById('myLineChart').getContext('2d');
+        var myLineChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Số lượng',
+                    data: countspData,
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 2,
+                    fill: false
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+    </div>
+    

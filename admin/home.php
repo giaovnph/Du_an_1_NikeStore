@@ -2,28 +2,44 @@
     <div class="" style="text-align: center;">
         <h2>DANH SÁCH LOẠI HÀNG</h2>
     </div>
-    <div class=" frmcontent w60">
-        <div class=" mb10 frmdsloai">
-            <table>
-                <tr>
-                    <th>MÃ LOẠI</th>
-                    <th>TÊN LOẠI</th>
-                </tr>
-                <?php
-                foreach ($listdanhmuc as $danhmuc) {
-                    extract($danhmuc);
-
-                    echo '
-                            <tr>
-                                <td>' . $id . '</td>
-                                <td>' . $name . '</td>
-                            </tr>
-                            ';
-                }
-                ?>
-            </table>
-        </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <div class="frmcontent w60">
+        <canvas id="myChart"></canvas>
     </div>
+
+    <script>
+        var listdanhmuc = <?php echo json_encode($listdanhmuc); ?>;
+
+        var labels = [];
+        var data = [];
+
+        listdanhmuc.forEach(function(danhmuc) {
+            labels.push(danhmuc.name);
+            data.push(danhmuc.id);
+        });
+
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'MÃ LOẠI',
+                    data: data,
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
 </div>
 
 <!-- thong ke -->
@@ -31,51 +47,45 @@
     <div class=" mb" style="text-align: center;">
         <h2>THỐNG KÊ</h2>
     </div>
-    <div class=" frmcontent w60">
-        <div class=" mb10 frmdsloai">
-            <table>
-                <tr>
-                    <th>STT</th>
-                    <th>LOẠI HÀNG</th>
-                    <th>SỐ LƯỢNG</th>
-                    <th>GIÁ CAO NHẤT</th>
-                    <th>GIÁ THẤP NHẤT</th>
-                    <th>GIÁ TRUNG BÌNH</th>
+    <div class="frmcontent w60">
+        <canvas id="myLineChart"></canvas>
+    </div>
 
-                </tr>
+    <script>
 
-                <?php
-                foreach ($dstk as $tk) {
-                    extract($tk);
-                    echo '
-                            <tr>
-                                <td>' . $id . '</td>
-                                <td>' . $name . '</td>
-                                <td>' . $countsp . '</td>
-                                <td>' . $maxgia . '</td>
-                                <td>' . $mingia . '</td>
-                                <td>' . $avg . '</td>
-                            </tr>
-                            ';
+        var dstk = <?php echo json_encode($dstk); ?>;
+        var labels = [];
+        var countspData = [];
+
+        dstk.forEach(function(tk) {
+            labels.push(tk.name);
+            countspData.push(tk.countsp);
+        });
+
+        var ctx = document.getElementById('myLineChart').getContext('2d');
+        var myLineChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Số lượng',
+                    data: countspData,
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 2,
+                    fill: false
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
                 }
-                ?>
-            </table>
-        </div>
+            }
+        });
+    </script>
+</div>
 
-    </div>
-</div>
-<div class="bieudo">
-    <div class="mb" style="text-align: center;">
-        <h2>THỐNG KÊ DẠNG BIỂU ĐỒ</h2>
-    </div>
-    <div class=" frmcontent">
-        <div class=" mb10">
-            <?php
-            include "./thongke/bieudo.php";
-            ?>
-        </div>
-    </div>
-</div>
 
 <!-- DANH SACH TAI KHOAN -->
 <div class="row">
