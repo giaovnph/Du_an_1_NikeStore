@@ -1,7 +1,7 @@
 <div class="alldm">
   <div class=" frmcontenttk">
     <div class=" frmtitle">
-      <p>Danh Sách Đơn Hàng</p>
+      <p>Danh Sách Bình Luận</p>
     </div>
     <div class=" frmdstk">
         <form action="index.php?act=dsbl" method="POST">
@@ -36,8 +36,8 @@
 
                 </table>
             </div>
-            <div class=" mb10 ">
-                <input  type="button" value="Xóa mục đã chọn">
+            <div class=" mb10 " style="text-align: left;">
+                <input type="button" value="Xóa mục đã chọn">
                 <!-- <input  type="button" value="BỎ CHỌN TẤT CẢ"> -->
             </div>
         </form>

@@ -22,7 +22,7 @@
                                 echo '<tr>
                                     <td>DH'.$bill['id'].'</td>
                                     <td>'.$bill['ngaydathang'].'</td>
-                                    <td>'.$bill['tong'].' đ</td>
+                                    <td>'.number_format($bill['tong'], 0, '.', '.').' đ</td>
                                     <td>'.$ttdh.'</td>
                                     <td><a href="'.$suabill.'"><input type="button" value="Chi tiết"></a></td>
                              </tr> ';

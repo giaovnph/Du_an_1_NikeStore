@@ -83,7 +83,7 @@
             <div>
               <div>'.$sp['1'].'</div>
               <div>Kích cỡ: '.$sp['2'].'</div>
-              <div>Đơn giá: '.$sp['4'].' đ</div>
+              <div>Đơn giá: '.number_format($sp['4'], 0, '.', '.').' đ</div>
               <div>Số lượng: '.$sp['5'].'</div>
             </div>
             </div><br>         
@@ -95,12 +95,12 @@
           echo '
         <hr>
         <div class="bangchiphi">
-        <br><span>Chi phí</span> <span class="gia-tt">'.$tong.' đ</span>
+        <br><span>Chi phí</span> <span class="gia-tt">'.number_format($tong, 0, '.', '.').' đ</span>
           <br><br>
 
           <span>Giao hàng/Vận chuyển</span> <span class="gia-tt">: Miễn phí</span><br><br>
           <hr><br>
-          <span class="tc-tt">Tổng cộng</span><span class="gia-tt">'.$tong.' đ</span><br><br>
+          <span class="tc-tt">Tổng cộng</span><span class="gia-tt">'.number_format($tong, 0, '.', '.').' đ</span><br><br>
           
         </div>
         ';

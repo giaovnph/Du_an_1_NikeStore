@@ -37,7 +37,7 @@
       <div class="boxcontent">
         <li>Mã đơn hàng <strong>DH<?= $bill['id'] ?></strong></li>
         <li>Ngày đặt hàng <strong><?= $bill['ngaydathang'] ?></strong></li>
-        <li>Tổng đơn hàng <strong><?= $bill['tong'] ?> đ </strong></li>
+        <li>Tổng đơn hàng <strong><?= number_format($bill['tong'], 0, '.', '.') ?> đ </strong></li>
       <hr>
         <li>
           <span>Trạng thái</span><select name="ttdh" id="">
