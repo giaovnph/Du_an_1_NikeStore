@@ -36,15 +36,15 @@
                 <a href="#">Mua sắm theo giá <i id="angne" class="fa-solid fa-angle-down"></i></a>
                 <div id="price" onclick="stopPropagation(event)">
                     <div>
-                        <input type="checkbox"><label>Dưới 50$</label><br>
+                        <input type="checkbox"><label>Dưới 500.000đ</label><br>
                     </div>
                     <div>
-                        <input type="checkbox"><label>50$ - 100$</label><br>
+                        <input type="checkbox"><label>500.0000đ ~ 1.000.000đ</label><br>
                     </div>
                     <div>
-                        <input type="checkbox"><label>100$ - 200$</label><br>
+                        <input type="checkbox"><label>1.000.000đ ~ 2.000.000đ</label><br>
                     </div>
-                    <input type="checkbox"><label>Trên 200$</label><br>
+                    <input type="checkbox"><label>Trên 2.000.000đ</label><br>
 
                 </div>
             </div>
