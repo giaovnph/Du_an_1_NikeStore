@@ -43,18 +43,11 @@
           echo '
                             <tr>
                                 <td><input type="checkbox" name="" id=""></td>
-<<<<<<< HEAD
                                 <td>' . $id . '</td>
                                 <td>' . $name . '</td>
                                 <td>' . $hinh . '</td>
                                 <td>' . $gia . ' $</td>
-=======
-                                <td>'.$id.'</td>
-                                <td>'.$name.'</td>
-                                <td>'.$hinh.'</td>
-                                <td>'.$gia.' đ</td>
-                                <td>'.$luotxem.'</td>
->>>>>>> 918713e1dcd0f856e4b6a0906c92d51c25c364be
+
                                 <td>
                                 <a href="' . $suasp . '"><input type="button" value="Sửa"></a>
                                 <a href="' . $xoasp . '"><input type="button" value="Xoá"></a>
