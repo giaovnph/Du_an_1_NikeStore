@@ -46,7 +46,7 @@
                 echo '
            <div class="product"><a href="' . $link . '"><img src="' . $hinh . '" alt=""></a>
                <div class="product-des">
-                   <p><a href="' . $link . '">' . $name . '</a>    <span class="price-color">' . $gia . 'đ</span></p>
+                   <p><a href="' . $link . '">' . $name . '</a>    <span class="price-color">' . number_format($gia, 0, '.', '.') . 'đ</span></p>
                </div>
            </div>';
             }
@@ -76,7 +76,7 @@
                 echo '
            <div class="product"><a href="' . $link . '"><img src="' . $hinh . '" alt=""></a>
                <div class="product-des">
-                   <p><a href="' . $link . '">' . $name . '</a>    <span class="price-color">' . $gia . 'đ</span></p>
+                   <p><a href="' . $link . '">' . $name . '</a>    <span class="price-color">' . number_format($gia, 0, '.', '.') . 'đ</span></p>
                </div>
            </div>';
             }
@@ -113,15 +113,15 @@
    <h1 style="text-align: center;margin: 80px 0;">THIẾT KẾ THEO LỨA TUỔI VÀ GIỚI TÍNH</h1>
    <div class="bot-banner">
        <div class="bot-banner__item">
-           <a href="http://localhost/php/Du_an_1_NikeStore/index.php?act=sanpham&iddm=16"><img src="view/images/men.jpg" alt=""></a>
+           <a href="http://localhost/PHP/Du_an_1_NikeStore/index.php?act=sanpham&iddm=16"><img src="view/images/men.jpg" alt=""></a>
            <a class="bot-banner-btn cta-btn" href="">Men's</a>
        </div>
        <div class="bot-banner__item">
-           <a href="http://localhost/php/Du_an_1_NikeStore/index.php?act=sanpham&iddm=17"><img src="view/images/women.jpg" alt=""></a>
+           <a href="http://localhost/PHP/Du_an_1_NikeStore/index.php?act=sanpham&iddm=17"><img src="view/images/women.jpg" alt=""></a>
            <a class="bot-banner-btn cta-btn" href="">Women's</a>
        </div>
        <div class="bot-banner__item">
-           <a href="http://localhost/php/Du_an_1_NikeStore/index.php?act=sanpham&iddm=18"><img src="view/images/kid.jpg" alt=""></a>
+           <a href="http://localhost/PHP/Du_an_1_NikeStore/index.php?act=sanpham&iddm=18"><img src="view/images/kid.jpg" alt=""></a>
            <a class="bot-banner-btn cta-btn" href="">Kid's</a>
        </div>
    </div>

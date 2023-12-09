@@ -12,7 +12,7 @@
         <div class="boxcontent">
           <li><strong>Mã đơn hàng</strong> : DH<?= $bill['id'] ?></li>
           <li><strong>Ngày đặt hàng</strong> : <?= $bill['ngaydathang'] ?></li>
-          <li><strong>Tổng đơn hàng</strong> : <?= $bill['tong'] ?></li>
+          <li><strong>Tổng đơn hàng</strong> : <?= number_format($bill['tong'], 0, '.', '.') ?></li>
           <li><strong>Trạng thái</strong> : <?= getttdh($bill['trangthai']) ?></li>
         </div>
       </div>
@@ -45,4 +45,3 @@
     </form>
   </div>
 </div>
-

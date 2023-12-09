@@ -35,7 +35,7 @@
 
                                 <td>DH'.$dh['id'].'</td>
                                 <td style="text-align: left;">'.$kh.'</td>
-                                <td>'.$dh['tong'].' đ</td>
+                                <td>'.number_format($dh['tong'], 0, '.', '.').' đ</td>
                                 <td>'.$ttdh.'</td>
                                 <td>'.$dh['ngaydathang'].'</td>
                                 <td><a href="'.$suabill.'"><input type="button" value="Cập nhật"></a></td>

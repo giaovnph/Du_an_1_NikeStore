@@ -23,9 +23,9 @@ function viewcart($del)
                         <td>'.$hinh.'</td>
                         <td>'.$sp['1'].'</td>
                         <td>'.$sp['2'].'</td>
-                        <td>'.$sp['4'].' đ</td>
+                        <td>'.number_format($sp['4'], 0, '.', '.').' đ</td>
                         <td>'.$sp['5'].'</td>
-                        <td>'.$sp['6'].' đ</td>
+                        <td>'.number_format($sp['6'], 0, '.', '.').' đ</td>
                         <td>'.$xoasp.'</td>
                     </tr>
                     ';
@@ -36,9 +36,9 @@ function viewcart($del)
                         <td>'.$hinh.'</td>
                         <td>'.$sp['1'].'</td>
                         <td>'.$sp['2'].'</td>
-                        <td>'.$sp['4'].' đ</td>
+                        <td>'.number_format($sp['4'], 0, '.', '.').' đ</td>
                         <td>'.$sp['5'].'</td>
-                        <td>'.$sp['6'].' đ</td>
+                        <td>'.number_format($sp['6'], 0, '.', '.').' đ</td>
                     </tr>
             ';
         }
@@ -49,7 +49,7 @@ function viewcart($del)
                 <tr>
                 <td colspan="5" style="text-align: left;">Tổng đơn hàng</td>
 
-                <td>'.$tong.' đ</td>
+                <td>'.number_format($tong, 0, '.', '.').' đ</td>
                 <td></td>
                 </tr>';
     } else {
@@ -57,7 +57,7 @@ function viewcart($del)
                 <tr>
                 <td colspan="5" style="text-align: left;">Tổng đơn hàng</td>
 
-                <td>'.$tong.' đ</td>
+                <td>'.number_format($tong, 0, '.', '.').' đ</td>
                 </tr>';
     }
 }
@@ -78,13 +78,12 @@ function billchitiet($billct)
         }
         echo '
             <tr>
-<
                 <td>'.$hinh.'</td>
                 <td>'.$sp['name'].'</td>
                 <td>'.$sp['kichco'].'</td>
-                <td>'.$sp['gia'].' đ</td>
+                <td>'.number_format($sp['gia'], 0, '.', '.').' đ</td>
                 <td>'.$sp['soluong'].'</td>
-                <td>'.$sp['thanhtien'].' đ</td>
+                <td>'.number_format($sp['thanhtien'], 0, '.', '.').' đ</td>
             </tr>
             ';
         $i += 1;
@@ -93,7 +92,7 @@ function billchitiet($billct)
                 <tr>
                 <td colspan="5" style="text-align: left;">Tổng đơn hàng</td>
 
-                <td>'.$tong.' đ</td>
+                <td>'.number_format($tong, 0, '.', '.').' đ</td>
                 </tr>';
 }
 function billchitiet_ad($billct)
@@ -116,7 +115,7 @@ function billchitiet_ad($billct)
                 <td>'.$hinh.'</td>
                 <td>'.$sp['name'].'</td>
                 <td>'.$sp['kichco'].'</td>
-                <td>'.$sp['gia'].' đ</td>
+                <td>'.number_format($sp['gia'], 0, '.', '.').' đ</td>
                 <td>'.$sp['soluong'].'</td>
                 <td>'.$sp['thanhtien'].' đ</td>
             </tr>

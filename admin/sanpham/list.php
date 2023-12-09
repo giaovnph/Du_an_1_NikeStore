@@ -46,7 +46,7 @@
                                 <td>' . $id . '</td>
                                 <td>' . $name . '</td>
                                 <td>' . $hinh . '</td>
-                                <td>' . $gia . ' đ</td>
+                                <td>' . number_format($gia, 0, '.', '.') . ' đ</td>
 
                                 <td>
                                 <a href="' . $suasp . '"><input type="button" value="Sửa"></a>
