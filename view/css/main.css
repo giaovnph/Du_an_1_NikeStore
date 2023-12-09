@@ -162,7 +162,6 @@ tr,td,th{
     color: var(--color-thirdy);
     opacity: .7;
 }
-
 .header-bot {
     width: 90%;
     display: flex;
