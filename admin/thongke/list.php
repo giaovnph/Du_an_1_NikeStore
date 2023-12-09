@@ -1,6 +1,6 @@
 <div class="row">
         <div class=" frmtitle mb">
-          <h1>THỐNG KÊ</h1>
+          <h1>Thống Kê</h1>
         </div>
         <div class=" frmcontent">
             <div class=" mb10 frmdsloai">

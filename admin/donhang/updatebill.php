@@ -131,7 +131,7 @@ strong{
       }
       ?>
       <div class="mb">
-        <div class="boxtitle">THÔNG TIN ĐƠN HÀNG</div>
+        <div class="boxtitle">Thông Tin Đơn Hàng</div>
         <div class="boxcontent">
           <li><strong>Mã đơn hàng</strong> : DH<?= $bill['id'] ?></li>
           <li><strong>Ngày đặt hàng</strong> : <?= $bill['ngaydathang'] ?></li>

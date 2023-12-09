@@ -14,17 +14,18 @@
     <!-- Bắt đầu trang -->
     <div class="all">
         <div class="mnn">
-            <div>
-                <span style="color: black;float: left;margin-left: 280px;font-size: 20px;margin-top: -12px;font-weight: bold;">ADMIN</span>
-            </div>
+            
+                        
             <div class="ex">
-                <a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
-                <div class="thoat"><a href="index.php?act=thoat">Thoát</a> </div>
+                <a href="index.php?act=thoat"><i class="fa-solid fa-circle-xmark"></i></a>
             </div>
-            <!-- <div class="ex ex1">
-                <a href=""><i id="adm" class="fa-solid fa-user"></i></a>
-                <div class="thoat"><a href=""> Admin</a> </div>
-            </div> -->
+            <div class="search-box">
+                    <form   method="post">
+                        <input class="search-box__text" type="text" name="kyw" placeholder="Tìm kiếm" id="" required>
+                        <button type="submit" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+           
 
         </div>
 
@@ -32,7 +33,7 @@
         <div class="mnd">
             <div class="logo">
                 <a href="http://localhost/php/Du_an_1_NikeStore/index.php">
-                    <img src="../view/images/Logo_Ad.png" alt="">
+                    <img src="../view/images/logadmin.jpg" alt="">
                 </a>
             </div>
 
@@ -52,10 +53,10 @@
                     </a>
                     <ul class="chu-be" aria-expanded="false">
                         <li>
-                            <a href="index.php?act=listdm"><i id="ic" class="fa-regular fa-file"></i> Danh mục</a>
+                            <a href="index.php?act=listdm"><i id="icn" class="fa-regular fa-file"></i> Danh mục</a>
                         </li>
                         <li>
-                            <a href="index.php?act=listsp"><i id="ic" class="fa-solid fa-shoe-prints"></i> Hàng hóa</a>
+                            <a href="index.php?act=listsp"><i id="icn" class="fa-solid fa-shoe-prints"></i>Hàng hóa</a>
                         </li>
                     </ul>
                 </li>
@@ -67,7 +68,7 @@
                     </a>
                     <ul class="chu-be" aria-expanded="false">
                         <li>
-                            <a href="index.php?act=dskh"><i id="ic" class="fa-solid fa-user"></i> Tài khoản</a>
+                            <a href="index.php?act=dskh"><i id="icn" class="fa-solid fa-user"></i> Tài khoản</a>
                         </li>
                     </ul>
                 </li>
@@ -79,7 +80,7 @@
                     </a>
                     <ul class="chu-be" aria-expanded="false">
                         <li>
-                            <a href="index.php?act=dsdh"><i id="ic" class="fa-regular fa-file"></i> Ds đơn hàng</a>
+                            <a href="index.php?act=dsdh"><i id="icn" class="fa-regular fa-file"></i> Danh sách đơn hàng</a>
                         </li>
                     </ul>
                 </li>
@@ -90,7 +91,7 @@
                     </a>
                     <ul class="chu-be" aria-expanded="false">
                         <li>
-                            <a href="index.php?act=dsbl"><i id="ic" class="fa-regular fa-file"></i>Ds bình luận</a>
+                            <a href="index.php?act=dsbl"><i id="icn" class="fa-regular fa-file"></i>Danh sách bình luận</a>
                         </li>
                     </ul>
                 </li>
@@ -101,7 +102,7 @@
                     </a>
                     <ul class="chu-be" aria-expanded="false">
                         <li>
-                            <a href="index.php?act=thongke"><i id="ic" class="fa-solid fa-chart-pie"></i> Biểu đồ thống kê</a>
+                            <a href="index.php?act=thongke"><i id="icn" class="fa-solid fa-chart-pie"></i> Biểu đồ thống kê</a>
                         </li>
                     </ul>
                 </li>
