@@ -1,8 +1,6 @@
-<div class="row">
-  <div class=" frmtitle mb">
-    <h1>Danh Sách Sản Phẩm</h1>
-  </div>
-  <form class="search-form" action="index.php?act=listsp" method="post">
+<div class="alldm">
+
+  <!-- <form class="search-form" action="index.php?act=listsp" method="post">
     <input type="text" name="kyw" placeholder="Tìm kiếm...">
     <select name="iddm" id="">
       <option value="0" selected>Tất cả</option>
@@ -15,18 +13,20 @@
     </select>
      <button type="submit" class="listspok"><i class="fa-solid fa-magnifying-glass"></i></button>
 
-  </form>
-  <div class=" frmcontent">
-    <div class=" mb10 frmdsloai">
+  </form> -->
+  <div class=" frmcontentsp">
+    <div class=" frmtitle">
+      <p>Danh Sách Giày</p>
+    </div>
+    <div class=" frmdssp">
       <table>
         <tr>
           <th></th>
-          <th>MÃ SẢN PHẨM</th>
-          <th>TÊN SẢN PHẨM</th>
-          <th>HÌNH</th>
-          <th>GIÁ</th>
-          <th>LƯỢT XEM</th>
-          <th>CÀI ĐẶT</th>
+          <th>Mã Giày</th>
+          <th>Tên Giày</th>
+          <th>Hình Ảnh </th>
+          <th>Số Tiền</th>
+          <th>Cài Đặt</th>
         </tr>
 
         <?php
@@ -46,8 +46,8 @@
                                 <td>' . $id . '</td>
                                 <td>' . $name . '</td>
                                 <td>' . $hinh . '</td>
-                                <td>' . $gia . ' $</td>
-                                <td>' . $luotxem . '</td>
+                                <td>' . $gia . ' đ</td>
+
                                 <td>
                                 <a href="' . $suasp . '"><input type="button" value="Sửa"></a>
                                 <a href="' . $xoasp . '"><input type="button" value="Xoá"></a>
@@ -58,14 +58,74 @@
         ?>
       </table>
     </div>
-    <div class=" mb10">
+    <div class="">
       <!-- <input type="button" name="select-all" value="Chọn All" />
             <input type="button" name="deselectAll" value="Bỏ chọn All" /> -->
       <input type="button" value="Xóa mục đã chọn" />
-      <a href="index.php?act=addsp"><input type="button" value="Nhập thêm" /></a>
+    </div>
+  </div>
+
+  <div>
+    <div class="rowdmadd">
+
+      <div class=" frmcontentspadd">
+
+        <div class=" frmtitle">
+          <p style="margin-left: 100px;">Danh Sách Loại Hàng</p>
+        </div>
+        <?php
+          if (isset($thongbao) && $thongbao != "") {
+            echo '<div class="thongbao">' . $thongbao . '</div>';
+          }
+          ?>
+        <form action="index.php?act=listsp" method="post" enctype="multipart/form-data">
+          <div class=" ">
+            <span class="frmdssp-ten">Danh mục</span>
+            <select name="iddm" id="adddm">
+              <?php
+              foreach ($listdanhmuc as $danhmuc) {
+                extract($danhmuc);
+                echo '<option value="' . $id . '">' . $name . '</option>';
+              }
+              ?>
+            </select>
+          </div>
+          <div class=" ">
+            <input type="text" name="tensp" placeholder="Tên Giày">
+          </div>
+          <div class=" ">
+            <input type="text" name="giasp" placeholder="Số tiền">
+          </div>
+          <div class=" ">
+            <span class="frmdssp-ten">Hình ảnh</span><br>
+            <input type="file" name="hinhsp" id="">
+          </div>
+          <div class="">
+            <span class="frmdssp-ten">Mô tả</span><br>
+            <textarea name="motasp" id="addmota" cols="30" s="10"></textarea>
+          </div>
+          <div class=" ">
+            <input type="submit" name="themmoi" value="Thêm mới">
+          </div>
+          
+
+        </form>
+      </div>
     </div>
   </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
 <script>
   // Lấy tất cả các checkbox box
   const checkboxes = document.querySelectorAll('input[type="checkbox"]');

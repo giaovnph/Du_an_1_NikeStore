@@ -25,16 +25,21 @@ if (isset($_GET['act'])) {
     switch ($act) {
 
             //comntroller danh muc
-        case 'adddm':
-            if (isset($_POST['themmoi']) && $_POST['themmoi']) {
-                $tenloai = $_POST['tenloai'];
-                insert_danhmuc($tenloai);
-                $thongbao = "Thêm thành công";
-            }
-            include "danhmuc/add.php";
-            break;
+        // case 'adddm':
+        //     if (isset($_POST['themmoi']) && $_POST['themmoi']) {
+        //         $tenloai = $_POST['tenloai'];
+        //         insert_danhmuc($tenloai);
+        //         $thongbao = "Thêm thành công";
+        //     }
+        //     include "danhmuc/add.php";
+        //     break;
         case 'listdm':
             $listdanhmuc = loadall_danhmuc();
+            if (isset($_POST['themmoi']) && $_POST['themmoi']) {
+                        $tenloai = $_POST['tenloai'];
+                        insert_danhmuc($tenloai);
+                        $thongbao = "Thêm thành công";
+                    }
             include "danhmuc/list.php";
             break;
         case 'xoadm':
@@ -63,6 +68,36 @@ if (isset($_GET['act'])) {
 
             //controller san pham
         case 'addsp':
+            // if (isset($_POST['themmoi']) && $_POST['themmoi']) {
+            //     $iddm = $_POST['iddm'];
+            //     $tensp = $_POST['tensp'];
+            //     $giasp = $_POST['giasp'];
+            //     $mota = $_POST['motasp'];
+            //     $filename = $_FILES['hinhsp']['name'];
+            //     $target_dir = "./uploads/";
+            //     $target_file = $target_dir . basename($_FILES["hinhsp"]["name"]);
+
+            //     if (move_uploaded_file($_FILES["hinhsp"]["tmp_name"], $target_file)) {
+            //         //echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded.";
+            //     } else {
+            //         //echo "Sorry, there was an error uploading your file.";
+            //     }
+
+            //     insert_sanpham($tensp, $giasp, $filename, $mota, $iddm);
+            //     $thongbao = "Thêm thành công";
+            // }
+            $listdanhmuc = loadall_danhmuc();
+            // include "sanpham/add.php";
+            break;
+        case 'listsp':
+            if (isset($_POST['listspok']) && $_POST['listspok']) {
+                $kyw = $_POST['kyw'];
+                $iddm = $_POST['iddm'];
+            } else {
+                $kyw = '';
+                $iddm = 0;
+            }
+
             if (isset($_POST['themmoi']) && $_POST['themmoi']) {
                 $iddm = $_POST['iddm'];
                 $tensp = $_POST['tensp'];
@@ -80,17 +115,6 @@ if (isset($_GET['act'])) {
 
                 insert_sanpham($tensp, $giasp, $filename, $mota, $iddm);
                 $thongbao = "Thêm thành công";
-            }
-            $listdanhmuc = loadall_danhmuc();
-            include "sanpham/add.php";
-            break;
-        case 'listsp':
-            if (isset($_POST['listspok']) && $_POST['listspok']) {
-                $kyw = $_POST['kyw'];
-                $iddm = $_POST['iddm'];
-            } else {
-                $kyw = '';
-                $iddm = 0;
             }
             $listdanhmuc = loadall_danhmuc();
             $listsanpham = loadall_sanpham($kyw, $iddm);

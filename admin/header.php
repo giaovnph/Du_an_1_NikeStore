@@ -63,48 +63,48 @@
 
                 <li class="chu-lon">
 
-                    <a href="javascript: void(0);">
-                        <p><i style="font-size: 13px;" id="ic" class="fa-solid fa-users"></i> KHÁCH HÀNG <i id="angne" class="fa-solid fa-angle-right"></i></p>
+                    <a href="index.php?act=dskh">
+                        <p><i style="font-size: 13px;" id="ic" class="fa-solid fa-users"></i> KHÁCH HÀNG </p>
                     </a>
-                    <ul class="chu-be" aria-expanded="false">
+                    <!-- <ul class="chu-be" aria-expanded="false">
                         <li>
                             <a href="index.php?act=dskh"><i id="icn" class="fa-solid fa-user"></i> Tài khoản</a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </li>
 
                 <li class="chu-lon">
 
-                    <a href="javascript: void(0);">
-                        <p><i style="font-size: 13px;" id="ic" class="fa-solid fa-cart-shopping"></i> ĐƠN HÀNG <i id="angne" class="fa-solid fa-angle-right"></i></p>
+                    <a href="index.php?act=dsdh">
+                        <p><i style="font-size: 13px;" id="ic" class="fa-solid fa-cart-shopping"></i> ĐƠN HÀNG </p>
                     </a>
-                    <ul class="chu-be" aria-expanded="false">
+                    <!-- <ul class="chu-be" aria-expanded="false">
                         <li>
                             <a href="index.php?act=dsdh"><i id="icn" class="fa-regular fa-file"></i> Danh sách đơn hàng</a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </li>
                 <li class="chu-lon">
 
-                    <a href="javascript: void(0);">
-                        <p><i style="font-size: 13px;" id="ic" class="fa-solid fa-comments"></i> BÌNH LUẬN <i id="angne" class="fa-solid fa-angle-right"></i></p>
+                    <a href="index.php?act=dsbl">
+                        <p><i style="font-size: 13px;" id="ic" class="fa-solid fa-comments"></i> BÌNH LUẬN </p>
                     </a>
-                    <ul class="chu-be" aria-expanded="false">
+                    <!-- <ul class="chu-be" aria-expanded="false">
                         <li>
                             <a href="index.php?act=dsbl"><i id="icn" class="fa-regular fa-file"></i>Danh sách bình luận</a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </li>
                 <li class="chu-lon">
 
-                    <a href="javascript: void(0);">
-                        <p><i style="font-size: 13px;" id="ic" class="fa-solid fa-chart-simple"></i> BIỂU ĐỒ <i id="angne" class="fa-solid fa-angle-right"></i></p>
+                    <a href="index.php?act=thongke">
+                        <p><i style="font-size: 13px;" id="ic" class="fa-solid fa-chart-simple"></i> BIỂU ĐỒ </p>
                     </a>
-                    <ul class="chu-be" aria-expanded="false">
+                    <!-- <ul class="chu-be" aria-expanded="false">
                         <li>
                             <a href="index.php?act=thongke"><i id="icn" class="fa-solid fa-chart-pie"></i> Biểu đồ thống kê</a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </li>
             </ul>
             <!-- Kết thúc thanh bên trái -->

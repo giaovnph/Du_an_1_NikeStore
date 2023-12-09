@@ -1,8 +1,9 @@
-<div class="row">
+<div class="alldm">
+  <div class=" frmcontenttk">
     <div class=" frmtitle">
-        <h1>Danh Sách Bình Luận</h1>
+      <p>Danh Sách Đơn Hàng</p>
     </div>
-    <div class=" frmcontent ">
+    <div class=" frmdstk">
         <form action="index.php?act=dsbl" method="POST">
             <div class=" mb10 frmdsloai">
                 <table>

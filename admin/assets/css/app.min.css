@@ -4,7 +4,6 @@ body {
     background-color: rgb(241, 241, 241);
     display: flex;
     flex-direction: column;
-    /* border-right: 8px solid rgb(255, 110, 110); */
     border-right: 7px solid rgb(0, 44, 73);
     border-radius: 40px;
     font-family: Arial;
@@ -30,11 +29,12 @@ body {
 
 }
 
-.logo  {
+.logo {
     margin-top: 25px;
     margin-left: 35px;
 }
-img{
+
+img {
     width: 200px;
     height: auto;
 
@@ -225,20 +225,376 @@ img{
     box-sizing: border-box;
     background-color: #fff;
     margin-left: 20px;
-    border: 5px solid #ececec;
+    border: 3px solid #ececec;
 }
 
 
-.w60 {
-    width: 60%;
-    margin: auto;
+
+
+/*-------------------------- dm -----------------------*/
+.alldm {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    gap: 20px;
+    width: 1200px;
+    margin-left: 300px;
+    height: auto;
 }
 
-.formtaikhoan input[type="text"],
+.alldm p {
+    color: rgb(0, 44, 73);
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.frmcontentdmadd {
+    display: block;
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    border: 4px solid #ececec;
+    margin-left: 350px;
+    padding: 30px 20px;
+    z-index: 1;
+}
+
+.frmcontentdmud {
+    width: 900px;
+    height: auto;
+    background-color: #fff;
+    border: 4px solid #ececec;
+    padding: 20px 20px;
+    z-index: 1;
+    margin-left: 130px;
+    text-align: center;
+}
+
+
+.frmcontentdm {
+    width: 700px;
+    background-color: #fff;
+    border: 3px solid #ececec;
+    min-height: 400px;
+    /* Sử dụng min-height thay vì height */
+    padding: 30px 20px;
+    position: relative;
+    z-index: 0;
+}
+#adddm{
+    padding: 10px 0px;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+#udddm{
+    padding: 10px 30px;
+    margin-left: 55px;
+    margin-bottom: 40px;
+    
+}
+
+
+.thongbao{
+    margin-left: 145px;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+
+
+
+
+.frmdsdm table {
+    width: 100%;
+    border-collapse: collapse;
+    color: rgb(0, 44, 73);
+}
+
+.frmdsdm table th {
+    height: 70px;
+    background-color: rgb(0, 44, 73);
+    color: #ffffff;
+    position: relative;
+    z-index: 0;
+}
+
+.frmdsdm table td {
+    padding: 30px 50px;
+}
+
+.frmcontentdmadd input[type="submit"],
+.frmcontentspadd input[type="submit"],
+.frmcontentdm input[type="button"],
+.frmcontentsp input[type="button"] {
+    background-color: rgb(0, 44, 73);
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.frmcontentdmadd input[type="submit"] {
+    margin-top: 40px;
+    height: 50px;
+}
+
+.frmcontentdmadd input {
+
+    height: 50px;
+    width: 300px;
+    margin-top: 50px;
+}
+
+.frmcontentdmud input[type="text"] {
+    width: 500px;
+    height: 50px;
+    margin-bottom: 70px;
+    padding-left: 10px;
+    margin-top: 10px
+    ;
+}
+.frmcontentdmud img{
+    margin-right: 300px;
+}
+
+.frmcontentdmud .chu-ud {
+    font-size: 20px;
+    width: 100px;
+    margin-left: -430px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+.chusp-ud{
+    float: left;
+    margin-left: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.inpud {
+    background-color: rgb(0, 44, 73);
+    color: #fff;
+    margin-bottom: 30px;
+    width: 247px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 50px;
+}
+.mb10 {
+    text-align: center;
+   
+}
+.alldm input[type="button"]:hover,input[type="submit"]:hover {
+    background-color: rgb(0, 69, 116);
+
+}
+
+
+/*=========================Sản phẩm================== */
+.frmcontentsp {
+    width: 750px;
+    height: auto;
+    background-color: #fff;
+    border: 3px solid #ececec;
+    min-height: 400px;
+    /* Sử dụng min-height thay vì height */
+    padding: 20px 20px;
+    position: relative;
+    z-index: 0;
+}
+.frmcontentspadd {
+    
+    display: block;
+    width: 380px;
+    height: auto;
+    background-color: #fff;
+    border: 4px solid #ececec;
+    margin-left: 360px;
+    padding: 20px 20px;
+    z-index: 1;
+    
+}.frmcontentspud {
+    width: 900px;
+    height: auto;
+    background-color: #fff;
+    border: 4px solid #ececec;
+    padding: 20px 20px;
+    z-index: 1;
+    margin-left: 130px;
+}
+.frmcontentspud img{
+    margin-left: 200px;
+    margin-bottom: 20px;
+    width: 150px;
+
+    
+}
+.frmcontentspud input[type="file"]{
+    margin-left: -88px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+}
+#giasp{
+    margin-left: -61px;
+    width: 495px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+#tensp{
+    margin-left: -80px;
+    width: 490px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+#motasp{
+    margin-left: -56px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 495px;
+    padding: 10px 20px;
+    height: 100px;
+}
+#addmota{
+    margin-left: 80px;
+    height: 100px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+
+}
+
+.frmcontentsp img {
+    width: 100px;
+    
+}
+.frmdssp table {
+    width: 100%;
+    border-collapse: collapse;
+    color: rgb(0, 44, 73);
+}
+
+.frmdssp table th {
+    padding-right: 30px;
+    height: 70px;
+    background-color: rgb(0, 44, 73);
+    color: #ffffff;
+    position: relative;
+    z-index: 0;
+    font-size: 13px;
+}
+
+.frmdssp table td {
+    padding: 13px 15px;
+}
+.frmdssp-ten{
+    margin-left: 80px;
+    font-weight: bold;
+
+} 
+.frmcontentspadd input[type="text"],
+.frmcontentspadd input[type="submit"],
+.frmcontentspadd input[type="file"]{
+    margin-left: 80px;
+    width: 242px;
+    border-radius: 5px;
+    height: 40px;
+    margin-bottom:20px ;
+}
+.frmcontentspadd input[type="submit"]{
+    border-radius: 50px;
+    height: 60px;
+    font-size: 18px;
+}
+.frmcontentdmadd input[type="submit"]{
+    border-radius: 50px;
+    height: 60px;
+    font-size: 18px;
+}
+
+
+
+
+
+/*---------- end dmsp -------------*/
+
+
+/*=========================Tài khoản================== */
+.frmcontenttk {
+    width: 1080px;
+    height: auto;
+    background-color: #fff;
+    border: 3px solid #ececec;
+    min-height: 400px;
+    /* Sử dụng min-height thay vì height */
+    padding: 20px 40px;
+    position: relative;
+    z-index: 0;
+    margin-left: 20px;
+}
+.frmdstk table {
+    width: 100%;
+    border-collapse: collapse;
+    color: rgb(0, 44, 73);
+}
+
+.frmdstk table th {
+    height: 70px;
+    background-color: rgb(0, 44, 73);
+    color: #ffffff;
+    position: relative;
+    z-index: 0;
+    font-size: 13px;
+}
+
+.frmdstk table td {
+    padding: 20px 30px;
+    font-size: 15px;
+}
+
+
+.frmcontenttk [type="button"]{
+    background-color: rgb(0, 44, 73);
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+.frmdsdh table {
+    width: 100%;
+    border-collapse: collapse;
+    color: rgb(0, 44, 73);
+}
+
+.frmdsdh table th {
+    height: 70px;
+    background-color: rgb(0, 44, 73);
+    color: #ffffff;
+    position: relative;
+    z-index: 0;
+    font-size: 14px;
+}
+
+.frmdsdh table td {
+    padding: 20px 30px;
+    font-size: 15px;
+}
+/* .formtaikhoan input[type="text"],
 .formtaikhoan input[type="password"],
 .formtaikhoan input[type="email"],
 .frmcontent input[type="text"] {
-    width: 50%;
+    width: 100%;
     border: 1px #CCC solid;
     padding: 10px 20px;
     margin-top: 10px;
@@ -255,7 +611,7 @@ img{
     padding: 10px 20px;
     color: #fff;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
 .ghinho {
@@ -264,61 +620,12 @@ img{
     border-radius: 5px;
 }
 
-.formtaikhoan input[type="submit"]:hover,
-.formtaikhoan input[type="reset"]:hover,
-.frmcontent input[type="submit"]:hover,
-.frmcontent input[type="reset"]:hover,
-.frmcontent input[type="button"]:hover {
-    background-color: rgb(0, 66, 110);
-    
-}
-
-.frmtitle {
-    margin-bottom: 20px;
-    color: rgb(0, 44, 73);
-    font-size: 10px;
-
-}
-
-.frmcontent {
-    padding-bottom: 10px;
-}
-
-.frmdsloai table {
-    width: 100%;
-    border-collapse: collapse;
-    color: rgb(0, 44, 73);
-}
-
-.frmdsloai table th {
-    padding: 20px;
-    background-color: rgb(0, 44, 73);
-    color: #ffffff;
-}
-
-.frmdsloai table td {
-    padding: 10px 20px;
-}
-
-.mb10 {
-    margin-bottom: 10px;
-}
-
-.row table {
-    text-align: center;
-}
-
-.bieudo {
-    margin: 0 10px 0 280px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .search-form input[type="text"] {
     padding: 10px 20px;
     border: none;
     background-color: rgb(0, 44, 73);
+    color: #fff;
 }
 
 .search-form input[type="submit"] {
@@ -330,9 +637,6 @@ img{
     cursor: pointer;
 }
 
-.search-form input[type="submit"]:hover {
-
-}
 
 .search-form select,
 .frmcontent select {
@@ -341,14 +645,149 @@ img{
     border: none;
 }
 
-.listspok{
+.listspok {
     background-color: rgb(0, 44, 73);
-    color: #dbdbdb;
+    color: #dimbdb;
     height: 38px;
     border-radius: 5px;
     width: 55px;
     font-size: 17px;
+} */
+
+/*===================Biểu đồ===================== */
+
+
+.frmcontentbd {
+    width: 1070px;
+    height: auto;
+    background-color: #fff;
+    border: 3px solid #ececec;
+    min-height: 400px;
+    /* Sử dụng min-height thay vì height */
+    padding: 20px 40px;
+    position: relative;
+    z-index: 0;
+    margin-left: 20px;
+}
+.frmdsbd table {
+    width: 100%;
+    border-collapse: collapse;
+    color: rgb(0, 44, 73);
+}
+
+.frmdsbd table th {
+    padding:0 40px ;
+    height: 70px;
+    background-color: rgb(0, 44, 73);
+    color: #ffffff;
+    position: relative;
+    z-index: 0;
+    font-size: 13px;
+}
+
+.frmdsbd table td {
+    padding: 20px 65px;
+    font-size: 15px;
+}
+
+.bd {
+    padding: 60px 100px;
+    width: 1000px;
+    margin-left: 295px;
+    height: 800px;
+    margin-top: 100px;
+    background-color: white;
+    margin-bottom: 238px;
+}
+/*===================Chi tiết đh===================== */
+
+.ctdhgiay {
+    width: 750px;
+    height: auto;
+    background-color: #fff;
+    border: 3px solid #ececec;
+    min-height: 400px;
+    /* Sử dụng min-height thay vì height */
+    padding: 20px 20px;
+    position: relative;
+    z-index: 0;
+}
+.ctdh {
+    display: block;
+    width: 350px;
+    height: auto;
+    background-color: #fff;
+    border: 4px solid #ececec;
+    margin-left: 410px;
+    padding: 20px 10px;
+    z-index: 1;
+    list-style: none;
+    
+}
+.ctdh hr{
+    width: 287px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #d6d6d6;
+}
+.boxcontent li{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.boxcontent strong{
+    float: right;
+    margin-right: 30px;    
+}
+
+.boxcontent select{
+    float: right;
+    margin-right: 30px;
+    width: 150px;
+    padding: 5px 20px;
+    margin-bottom: 20px;
 }
 
 
+.frmdsctdh table {
+    width: 100%;
+    border-collapse: collapse;
+    color: rgb(0, 44, 73);
+}
 
+.frmdsctdh table th {
+    height: 70px;
+    padding: 0 40px 0 0;
+    background-color: rgb(0, 44, 73);
+    color: #ffffff;
+    position: relative;
+    z-index: 0;
+    font-size: 13px;
+}
+
+.frmdsctdh table td {
+    padding: 40px 20px;
+    font-size: 16px;
+
+}
+.frmdsctdh table td img{
+    width: 120px;
+    font-weight: bold;
+}
+.chitiet-nut [type="submit"]{
+    background-color: rgb(0, 44, 73);
+    padding: 20px 20px;
+    color: #fff;
+    border-radius: 50px;
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 292px;
+    font-size: 18px;
+}
+.frmdsdh input[type="button"]{
+    background-color: rgb(0, 44, 73);
+    padding: 15px 30px;
+    color: #fff;
+    border-radius: 50px;
+    margin-top: -5px;
+
+}
