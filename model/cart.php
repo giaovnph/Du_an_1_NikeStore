@@ -19,15 +19,7 @@ function viewcart($del)
         if ($del == 1) {
             echo '
                     <tr>
-<<<<<<< HEAD
-                        <td>' . $hinh . '</td>
-                        <td>' . $sp['1'] . '</td>
-                        <td>' . $sp['2'] . '</td>
-                        <td>' . $sp['4'] . ' $</td>
-                        <td>' . $sp['5'] . '</td>
-                        <td>' . $sp['6'] . ' $</td>
-                        <td>' . $xoasp . '</td>
-=======
+
                         <td>'.$hinh.'</td>
                         <td>'.$sp['1'].'</td>
                         <td>'.$sp['2'].'</td>
@@ -35,27 +27,18 @@ function viewcart($del)
                         <td>'.$sp['5'].'</td>
                         <td>'.$sp['6'].' đ</td>
                         <td>'.$xoasp.'</td>
->>>>>>> 918713e1dcd0f856e4b6a0906c92d51c25c364be
                     </tr>
                     ';
         } else {
             echo '
                     <tr>
-<<<<<<< HEAD
-                        <td>' . $hinh . '</td>
-                        <td>' . $sp['1'] . '</td>
-                        <td>' . $sp['2'] . '</td>
-                        <td>' . $sp['4'] . ' $</td>
-                        <td>' . $sp['5'] . '</td>
-                        <td>' . $sp['6'] . ' $</td>
-=======
+
                         <td>'.$hinh.'</td>
                         <td>'.$sp['1'].'</td>
                         <td>'.$sp['2'].'</td>
                         <td>'.$sp['4'].' đ</td>
                         <td>'.$sp['5'].'</td>
                         <td>'.$sp['6'].' đ</td>
->>>>>>> 918713e1dcd0f856e4b6a0906c92d51c25c364be
                     </tr>
             ';
         }
@@ -65,22 +48,16 @@ function viewcart($del)
         echo '
                 <tr>
                 <td colspan="5" style="text-align: left;">Tổng đơn hàng</td>
-<<<<<<< HEAD
-                <td>' . $tong . ' $</td>
-=======
+
                 <td>'.$tong.' đ</td>
->>>>>>> 918713e1dcd0f856e4b6a0906c92d51c25c364be
                 <td></td>
                 </tr>';
     } else {
         echo '
                 <tr>
                 <td colspan="5" style="text-align: left;">Tổng đơn hàng</td>
-<<<<<<< HEAD
-                <td>' . $tong . ' $</td>
-=======
+
                 <td>'.$tong.' đ</td>
->>>>>>> 918713e1dcd0f856e4b6a0906c92d51c25c364be
                 </tr>';
     }
 }
@@ -101,21 +78,13 @@ function billchitiet($billct)
         }
         echo '
             <tr>
-<<<<<<< HEAD
-                <td>' . $hinh . '</td>
-                <td>' . $sp['name'] . '</td>
-                <td>' . $sp['kichco'] . '</td>
-                <td>' . $sp['gia'] . ' $</td>
-                <td>' . $sp['soluong'] . '</td>
-                <td>' . $sp['thanhtien'] . ' $</td>
-=======
+<
                 <td>'.$hinh.'</td>
                 <td>'.$sp['name'].'</td>
                 <td>'.$sp['kichco'].'</td>
                 <td>'.$sp['gia'].' đ</td>
                 <td>'.$sp['soluong'].'</td>
                 <td>'.$sp['thanhtien'].' đ</td>
->>>>>>> 918713e1dcd0f856e4b6a0906c92d51c25c364be
             </tr>
             ';
         $i += 1;
@@ -123,11 +92,8 @@ function billchitiet($billct)
     echo '
                 <tr>
                 <td colspan="5" style="text-align: left;">Tổng đơn hàng</td>
-<<<<<<< HEAD
-                <td>' . $tong . ' $</td>
-=======
+
                 <td>'.$tong.' đ</td>
->>>>>>> 918713e1dcd0f856e4b6a0906c92d51c25c364be
                 </tr>';
 }
 function billchitiet_ad($billct)
@@ -146,33 +112,20 @@ function billchitiet_ad($billct)
         }
         echo '
             <tr>
-<<<<<<< HEAD
-                <td>' . $hinh . '</td>
-                <td>' . $sp['name'] . '</td>
-                <td>' . $sp['kichco'] . '</td>
-                <td>' . $sp['gia'] . ' $</td>
-                <td>' . $sp['soluong'] . '</td>
-                <td>' . $sp['thanhtien'] . ' $</td>
-=======
+
                 <td>'.$hinh.'</td>
                 <td>'.$sp['name'].'</td>
                 <td>'.$sp['kichco'].'</td>
                 <td>'.$sp['gia'].' đ</td>
                 <td>'.$sp['soluong'].'</td>
                 <td>'.$sp['thanhtien'].' đ</td>
->>>>>>> 918713e1dcd0f856e4b6a0906c92d51c25c364be
             </tr>
             ';
         $i += 1;
     }
     echo '
                 <tr>
-<<<<<<< HEAD
-               
-=======
-                <td colspan="5" style="text-align: left;">Tổng đơn hàng</td>
-                <td>'.$tong.' đ</td>
->>>>>>> 918713e1dcd0f856e4b6a0906c92d51c25c364be
+
                 </tr>';
 }
 
