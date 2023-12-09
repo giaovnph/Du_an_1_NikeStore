@@ -46,7 +46,7 @@
                 echo '
            <div class="product"><a href="' . $link . '"><img src="' . $hinh . '" alt=""></a>
                <div class="product-des">
-                   <p><a href="' . $link . '">' . $name . '</a>    <span class="price-color">' . $gia . '$</span></p>
+                   <p><a href="' . $link . '">' . $name . '</a>    <span class="price-color">' . $gia . 'đ</span></p>
                </div>
            </div>';
             }
@@ -76,7 +76,7 @@
                 echo '
            <div class="product"><a href="' . $link . '"><img src="' . $hinh . '" alt=""></a>
                <div class="product-des">
-                   <p><a href="' . $link . '">' . $name . '</a>    <span class="price-color">' . $gia . '$</span></p>
+                   <p><a href="' . $link . '">' . $name . '</a>    <span class="price-color">' . $gia . 'đ</span></p>
                </div>
            </div>';
             }

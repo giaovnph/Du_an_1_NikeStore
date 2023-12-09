@@ -32,12 +32,21 @@
           echo '
                             <tr>
                                 <td><input type="checkbox" name="" id=""></td>
+<<<<<<< HEAD
                                 <td>DH' . $dh['id'] . '</td>
                                 <td style="text-align: left;">' . $kh . '</td>
                                 <td>' . $dh['tong'] . ' $</td>
                                 <td>' . $ttdh . '</td>
                                 <td>' . $dh['ngaydathang'] . '</td>
                                 <td><a href="' . $suabill . '"><input  type="button" value="Cập nhật"></a></td>
+=======
+                                <td>DH'.$dh['id'].'</td>
+                                <td style="text-align: left;">'.$kh.'</td>
+                                <td>'.$dh['tong'].' đ</td>
+                                <td>'.$ttdh.'</td>
+                                <td>'.$dh['ngaydathang'].'</td>
+                                <td><a href="'.$suabill.'"><input type="button" value="Cập nhật"></a></td>
+>>>>>>> 918713e1dcd0f856e4b6a0906c92d51c25c364be
                             </tr>
                             ';
         }
