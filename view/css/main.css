@@ -54,7 +54,7 @@ tr,td,th{
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    background-color: #f3f3f3;
+    background-color: var(--color-primary);
     padding: 10px 5%;
     box-sizing: border-box;
     height: 30px;
@@ -62,7 +62,8 @@ tr,td,th{
 
 .sign-btn {
     display: block;
-    color: var(--color-primary);
+    color: var(--color-secondary);
+    opacity: .8;
     font-size: 12px;
     font-weight: bolder;
     padding: 2px 0;
@@ -71,14 +72,16 @@ tr,td,th{
 }
 
 #sign-icon {
+    opacity: .8;
     margin-left: 8px;
-    color: var(--color-primary);
+    color: var(--color-secondary);
     font-size: 16px;
-    margin-top: 1px;
+    margin-top: 1px;  
 }
 #sign-icon-out {
+    opacity: .8;
     margin-left: 8px;
-    color: #9a9a9a;
+    color: var(--color-primary);
     font-size: 16px;
     margin-top: 1px;
 }
@@ -99,17 +102,19 @@ tr,td,th{
     font-weight: bold;
     display: block;
     font-size: 12px;
-    color: #9a9a9a;
+    color: var(--color-primary);
 }
 .sign-exit:hover{
-    color: black;
+    color: var(--color-thirdy);
 }
 .sign-exit:hover #sign-icon-out{ 
-    color: black;
+    color: var(--color-thirdy);
+    opacity: .7;
 }
 .header-top__box-icon:hover .sign-btn,
 .header-top__box-icon:hover #sign-icon {
-    color: var(--color-thirdy);
+    color: var(--color-secondary);
+    opacity: 1;
 }
 
 .header-top__box-icon {
@@ -150,12 +155,12 @@ tr,td,th{
     font-weight: bold;
     font-size: 12px;
     color: var(--color-primary);
-    color: #9a9a9a;
 }
 
 
 .header-top__box-item li:hover {
-    color: #000000;
+    color: var(--color-thirdy);
+    opacity: .7;
 }
 
 .header-bot {
@@ -185,12 +190,13 @@ tr,td,th{
 }
 
 .header-menu li a {
-    color: black;
+    color: var(--color-primary);
     font-size: 20px;
 }
 
 .header-menu li a:hover {
-    color: #9a9a9a;
+    color: var(--color-thirdy);
+    opacity: .7;
 }
 
 
@@ -198,29 +204,34 @@ tr,td,th{
 .header-bot-1 {
     width: 100%;
     text-align: center;
-    background-color: #f3f3f3;
-    height: 75px;
+    background-color: var(--color-primary);
+    height: 75px;   
     padding-top: 10px;
     margin-bottom: 30px;
-
+    
 }
 
 .header-bot-1 span {
     font-size: 19px;
+    color: var(--color-secondary);
+    opacity: .9;
 }
 
 .header-bot-1 p {
     font-size: 13px;
     padding-top: 5px;
     display: block;
+    color: var(--color-secondary);
+    opacity: .9;
 }
 
-.header-bot-1 .a {
+.header-bot-1 .a{
     padding: 5px 0;
     display: block;
     font-size: 12px;
     font-weight: bold;
-    color: #000000;
+    color: var(--color-secondary);
+    opacity: .9;
 }
 
 
@@ -232,9 +243,11 @@ tr,td,th{
     width: 300px;
     align-items: center;
     justify-content: space-between;
+    color: var(--color-primary);
 }
 .love-icon{
     margin: 0 15px;
+    color: var(--color-primary);
 }
 /*---------------- Phần thanh tìm kiếm-----------------*/
 .search-form {
@@ -491,7 +504,7 @@ tr,td,th{
 /*----------------phần footer----------------*/
 
 .nikestore-footer {
-    background-color: #111111;
+    background-color: var(--color-primary);
     padding: 50px 5%;
     margin-top: 80px;
     box-sizing: border-box;
@@ -705,7 +718,7 @@ input[type="checkbox"] {
 
 /* Thiết lập giao diện checkbox khi được chọn */
 input[type="checkbox"]:checked {
-    background-color: #000000;
+    background-color: var(--color-primary);
 }
 
 
