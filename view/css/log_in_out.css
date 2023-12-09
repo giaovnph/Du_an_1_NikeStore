@@ -1,8 +1,8 @@
 /*====================== Đăng ký đăng nhập ==============*/
 :root {
-  --color-primary: black;
+  --color-primary: #002c49;
   --color-secondary: white;
-  --color-thirdy: #707072;
+  --color-thirdy: #00426e;
   --color-four: #5a5a5a;
 }
 .log-in-logo img{
