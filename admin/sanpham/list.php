@@ -16,7 +16,7 @@
   </form> -->
   <div class=" frmcontentsp">
     <div class=" frmtitle">
-      <p>Danh Sách Giày</p>
+      <p>Danh Sách Sản Phẩm</p>
     </div>
     <div class=" frmdssp">
       <table>
@@ -71,7 +71,7 @@
       <div class=" frmcontentspadd">
 
         <div class=" frmtitle">
-          <p style="margin-left: 100px;">Danh Sách Loại Hàng</p>
+          <p style="margin-left: 100px;">Thêm Mới Sản Phẩm</p>
         </div>
         <?php
           if (isset($thongbao) && $thongbao != "") {

@@ -50,7 +50,7 @@
     <div class=" frmcontentdmadd">
 
       <div class=" frmtitle">
-        <p style="margin-left: 100px;">Danh Sách Loại Hàng</p>
+        <p style="margin-left: 100px;">Thêm Mới Loại Hàng</p>
         <?php
           if (isset($thongbao) && $thongbao != "") {
             echo '<div class="thongbao">' . $thongbao . '</div>';
