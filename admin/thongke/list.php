@@ -1,9 +1,9 @@
-<div class="row">
-        <div class=" frmtitle mb">
-          <h1>Thống Kê</h1>
-        </div>
-        <div class=" frmcontent">
-            <div class=" mb10 frmdsloai">
+<div class="alldm">
+  <div class=" frmcontentbd">
+    <div class=" frmtitle">
+      <p>Danh Sách Đơn Hàng</p>
+    </div>
+    <div class=" frmdsbd">
                 <table>
                     <tr>
                         <th>STT</th>
@@ -36,9 +36,7 @@
         </div>
       </div>
       <div class="bieudo">
-        <div class="mb">
-          <h2>THỐNG KÊ DẠNG BIỂU ĐỒ</h2>
-        </div>
+        
         <div class=" frmcontent">
         <div class=" mb10">
                <?php
