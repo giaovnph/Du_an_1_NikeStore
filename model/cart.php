@@ -22,9 +22,9 @@
                         <td>'.$hinh.'</td>
                         <td>'.$sp['1'].'</td>
                         <td>'.$sp['2'].'</td>
-                        <td>'.$sp['4'].' $</td>
+                        <td>'.$sp['4'].' đ</td>
                         <td>'.$sp['5'].'</td>
-                        <td>'.$sp['6'].' $</td>
+                        <td>'.$sp['6'].' đ</td>
                         <td>'.$xoasp.'</td>
                     </tr>
                     ';
@@ -34,9 +34,9 @@
                         <td>'.$hinh.'</td>
                         <td>'.$sp['1'].'</td>
                         <td>'.$sp['2'].'</td>
-                        <td>'.$sp['4'].' $</td>
+                        <td>'.$sp['4'].' đ</td>
                         <td>'.$sp['5'].'</td>
-                        <td>'.$sp['6'].' $</td>
+                        <td>'.$sp['6'].' đ</td>
                     </tr>
             ';
             }
@@ -46,14 +46,14 @@
             echo '
                 <tr>
                 <td colspan="5" style="text-align: left;">Tổng đơn hàng</td>
-                <td>'.$tong.' $</td>
+                <td>'.$tong.' đ</td>
                 <td></td>
                 </tr>';
         }else{
             echo '
                 <tr>
                 <td colspan="5" style="text-align: left;">Tổng đơn hàng</td>
-                <td>'.$tong.' $</td>
+                <td>'.$tong.' đ</td>
                 </tr>';
         }
     }
@@ -77,9 +77,9 @@
                 <td>'.$hinh.'</td>
                 <td>'.$sp['name'].'</td>
                 <td>'.$sp['kichco'].'</td>
-                <td>'.$sp['gia'].' $</td>
+                <td>'.$sp['gia'].' đ</td>
                 <td>'.$sp['soluong'].'</td>
-                <td>'.$sp['thanhtien'].' $</td>
+                <td>'.$sp['thanhtien'].' đ</td>
             </tr>
             ';
           $i+=1;
@@ -87,7 +87,7 @@
             echo '
                 <tr>
                 <td colspan="5" style="text-align: left;">Tổng đơn hàng</td>
-                <td>'.$tong.' $</td>
+                <td>'.$tong.' đ</td>
                 </tr>';
 
     }
@@ -110,9 +110,9 @@
                 <td>'.$hinh.'</td>
                 <td>'.$sp['name'].'</td>
                 <td>'.$sp['kichco'].'</td>
-                <td>'.$sp['gia'].' $</td>
+                <td>'.$sp['gia'].' đ</td>
                 <td>'.$sp['soluong'].'</td>
-                <td>'.$sp['thanhtien'].' $</td>
+                <td>'.$sp['thanhtien'].' đ</td>
             </tr>
             ';
           $i+=1;
@@ -120,7 +120,7 @@
             echo '
                 <tr>
                 <td colspan="5" style="text-align: left;">Tổng đơn hàng</td>
-                <td>'.$tong.' $</td>
+                <td>'.$tong.' đ</td>
                 </tr>';
 
     }

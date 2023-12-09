@@ -102,7 +102,7 @@
             <a href="' . $link . '">
                 <h3 class="product-name">' . $name . '</h3>
             </a>
-            <h3 class="product-price"><span>' . $gia . '$</span></h3>
+            <h3 class="product-price"><span>' . $gia . 'đ</span></h3>
         </div>
     </div>';
     }

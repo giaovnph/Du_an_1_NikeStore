@@ -46,7 +46,7 @@
                                 <td>'.$id.'</td>
                                 <td>'.$name.'</td>
                                 <td>'.$hinh.'</td>
-                                <td>'.$gia.' $</td>
+                                <td>'.$gia.' đ</td>
                                 <td>'.$luotxem.'</td>
                                 <td>
                                 <a href="'.$suasp.'"><input type="button" value="Sửa"></a>
