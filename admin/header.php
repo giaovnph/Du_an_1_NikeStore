@@ -13,12 +13,13 @@
 <body>
     <!-- Bắt đầu trang -->
     <div class="all">
+    <div class="ex">
+                <a href="index.php?act=thoat" title="Go to Home"><i class="fa-solid fa-circle-xmark"></i></a>
+            </div>
         <div class="mnn">
             
                         
-            <div class="ex">
-                <a href="index.php?act=thoat"><i class="fa-solid fa-circle-xmark"></i></a>
-            </div>
+           
             <div class="search-box">
                     <form   method="post">
                         <input class="search-box__text" type="text" name="kyw" placeholder="Tìm kiếm" id="" required>
