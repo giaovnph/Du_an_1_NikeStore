@@ -95,7 +95,7 @@
                Vào những năm 70, Nike là mẫu giày mới trên thị trường, quá mới mẻ, chúng tôi vẫn đang thâm nhập
                vào lĩnh vực bóng rổ và thử nghiệm các nguyên mẫu trên đôi chân của đội địa phương của chúng tôi. Tất nhiên,
                thiết kế được cải thiện qua nhiều năm nhưng cái tên vẫn không thay đổi. Nike Blazer Mid '77 Vintage cổ
-               điển ngay từ đầu..
+               điển ngay từ đầu.
            </div>
        </div>
 
