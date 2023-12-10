@@ -114,15 +114,15 @@
    <div class="bot-banner">
        <div class="bot-banner__item">
            <a href="http://localhost/PHP/Du_an_1_NikeStore/index.php?act=sanpham&iddm=16"><img src="view/images/men.jpg" alt=""></a>
-           <a class="bot-banner-btn cta-btn" href="">Men's</a>
+           <a class="bot-banner-btn cta-btn" href="http://localhost/PHP/Du_an_1_NikeStore/index.php?act=sanpham&iddm=16">Men's</a>
        </div>
        <div class="bot-banner__item">
            <a href="http://localhost/PHP/Du_an_1_NikeStore/index.php?act=sanpham&iddm=17"><img src="view/images/women.jpg" alt=""></a>
-           <a class="bot-banner-btn cta-btn" href="">Women's</a>
+           <a class="bot-banner-btn cta-btn" href="http://localhost/PHP/Du_an_1_NikeStore/index.php?act=sanpham&iddm=17">Women's</a>
        </div>
        <div class="bot-banner__item">
            <a href="http://localhost/PHP/Du_an_1_NikeStore/index.php?act=sanpham&iddm=18"><img src="view/images/kid.jpg" alt=""></a>
-           <a class="bot-banner-btn cta-btn" href="">Kid's</a>
+           <a class="bot-banner-btn cta-btn" href="http://localhost/PHP/Du_an_1_NikeStore/index.php?act=sanpham&iddm=18">Kid's</a>
        </div>
    </div>
    <script>
