@@ -530,7 +530,7 @@ img {
 
 /*=========================Tài khoản================== */
 .frmcontenttk {
-    width: 1090px;
+    width: 1110px;
     height: auto;
     background-color: #fff;
     border: 3px solid #ececec;
@@ -542,7 +542,7 @@ img {
     margin-left: 20px;
 }
 .frmdstk table {
-    width: 100%;
+    width: 90%;
     border-collapse: collapse;
     color: rgb(0, 44, 73);
 }
