@@ -13,22 +13,17 @@
 <body>
     <!-- Bắt đầu trang -->
     <div class="all">
-    <div class="ex">
+        <div class="mnn">         
+            <div class="ex">
                 <a href="index.php?act=thoat" title="Go to Home"><i class="fa-solid fa-circle-xmark"></i></a>
             </div>
-        <div class="mnn">
-            
-                        
-           
             <div class="search-box">
                     <form   method="post">
                         <input class="search-box__text" type="text" name="kyw" placeholder="Tìm kiếm" id="" required>
                         <button type="submit" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </form>
                 </div>
-           
         </div>
-
         <!-- Thanh bên trái -->
         <div class="mnd">
             <div class="logo">
@@ -36,7 +31,6 @@
                     <img src="../view/images/logadmin.jpg" alt="">
                 </a>
             </div>
-
             <ul class="menu" id="side-menu">
 
                 <li class="chu-lon">
@@ -44,7 +38,6 @@
                         <p><i id="ic" class="fa-solid fa-house" style="font-size: 13px;"></i>TRANG CHỦ </p>
                     </a>
                 </li>
-
                 <li class="chu-lon">
 
                     <a href="javascript: void(0);">
