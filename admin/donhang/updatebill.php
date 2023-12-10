@@ -43,7 +43,7 @@
           <span>Trạng thái</span><select name="ttdh" id="">
             <?php
 
-            for ($i = 0; $i < 4; $i++) {
+            for ($i = $trangthai; $i < 4; $i++) {
               $load_trangthai = getttdh($i);
               if ($trangthai == $i)
                 echo '<option value="' . $i . '" selected>' . getttdh($i) . '</option>';
