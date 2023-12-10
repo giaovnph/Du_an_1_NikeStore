@@ -55,7 +55,9 @@
       </div>
       <div class="chitiet-nut">
         <input type="hidden" name="id" value="<?= $bill['id'] ?>">
+        <?php if($bill['trangthai']!=3){ ?>
         <input type="submit" name="capnhat" value="Cập nhật">
+        <?php } ?>
     </form>
 
   </div>
