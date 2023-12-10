@@ -126,8 +126,8 @@ if (isset($_GET['act']) && ($_GET['act'] != "")) {
                 $thanhtien = $soluong * $gia;
                 
                 // Check trùng sản phẩm
-                if(checktrungsp($id)>=0){
-                    update_soluong(checktrungsp($id));
+                if(checktrungsp($id,$kichco)>=0){
+                    update_soluong(checktrungsp($id,$kichco));
                 }else{
                     $addsp = [$id, $name, $kichco, $img, $gia, $soluong, $thanhtien];
                     array_push($_SESSION['mycart'], $addsp);

@@ -1,5 +1,5 @@
 <div class="alldm">
-  <div class=" frmcontenttk">
+  <div class=" frmcontentdh">
     <div class=" frmtitle">
       <p>Danh Sách Đơn Hàng</p>
     </div>
@@ -37,10 +37,11 @@
                                 <td style="text-align: left;">'.$kh.'</td>
                                 <td>'.number_format($dh['tong'], 0, '.', '.').' đ</td>
                                 <td>'.$ttdh.'</td>
-                                <td>'.$dh['ngaydathang'].'</td>
-                                <td><a href="'.$suabill.'"><input type="button" value="Cập nhật"></a></td>
+                                <td>'.$dh['ngaydathang'].'</td>';?>
+                                <?php if($dh['trangthai']!=3){ ?>
+                                <td><a href="<?=$suabill?>"><input type="button" value="Cập nhật"></a></td>
                             </tr>
-                            ';
+                            <?php }
         }
         ?>
       </table>

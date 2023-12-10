@@ -58,10 +58,10 @@
             }
         }
     }
-    function checktrungsp($id){
+    function checktrungsp($id,$kichco){
         $vitri=-1;
         for ($i=0; $i < sizeof($_SESSION['mycart']); $i++) { 
-            if($_SESSION['mycart'][$i][0]==$id){
+            if($_SESSION['mycart'][$i][0]==$id&&$_SESSION['mycart'][$i][2]==$kichco){
                 $vitri=$i;
             }
         }
