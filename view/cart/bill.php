@@ -1,3 +1,28 @@
+<style>
+  .thongtin-tt {
+  display: flex;
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.thongtin-tt > div {
+  margin-right: 20px;
+}
+
+.thongtin-tt img {
+  max-width: 100px; 
+  height: auto;
+  border-radius: 5px; 
+}
+.name{
+  color: black;
+  font-weight: bold;
+}
+
+
+</style>
 <div class="all-tt">
 
   <!-- /* ===========Form thanh toán============*/ -->
@@ -53,9 +78,6 @@
 
           </div>
 
-          <div class="nut-tt">
-            <a href=""><input type="submit" name="dongydathang" value="Đặt hàng"></a>
-          </div>
         </div>
         <!-- /* ============Tóm tắt chi phí============*/ -->
 
@@ -81,9 +103,9 @@
               '.$hinh.'
             </div>
             <div>
-              <div>'.$sp['1'].'</div>
+              <div class="name">'.$sp['1'].'</div>
               <div>Kích cỡ: '.$sp['2'].'</div>
-              <div>Đơn giá: '.$sp['4'].' đ</div>
+              <div>Đơn giá: '.number_format($sp['4'], 0, '.', '.').' đ</div>
               <div>Số lượng: '.$sp['5'].'</div>
             </div>
             </div><br>         
@@ -95,19 +117,23 @@
           echo '
         <hr>
         <div class="bangchiphi">
-        <br><span>Chi phí</span> <span class="gia-tt">'.$tong.' đ</span>
+        <br><span>Chi phí</span> <span class="gia-tt">'.number_format($tong, 0, '.', '.').' đ</span>
           <br><br>
 
           <span>Giao hàng/Vận chuyển</span> <span class="gia-tt">: Miễn phí</span><br><br>
           <hr><br>
-          <span class="tc-tt">Tổng cộng</span><span class="gia-tt">'.$tong.' đ</span><br><br>
+          <span class="tc-tt">Tổng cộng</span><span class="gia-tt">'.number_format($tong, 0, '.', '.').' đ</span><br><br>
           
         </div>
         ';
         ?>
 
+          <div class="nut-tt">
+            <a href=""><input type="submit" name="dongydathang" value="Đặt hàng"></a>
+          </div>
       </div>
-
+        
+      
 
     </form>
   </div>

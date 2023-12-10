@@ -36,15 +36,15 @@
                 <a href="#">Mua sắm theo giá <i id="angne" class="fa-solid fa-angle-down"></i></a>
                 <div id="price" onclick="stopPropagation(event)">
                     <div>
-                        <input type="checkbox"><label>Dưới 500.000đ</label><br>
+                        <input type="checkbox"><label>Dưới 500.000 đ</label><br>
                     </div>
                     <div>
-                        <input type="checkbox"><label>500.0000đ ~ 1.000.000đ</label><br>
+                        <input type="checkbox"><label>500.0000 đ ~ 1.000.000 đ</label><br>
                     </div>
                     <div>
-                        <input type="checkbox"><label>1.000.000đ ~ 2.000.000đ</label><br>
+                        <input type="checkbox"><label>1.000.000 đ ~ 2.000.000 đ</label><br>
                     </div>
-                    <input type="checkbox"><label>Trên 2.000.000đ</label><br>
+                    <input type="checkbox"><label>Trên 2.000.000 đ</label><br>
 
                 </div>
             </div>
@@ -99,7 +99,7 @@
                   <a href="' . $link . '">
                       <h3 class="product-name">' . $name . '</h3>
                   </a>
-                  <h3 class="product-price"><span>' . $gia . 'đ</span></h3>
+                  <h3 class="product-price"><span>' . number_format($gia, 0, '.', '.') . 'đ</span></h3>
               </div>
           </div>';
         }

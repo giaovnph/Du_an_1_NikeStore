@@ -6,7 +6,7 @@ if (is_array($dm)) {
 <div class="alldm">
     <div class=" frmcontentdmud">
         <div class=" frmtitle">
-            <p style="font-size: 22px; margin-bottom: 50px;">Danh Sách Loại Hàng</p>
+            <p style="font-size: 22px; margin-bottom: 50px;">Cập Nhật Loại Hàng</p>
         </div>
         <form action="index.php?act=updatedm" method="post">
             <div class=" mb10">

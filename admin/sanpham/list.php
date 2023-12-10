@@ -16,7 +16,7 @@
   </form> -->
   <div class=" frmcontentsp">
     <div class=" frmtitle">
-      <p>Danh Sách Giày</p>
+      <p>Danh Sách Sản Phẩm</p>
     </div>
     <div class=" frmdssp">
       <table>
@@ -46,7 +46,7 @@
                                 <td>' . $id . '</td>
                                 <td>' . $name . '</td>
                                 <td>' . $hinh . '</td>
-                                <td>' . $gia . ' $</td>
+                                <td>' . number_format($gia, 0, '.', '.') . ' đ</td>
 
                                 <td>
                                 <a href="' . $suasp . '"><input type="button" value="Sửa"></a>
@@ -71,7 +71,7 @@
       <div class=" frmcontentspadd">
 
         <div class=" frmtitle">
-          <p style="margin-left: 100px;">Danh Sách Loại Hàng</p>
+          <p style="margin-left: 100px;">Thêm Mới Sản Phẩm</p>
         </div>
         <?php
           if (isset($thongbao) && $thongbao != "") {

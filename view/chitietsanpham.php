@@ -12,7 +12,7 @@
     <div class="box-chitiet__right">
         <div class="box-chitiet__des">
             <h2><?= $name ?></h2>
-            <h3><?= $gia ?> đ</h3>
+            <h3><?= number_format($gia, 0, '.', '.') ?> đ</h3>
         </div>
 
         <div class="box-chitiet__text">
@@ -102,7 +102,7 @@
             <a href="' . $link . '">
                 <h3 class="product-name">' . $name . '</h3>
             </a>
-            <h3 class="product-price"><span>' . $gia . 'đ</span></h3>
+            <h3 class="product-price"><span>' . number_format($gia, 0, '.', '.') . 'đ</span></h3>
         </div>
     </div>';
     }

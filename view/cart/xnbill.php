@@ -70,7 +70,7 @@
       <div class="boxcontent">
         <li><strong>Mã đơn hàng</strong> : DH<?= $bill['id'] ?></li>
         <li><strong>Ngày đặt hàng</strong> : <?= $bill['ngaydathang'] ?></li>
-        <li><strong>Tổng đơn hàng</strong> : <?= $bill['tong'] ?> đ</li>
+        <li><strong>Tổng đơn hàng</strong> : <?= number_format($bill['tong'], 0, '.', '.') ?> đ</li>
         <li><strong>Phương thức thanh toán</strong> : <?= getpttt($bill['pttt']); ?></li>
       </div>
     <div></div>
