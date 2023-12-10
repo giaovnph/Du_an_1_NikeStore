@@ -1,56 +1,5 @@
 <style>
-.ctdh {
-    display: block;
-    width: 100%;
-    height: auto;
-    background-color: #fff;
-    border: 4px solid #ececec;
-    padding: 20px 10px;
-    z-index: 1;
-    list-style: none;
-    margin-bottom: 50px;
-    
-}
-.ctdhgiay {
-    width: auto;
-    height: auto;
-    background-color: #fff;
-    border: 3px solid #ececec;
-    min-height: 400px;
-    /* Sử dụng min-height thay vì height */
-    padding: 20px 20px;
-    position: relative;
-    z-index: 0;
-}
-.frmdsctdh table {
-    width: 100%;
-    border-collapse: collapse;
-    color: rgb(0, 44, 73);
-}
 
-.frmdsctdh table th {
-    height: 50px;
-    padding: 0 40px 0 0;
-    background-color: black;
-    color: #ffffff;
-    position: relative;
-    z-index: 0;
-    font-size: 16px;
-}
-
-.frmdsctdh table td {
-    padding: 40px 20px;
-    font-size: 16px;
-
-}
-.frmdsctdh table td img{
-    width: auto;
-    font-weight: bold;
-} 
-.frmdsctdh table td{
-  border: 0.5px solid #ABB0B0;
-  text-align: center;
-}
 </style>
 <div class="cart-content mb">
   <div class="boxtrai mr">
