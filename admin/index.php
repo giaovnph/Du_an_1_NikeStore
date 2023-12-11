@@ -38,7 +38,11 @@ if (isset($_GET['act'])) {
             if (isset($_POST['themmoi']) && $_POST['themmoi']) {
                         $tenloai = $_POST['tenloai'];
                         insert_danhmuc($tenloai);
-                        $thongbao = "Thêm thành công";
+                        echo '<script>
+                        alert("Thêm mới thành công !");
+                     </script>';
+                        echo '<script>window.location.href = "index.php?act=listdm";</script>';
+                       
                     }
             include "danhmuc/list.php";
             break;
@@ -60,7 +64,9 @@ if (isset($_GET['act'])) {
                 $tenloai = $_POST['tenloai'];
                 $id = $_POST['id'];
                 update_danhmuc($id, $tenloai);
-                $thongbao = "Cập nhật thành công";
+                echo '<script>
+                alert("Cập nhật thành công");
+             </script>';
             }
             $listdanhmuc = loadall_danhmuc();
             include "danhmuc/list.php";
@@ -114,7 +120,10 @@ if (isset($_GET['act'])) {
                 }
 
                 insert_sanpham($tensp, $giasp, $filename, $mota, $iddm);
-                $thongbao = "Thêm thành công";
+                echo '<script>
+                alert("Thêm mới thành công !");
+             </script>';
+                echo '<script>window.location.href = "index.php?act=listsp";</script>';   
             }
             $listdanhmuc = loadall_danhmuc();
             $listsanpham = loadall_sanpham($kyw, $iddm);
@@ -124,6 +133,7 @@ if (isset($_GET['act'])) {
             if (isset($_GET['id']) && $_GET['id'] > 0) {
                 delete_sanpham($_GET['id']);
             }
+            $listdanhmuc = loadall_danhmuc();
             $listsanpham = loadall_sanpham("", 0);
             include "sanpham/list.php";
             break;
@@ -155,7 +165,9 @@ if (isset($_GET['act'])) {
                     $filename = $_POST['hinhspcu'];
                 }
                 update_sanpham($id, $tensp, $giasp, $filename, $mota, $iddm);
-                $thongbao = "Cập nhật thành công";
+                echo '<script>
+                alert("Cập nhật thành công");
+             </script>';
             }
             $listdanhmuc = loadall_danhmuc();
             $listsanpham = loadall_sanpham("", 0);
@@ -211,10 +223,10 @@ if (isset($_GET['act'])) {
             $listBinhLuan = loadall_binhluan(0);
             include "binhluan/list.php";
             break;
-            case 'thoat':
-                session_unset();
-                echo '<script>window.location.href = "http://localhost/PHP/Du_an_1_NikeStore/index.php?act=dangnhap";</script>';
-                break;
+        case 'thoat':
+            session_unset();
+            echo '<script>window.location.href = "http://localhost/PHP/Du_an_1_NikeStore/index.php?act=dangnhap";</script>';
+            break;
 
             //default
         default:

@@ -5,9 +5,13 @@
         $listsanpham=pdo_query($sql);
         return $listsanpham;
     }
-
+    function loadall_sanpham_topluotxem(){
+        $sql = "select * from sanpham where 1 order by luotxem desc limit 0,15";
+        $listsanpham=pdo_query($sql);
+        return $listsanpham;
+    }
     function loadall_sanpham_top4(){
-        $sql = "select * from sanpham where 1 order by id desc limit 0,4";
+        $sql = "select * from sanpham where 1 order by luotxem desc limit 0,4";
         $listsanpham=pdo_query($sql);
         return $listsanpham;
     }
@@ -66,6 +70,10 @@
             }
         }
         return $vitri;
+    }
+    function tangluotxem($id){
+        $sql = "INSERT INTO sanpham (id) VALUES ($id) ON DUPLICATE KEY UPDATE luotxem = luotxem + 1";
+        pdo_execute($sql);
     }
     
 ?>

@@ -71,7 +71,7 @@
                     <p>Điều khoản sử dụng</p>
                 </a>
                 <a href="">
-                    <p>Chính sách quyền riêng tư</p>
+                    <p>Quyền riêng tư</p>
                 </a>
             </div>
         </div>

@@ -25,7 +25,8 @@
           <th>Mã Giày</th>
           <th>Tên Giày</th>
           <th>Hình Ảnh </th>
-          <th>Số Tiền</th>
+          <th>Lượt xem</th>
+          <th>Số Tiền</th>         
           <th>Cài Đặt</th>
         </tr>
 
@@ -34,6 +35,7 @@
           extract($sp);
           $suasp = 'index.php?act=suasp&id=' . $id;
           $xoasp = 'index.php?act=xoasp&id=' . $id;
+          $xacnhan = 'onclick = "return confirm(\'Bạn có thực sự muốn xóa ?\')";';
           $hinhpath = "./uploads/" . $img;
           if (is_file($hinhpath)) {
             $hinh = '<img src="' . $hinhpath . '" alt="" height="80">';
@@ -46,11 +48,11 @@
                                 <td>' . $id . '</td>
                                 <td>' . $name . '</td>
                                 <td>' . $hinh . '</td>
+                                <td style="text-align: center;">' . $luotxem . '</td>
                                 <td>' . number_format($gia, 0, '.', '.') . ' đ</td>
-
                                 <td>
                                 <a href="' . $suasp . '"><input type="button" value="Sửa"></a>
-                                <a href="' . $xoasp . '"><input type="button" value="Xoá"></a>
+                                <a '.$xacnhan.' href="' . $xoasp . '"><input type="button" value="Xoá"></a>
                                 </td>
                             </tr>
                             ';
@@ -81,7 +83,7 @@
         <form action="index.php?act=listsp" method="post" enctype="multipart/form-data">
           <div class=" ">
             <span class="frmdssp-ten">Danh mục</span>
-            <select name="iddm" id="adddm">
+            <select name="iddm" id="adddm" required>
               <?php
               foreach ($listdanhmuc as $danhmuc) {
                 extract($danhmuc);

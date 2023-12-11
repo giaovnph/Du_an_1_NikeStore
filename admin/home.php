@@ -66,21 +66,21 @@
     <div class="col-md-6">
         <div class="col-md">
             <div class="" style="">
-                <h2>Danh Sách Loại Hàng</h2>
+                <h2>Danh Sách sản phẩm được quan tâm nhiều nhất</h2>
             </div>
             <div class="frmcontent w60">
                 <canvas id="myChart" width="290px" height="250px"></canvas>
             </div>
-
+            <?php $listsp = loadall_sanpham_top4() ?>
             <script>
-                var listdanhmuc = <?php echo json_encode($listdanhmuc); ?>;
+                var listdanhmuc = <?php echo json_encode($listsp); ?>;
 
                 var labels = [];
                 var data = [];
 
-                listdanhmuc.forEach(function(danhmuc) {
-                    labels.push(danhmuc.name);
-                    data.push(danhmuc.id);
+                listdanhmuc.forEach(function(sanpham) {
+                    labels.push(sanpham.name);
+                    data.push(sanpham.luotxem);
                 });
 
                 var ctx = document.getElementById('myChart').getContext('2d');
@@ -89,7 +89,7 @@
                     data: {
                         labels: labels,
                         datasets: [{
-                            label: 'MÃ LOẠI',
+                            label: 'Lượt xem',
                             data: data,
                             backgroundColor: 'rgba(90, 192, 192, 1)',
                             borderColor: 'White',

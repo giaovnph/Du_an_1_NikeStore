@@ -14,20 +14,22 @@
     <!-- Bắt đầu trang -->
     <div class="all">
         <div class="mnn">         
-            <div class="ex">
-                <a href="index.php?act=thoat" title="Go to Home"><i class="fa-solid fa-circle-xmark"></i></a>
-            </div>
+        
+        <div class="ex">
+                <a href="index.php?act=thoat"><i class="fa-solid fa-circle-xmark"></i></a>
+        </div>
+
             <div class="search-box">
                     <form   method="post">
                         <input class="search-box__text" type="text" name="kyw" placeholder="Tìm kiếm" id="" required>
                         <button type="submit" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </form>
                 </div>
-        </div>
+            </div>
         <!-- Thanh bên trái -->
         <div class="mnd">
             <div class="logo">
-                <a href="http://localhost/php/Du_an_1_NikeStore/index.php">
+                <a href="http://localhost/PHP/Du_an_1_NikeStore/index.php">
                     <img src="../view/images/logadmin.jpg" alt="">
                 </a>
             </div>

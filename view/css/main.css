@@ -856,3 +856,91 @@ border-color: #c4c4c4;
 .binhluan_text{
     margin-left: 20px;
 }
+
+@media only screen and (max-width: 768px) {
+    /* CSS áp dụng cho màn hình có chiều rộng tối đa 768px */
+    /*-----------Trang chủ------------*/
+    .header-menu{
+        display: none;
+    }
+    .main-title{
+        font-size: 21px;
+    }
+    .listsp-des h1{
+        font-size: 21px;
+    }
+    .product_tb1{
+        display: flex;
+        flex-direction: column;
+    }
+    .product_tb1-reverse{
+        flex-direction: column-reverse;
+    }
+    .bot-banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bot-banner img{
+        width: 400px;
+    }
+    .top-footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .top-footer__logo{
+        margin-top: 30px;
+        justify-content: flex-start;
+    }
+    .top-footer__item{
+        flex-direction: column;
+    }
+    .top-footer__icon{
+        margin-left: 0;
+        margin-right: 20px;
+    }
+    .bot-footer{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    .header-bot-1{
+        display: none;
+    }
+    /*-----------Trang sản phẩm------------*/
+    .product-col{
+        grid-template-columns: 1fr;
+        padding-bottom: 0;
+    }
+    .product-col-left{
+        display: none;
+    }
+    .product-col-right{
+        grid-template-columns: repeat(2,1fr);
+        margin: auto;
+    }
+    /*-----------Trang chi tiết sản phẩm------------*/
+    .box-chitiet{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box-chitiet__right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box-chitiet__text,.box-chitiet__des{
+        width: 300px;
+    }
+    .box-chitiet__col{
+        justify-content: center;
+    }
+    /*-----------thanh toán-----------*/
+    .form-tt form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

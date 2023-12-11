@@ -11,6 +11,7 @@ $listmenu = loadall_danhmuc();
 include "view/header.php";
 if (!isset($_SESSION['mycart'])) $_SESSION['mycart'] = [];
 $top15sp = loadall_sanpham_top15();
+$top15luotxem = loadall_sanpham_topluotxem();
 if (isset($_GET['act']) && ($_GET['act'] != "")) {
     $act = $_GET['act'];
     switch ($act) {
@@ -76,17 +77,24 @@ if (isset($_GET['act']) && ($_GET['act'] != "")) {
             break;
 
         case 'sanphamct':
-            if (isset($_POST['guibinhluan'])) {
+            if (isset($_POST['guibinhluan']) && strlen($_POST['noidung'])>0) {
                 if(isset($_SESSION['user'])){
-                    insert_binhluan($_POST['idsp'], $_POST['noidung'], $_SESSION['user']['id']);
+                    insert_binhluan($_POST['idsp'], $_POST['noidung'], $_SESSION['user']['id']); 
+                //     echo '<script>
+                //     alert("Cảm ơn vì đã để lại đánh giá cho chúng tôi !");
+                //  </script>';
                 }else{
-                    echo '<script>
-                    alert("Bạn chỉ có thể để lại bình luận sau khi đăng nhập !");
-                 </script>';
-                }  
+                //     echo '<script>
+                //     alert("Bạn chỉ có thể để lại bình luận sau khi đăng nhập !");
+                //  </script>';
+                }
+                $link = "index.php?act=sanphamct&idsp=" . $_GET['idsp'];
+                header("Location:".$link);
+                exit(); 
             }
             if (isset($_GET['idsp']) && ($_GET['idsp'] > 0)) {
                 $id = $_GET['idsp'];
+                tangluotxem($id);
                 $spct = loadone_sanpham($id);
                 extract($spct);
                 $spcungloai = load_sanpham_cungloai($id, $danhmuc);

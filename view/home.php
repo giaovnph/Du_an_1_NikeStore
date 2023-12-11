@@ -31,7 +31,7 @@
    </div>
    <!-- Tiêu đề giữa trang -->
    <div class="listsp-des">
-       <h1>XU HƯỚNG SẢN PHẨM MÙA HÈ</h1>
+       <h1 class="main-title" style="text-align: center;">XU HƯỚNG SẢN PHẨM MÙA HÈ</h1>
        <p>Thiết kế linh hoạt - Kiểu dáng thể thao</p>
        <a class="cta-btn listsp-des__btn" href="index.php?act=sanpham">SHOP NOW</a>
    </div>
@@ -39,7 +39,7 @@
    <div class="carousel-container">
        <div class="product-container">
            <?php
-            foreach ($top15sp as $sp) {
+            foreach ($top15luotxem as $sp) {
                 extract($sp);
                 $link = "index.php?act=sanphamct&idsp=" . $id;
                 $hinh = $img_path . $img;
@@ -61,7 +61,7 @@
    </div>
    <!-- Tiêu đề giữa trang -->
    <div class="listsp-des">
-       <h1>SẢN PHẨM MỚI VÀ NỔI BẬT</h1>
+       <h1 class="main-title" style="text-align: center;">SẢN PHẨM MỚI VÀ NỔI BẬT</h1>
        <p>Sự kết hợp hoàn hảo giữa thời trang và phong cách</p>
        <a class="cta-btn" href="index.php?act=sanpham">SHOP NOW</a>
    </div>
@@ -85,7 +85,7 @@
        <button class="btn btn-prev" onclick="prev2()">❮</button>
        <button class="btn btn-next" onclick="next2()">❯</button>
    </div>
-   <h1 style="text-align: center;margin-bottom: 80px;">SẢN PHẨM MANG TÍNH BIỂU TƯỢNG</h1>
+   <h1 class="main-title" style="text-align: center;margin-bottom: 80px;">SẢN PHẨM MANG TÍNH BIỂU TƯỢNG</h1>
    <div class="product_tb">
        <div class="product_tb1">
            <div class="product_tb0">
@@ -99,7 +99,7 @@
            </div>
        </div>
 
-       <div class="product_tb1">
+       <div class="product_tb1 product_tb1-reverse">
            <div class="product_tt1">
                Air Jordan 1 hi flyease kết hợp phong cách đáng thèm muốn của đôi giày thể thao đặc trưng đầu tiên của Michael
                Jordan với hệ thống nhập bằng một tay nhanh chóng và dễ dàng. Không có dây để buộc, chỉ có một khóa kéo bao
@@ -110,7 +110,7 @@
            </div>
        </div>
    </div>
-   <h1 style="text-align: center;margin: 80px 0;">THIẾT KẾ THEO LỨA TUỔI VÀ GIỚI TÍNH</h1>
+   <h1 class="main-title" style="text-align: center;margin: 80px 0;">THIẾT KẾ THEO LỨA TUỔI VÀ GIỚI TÍNH</h1>
    <div class="bot-banner">
        <div class="bot-banner__item">
            <a href="http://localhost/PHP/Du_an_1_NikeStore/index.php?act=sanpham&iddm=16"><img src="view/images/men.jpg" alt=""></a>

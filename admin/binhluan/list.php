@@ -17,6 +17,7 @@
                         <th></th>
                     </tr>
                     <?php 
+                    $xacnhan = 'onclick = "return confirm(\'Bạn có thực sự muốn xóa ?\')";';
                         foreach($listBinhLuan as $binhluan) {
                             extract($binhluan);
                             echo '
@@ -27,12 +28,11 @@
                                     <td>'.$iduser.'</td>
                                     <td>'.$idsp.'</td>
                                     <td>'.$ngaybinhluan.'</td>
-                                    <td><a href="index.php?act=xoabl&id='.$id.'"><input type="button" value="Xóa"></a></td>
+                                    <td><a '.$xacnhan.' href="index.php?act=xoabl&id='.$id.'"><input type="button" value="Xóa"></a></td>
                                 </tr>
                             ';
                         }
                     ?>
-
 
                 </table>
             </div>

@@ -19,6 +19,7 @@
             extract($danhmuc);
             $suadm = 'index.php?act=suadm&id=' . $id;
             $xoadm = 'index.php?act=xoadm&id=' . $id;
+            $xacnhan = 'onclick = "return confirm(\'Bạn có thực sự muốn xóa ?\')";';
             echo '
                             <tr>
                                 <td><input type="checkbox" name="" id=""></td>
@@ -26,7 +27,7 @@
                                 <td>' . $name . '</td>
                                 <td>
                                 <a href="' . $suadm . '"><input type="button" value="Sửa"></a>
-                                <a href="' . $xoadm . '"><input type="button" value="Xoá"></a>
+                                <a '.$xacnhan.' href="' . $xoadm . '"><input type="button" value="Xoá"></a>
                                 </td>
                             </tr>
                             ';
@@ -63,10 +64,10 @@
           <input type="text" name="maloai" id="" disabled placeholder="Mã Loại">
         </div>
         <div class=" mb10">
-          <input type="text" name="tenloai" id="" placeholder="Tên Loại">
+          <input type="text" name="tenloai" id="" placeholder="Tên Loại" required>
         </div>
         <div class=" mb10">
-          <input type="submit" name="themmoi" value="Thêm mới">
+          <input type="submit" name="themmoi" value="Thêm mới" required>
         </div>
        
 

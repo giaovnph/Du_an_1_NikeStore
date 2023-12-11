@@ -20,7 +20,8 @@
           extract($tk);
           $suatk = 'index.php?act=suasp&id=' . $id;
           $xoatk = 'index.php?act=xoasp&id=' . $id;
-          echo '
+          if($role != 1){
+            echo '
                             <tr>
                                 <td>' . $id . '</td>
                                 <td>' . $user . '</td>
@@ -31,6 +32,7 @@
                                 <td>' . $role . '</td>
                             </tr>
                             ';
+          }
         }
         ?>
       </table>
